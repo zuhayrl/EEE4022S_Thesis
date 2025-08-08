@@ -1,9 +1,8 @@
+
 % Zuhayr Loonat - University of Cape Town - LNTZUH001
-
 % This is a project report templace document created for EEE4022FS students at the University of Cape Town.
-%
 % This file should be is processed with ``pdflatex`` and might need a few modifications if a different processor is chosen.
-
+% Use pdflatex - bibtex - pdf latex - pdflatex
 
 \documentclass[a4paper,12pt]{report}
 
@@ -82,7 +81,7 @@
 \newpage
 \pagenumbering{roman}
 %\newpage
-    \onehalfspacing
+    \onehalfspacing{
     \nohyphens{
     %\thispagestyle{empty}
     \vskip 40mm
@@ -157,9 +156,9 @@ Make relevant acknowledgements to people who have helped you complete or conduct
 
 % Page formatting, to place section titles as headers of odd pages and Chapter titles as headers of even pages.
 \newpage
-\fancyhead[RE,LO]{}
-\fancyhead[LE]{\leftmark}
-\fancyhead[RO]{\rightmark}
+%\fancyhead[RE,LO]{}
+%\fancyhead[LE]{\leftmark}
+%\fancyhead[RO]{\rightmark}
 \pagestyle{fancy}
 
 \pagenumbering{arabic}
@@ -176,5 +175,6 @@ Make relevant acknowledgements to people who have helped you complete or conduct
 \appendix
 \include{Appendix/appendixa}
 \include{Appendix/appendixb}
-}
+\include{Appendix/appendixc}
+}}% for nohyphens and line spacing
 \end{document}

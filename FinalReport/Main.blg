@@ -24,10 +24,12 @@ Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Appendix/appendixa.aux
 Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: Appendix/appendixb.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: Appendix/appendixc.aux
 Database file #1: Referencing/References.bib
 You've used 2 entries,
             1876 wiz_defined-function locations,
-            500 strings with 3808 characters,
+            501 strings with 3830 characters,
 and the built_in function-call counts, 491 in all, are:
 = -- 49
 > -- 12
