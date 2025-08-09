@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  8 AUG 2025 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  9 AUG 2025 22:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -387,7 +387,7 @@ Package hyperref Info: Link coloring OFF on input line 30.
 \@outlinefile=\write3
 \openout3 = `Main.out'.
 
-<Figures/uctLogo.png, id=82, 418.56375pt x 425.59pt>
+<Figures/uctLogo.png, id=94, 418.56375pt x 425.59pt>
 File: Figures/uctLogo.png Graphic file (type png)
 <use Figures/uctLogo.png>
 Package pdftex.def Info: Figures/uctLogo.png  used on input line 44.
@@ -395,44 +395,49 @@ Package pdftex.def Info: Figures/uctLogo.png  used on input line 44.
  [1
 
 {C:/Users/zuhay/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/uctLogo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 179.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 209.
 (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 179.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 209.
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1]
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 
  []
 
 
-Overfull \hbox (2.01349pt too wide) in paragraph at lines 179--179
+Overfull \hbox (2.01349pt too wide) in paragraph at lines 209--209
 []\OT1/cmr/m/n/12 The terms of reference page is an agreement between yourself and your supervisor outlining
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 179--179
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
 
  []
 
-[4] (Main.toc [5
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 209--209
+
+ []
+
+[5] (Main.toc [6
 
 ])
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
- [6]
+ [7]
 \openout2 = `Body/Introduction.aux'.
 
  (Body/Introduction.tex
@@ -463,35 +468,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (Body/Literature.tex
 Chapter 2.
-<Figures/model.png, id=158, 650.43pt x 396.48125pt>
-File: Figures/model.png Graphic file (type png)
-<use Figures/model.png>
-Package pdftex.def Info: Figures/model.png  used on input line 26.
-(pdftex.def)             Requested size: 317.07614pt x 193.28534pt.
-
-Underfull \hbox (badness 1642) in paragraph at lines 27--27
-\OT1/cmr/m/n/12 MCS08GT16A microcontroller (Please note that your headings should be short
- []
-
 ) [3
 
 
 
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[4 <./Figures/model.png>]
 \openout2 = `Body/Methodology.aux'.
 
  (Body/Methodology.tex
 Chapter 3.
-) [5
+) [4
 
 
 
@@ -506,7 +493,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 []\OT1/cmr/m/n/12 Present your results in a suitable format using tables and graphs where necessary. Remember
  []
 
-) [6
+) [5
 
 
 
@@ -516,7 +503,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 
  (Body/Discussion.tex
 Chapter 5.
-) [7
+) [6
 
 
 
@@ -526,7 +513,7 @@ Chapter 5.
 
  (Body/Conclusions.tex
 Chapter 6.
-) [8
+) [7
 
 
 
@@ -536,7 +523,7 @@ Chapter 6.
 
  (Body/Recommendations.tex
 Chapter 7.
-) [9
+) [8
 
 
 
@@ -544,7 +531,7 @@ Chapter 7.
 ]
 \openout2 = `Referencing/References.aux'.
 
- (Referencing/References.tex (Main.bbl)) [10
+ (Referencing/References.tex (Main.bbl)) [9
 
 
 
@@ -570,7 +557,7 @@ Overfull \hbox (21.77759pt too wide) in paragraph at lines 14--31
  [] 
  []
 
-[11
+[10
 
 
 
@@ -583,12 +570,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[11]
 \openout2 = `Appendix/appendixb.aux'.
 
  (Appendix/appendixb.tex
 Appendix B.
-) [13
+) [12
 
 
 
@@ -598,7 +585,7 @@ Appendix B.
 
  (Appendix/appendixc.tex
 Appendix C.
-) [14
+) [13
 
 
 
@@ -611,20 +598,20 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: B0A19B256E4165FEE9EA4FCBC946F755;2730.
+(rerunfilecheck)             Checksum: 4BD794177EC95D805F0A90BA59033E9D;3136.
  ) 
 Here is how much of TeX's memory you used:
- 11253 strings out of 474486
- 182073 string characters out of 5743755
+ 11245 strings out of 474486
+ 181870 string characters out of 5743755
  1932542 words of memory out of 5000000
- 33247 multiletter control sequences out of 15000+600000
+ 33238 multiletter control sequences out of 15000+600000
  565522 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,601b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Main.pdf (21 pages, 275777 bytes).
+ 75i,11n,79p,601b,757s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Main.pdf (21 pages, 302497 bytes).
 PDF statistics:
- 255 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 171 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 52 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
