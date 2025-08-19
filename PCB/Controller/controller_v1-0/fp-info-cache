@@ -1,4 +1,4 @@
-24282331311379650
+24277064643411614
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96711,27 +96711,6 @@ MODULE_ESP32-DEVKITC-32E-Edited
 0
 38
 38
-ThesisLib
-SHOUHAN_MICROXNJ
-<b>MICROXNJ-1</b><br>
-
-0
-11
-11
-ThesisLib
-SHOUHAN_MICROXNJ_Edited
-<b>MICROXNJ-1</b><br>
-
-0
-11
-6
-ThesisLib
-SW_TS-1088-AR02016
-
-
-0
-2
-2
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)

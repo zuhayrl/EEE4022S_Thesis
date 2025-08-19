@@ -1,4 +1,4 @@
-24282331311379650
+24287598118645493
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96697,6 +96697,27 @@ test point THT pad
 0
 1
 1
+ThesisLib
+3-Wire Solder Pads
+
+
+0
+3
+3
+ThesisLib
+Au_Electrode
+
+
+0
+3
+2
+ThesisLib
+CCLGA-7L
+
+
+0
+7
+7
 ThesisLib
 MODULE_ESP32-DEVKITC-32E
 
