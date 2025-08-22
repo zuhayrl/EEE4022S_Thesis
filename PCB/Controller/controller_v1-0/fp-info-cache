@@ -1,4 +1,4 @@
-24277064643411614
+24289353918560165
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -96698,6 +96698,27 @@ test point THT pad
 1
 1
 ThesisLib
+3-Wire Solder Pads
+
+
+0
+3
+3
+ThesisLib
+Au_Electrode
+
+
+0
+3
+2
+ThesisLib
+CCLGA-7L
+
+
+0
+7
+7
+ThesisLib
 MODULE_ESP32-DEVKITC-32E
 
 
@@ -96711,6 +96732,34 @@ MODULE_ESP32-DEVKITC-32E-Edited
 0
 38
 38
+ThesisLib
+MODULE_ESP32-DEVKITC-32E-Edited2
+
+
+0
+38
+38
+ThesisLib
+SHOUHAN_MICROXNJ
+<b>MICROXNJ-1</b><br>
+
+0
+11
+11
+ThesisLib
+SHOUHAN_MICROXNJ_Edited
+<b>MICROXNJ-1</b><br>
+
+0
+11
+6
+ThesisLib
+SW_TS-1088-AR02016
+
+
+0
+2
+2
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)

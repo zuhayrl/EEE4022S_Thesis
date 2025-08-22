@@ -6835,7 +6835,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 52.07) (xy 95.25 60.96)
+			(xy 95.25 48.26) (xy 95.25 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7355,7 +7355,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 59.69) (xy 102.87 60.96)
+			(xy 102.87 55.88) (xy 102.87 57.15)
 		)
 		(stroke
 			(width 0)
@@ -8115,7 +8115,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 54.61) (xy 97.79 60.96)
+			(xy 97.79 50.8) (xy 97.79 57.15)
 		)
 		(stroke
 			(width 0)
@@ -9315,7 +9315,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 57.15) (xy 100.33 60.96)
+			(xy 100.33 53.34) (xy 100.33 57.15)
 		)
 		(stroke
 			(width 0)
@@ -10045,7 +10045,7 @@
 		(uuid "fe1e745b-260a-4e62-9bdc-f02e7f46ae99")
 	)
 	(label "AMP"
-		(at 100.33 57.15 0)
+		(at 100.33 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10078,7 +10078,7 @@
 		(uuid "19a6ce2b-0888-42a6-a284-8548e43b933f")
 	)
 	(label "Signal"
-		(at 102.87 59.69 0)
+		(at 102.87 55.88 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10144,7 +10144,7 @@
 		(uuid "9773e014-bdb2-4ddf-ba73-cbe8bf92cdcc")
 	)
 	(label "UNB_DAC"
-		(at 95.25 52.07 0)
+		(at 95.25 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10166,7 +10166,7 @@
 		(uuid "c95a4d13-c990-4639-be42-c7572f94eba0")
 	)
 	(label "DAC"
-		(at 97.79 54.61 0)
+		(at 97.79 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10651,7 +10651,7 @@
 	)
 	(global_label "5V"
 		(shape input)
-		(at 90.17 60.96 90)
+		(at 90.17 57.15 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10661,7 +10661,7 @@
 		)
 		(uuid "39706006-44d2-4ad1-bf65-273d2f802025")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 90.17 55.6767 90)
+			(at 90.17 51.8667 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11355,7 +11355,7 @@
 	)
 	(global_label "3V3"
 		(shape input)
-		(at 92.71 60.96 90)
+		(at 92.71 57.15 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11365,7 +11365,7 @@
 		)
 		(uuid "821bf0ef-10bf-4e1f-afd6-d364c14b836c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 54.4672 90)
+			(at 92.71 50.6572 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11573,6 +11573,28 @@
 			)
 		)
 	)
+	(global_label "D-"
+		(shape output)
+		(at 97.79 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a137ce90-7496-411c-ad7c-594d80770ca5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.9624 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "5V"
 		(shape input)
 		(at 132.08 22.86 90)
@@ -11696,6 +11718,28 @@
 		(uuid "abc15881-1696-47c7-9f7e-c0043210d862")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 21.3067 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+"
+		(shape output)
+		(at 97.79 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ac1a0f46-d551-4c37-87a5-3850a16fffc2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.9624 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12552,6 +12596,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0011"
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23162"
+			(at 59.69 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "133790c8-b36a-480d-8a41-a5aed15a85af")
 		)
@@ -12611,6 +12673,24 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0758"
+			(at 30.48 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C7950"
 			(at 30.48 124.46 0)
 			(effects
 				(font
@@ -12697,6 +12777,24 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 120.65 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0423"
+			(at 120.65 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C720477"
 			(at 120.65 60.96 0)
 			(effects
 				(font
@@ -13104,6 +13202,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0010"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22984"
+			(at 133.35 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1e3c77f6-8d61-40ee-805d-63c238355413")
 		)
@@ -13173,6 +13289,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 20.32 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 20.32 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 20.32 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bf35b94e-89e9-4716-aa7d-793a70f23b74")
 		)
@@ -13234,6 +13377,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 96.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0011"
+			(at 96.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22950"
 			(at 96.52 121.92 0)
 			(effects
 				(font
@@ -13377,6 +13538,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0011"
+			(at 133.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23025"
+			(at 133.35 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "75e4dd95-3393-457e-bf59-31a51ee5212b")
 		)
@@ -13438,6 +13617,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 40.64 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0443"
+			(at 40.64 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 40.64 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C12891"
 			(at 40.64 29.21 0)
 			(effects
 				(font
@@ -13581,6 +13787,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0010"
+			(at 157.48 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C21190"
+			(at 157.48 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "39722e18-0f9d-451a-9173-4f3a8c7d4f65")
 		)
@@ -13598,15 +13822,15 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 97.79 66.04 270)
+		(at 97.79 62.23 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2241d78f-a678-4a78-a761-197bd1dbb4c3")
 		(property "Reference" "J3"
-			(at 105.664 66.04 90)
+			(at 105.664 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13614,7 +13838,7 @@
 			)
 		)
 		(property "Value" "TP"
-			(at 96.774 68.834 90)
+			(at 96.774 65.024 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13622,7 +13846,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 97.79 66.04 0)
+			(at 97.79 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13631,7 +13855,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 66.04 0)
+			(at 97.79 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13640,7 +13864,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 97.79 66.04 0)
+			(at 97.79 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13792,7 +14016,7 @@
 				(hide yes)
 			)
 		)
-		(property "Cost" ""
+		(property "Cost" "1.0695"
 			(at 219.71 132.08 0)
 			(effects
 				(font
@@ -13801,7 +14025,7 @@
 				(hide yes)
 			)
 		)
-		(property "Extended" ""
+		(property "Extended" "Yes"
 			(at 219.71 132.08 0)
 			(effects
 				(font
@@ -13924,6 +14148,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0011"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23025"
+			(at 120.65 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b9ab92cb-5b9b-4de2-aaed-231528ba4ec4")
 		)
@@ -13985,6 +14227,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 400.05 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0011"
+			(at 400.05 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23162"
 			(at 400.05 45.72 0)
 			(effects
 				(font
@@ -14129,6 +14389,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 207.01 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 207.01 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 207.01 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5b1c22b6-4d65-4522-849c-dcad6fcdb76a")
 		)
@@ -14198,6 +14485,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 284.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 284.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 284.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f4b64a11-d197-44a6-9de9-ec4d28692153")
 		)
@@ -14259,6 +14573,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 120.65 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0010"
+			(at 120.65 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C4211"
 			(at 120.65 95.25 0)
 			(effects
 				(font
@@ -14459,6 +14791,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.011"
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 115.57 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
 			(at 115.57 29.21 0)
 			(effects
 				(font
@@ -14672,6 +15031,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0010"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C4211"
+			(at 133.35 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b31098a2-5b9b-41f1-852b-820df2f4c9c7")
 		)
@@ -14807,6 +15184,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 35.56 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 35.56 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 35.56 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a11d92bc-15fc-4b41-85bb-fe4b0e017182")
 		)
@@ -14868,6 +15272,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 132.08 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0443"
+			(at 132.08 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 132.08 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C12891"
 			(at 132.08 26.67 0)
 			(effects
 				(font
@@ -14946,6 +15377,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0011"
+			(at 59.69 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23162"
+			(at 59.69 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "db603e08-eabb-47f8-b6ee-b6e8e033dab6")
 		)
@@ -15015,6 +15464,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 278.13 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 278.13 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 278.13 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c5050db6-5a17-46c2-9ff2-d2715fdcb88e")
 		)
@@ -15074,6 +15550,24 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223"
+			(at 52.07 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.1913"
+			(at 52.07 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C6187"
 			(at 52.07 25.4 0)
 			(effects
 				(font
@@ -15222,7 +15716,7 @@
 				(hide yes)
 			)
 		)
-		(property "Cost" ""
+		(property "Cost" "1.0695"
 			(at 229.87 96.52 0)
 			(effects
 				(font
@@ -15231,7 +15725,7 @@
 				(hide yes)
 			)
 		)
-		(property "Extended" ""
+		(property "Extended" "Yes"
 			(at 229.87 96.52 0)
 			(effects
 				(font
@@ -15346,6 +15840,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 127 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0010"
+			(at 127 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C4211"
 			(at 127 95.25 0)
 			(effects
 				(font
@@ -15489,6 +16001,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 130.81 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a0dade97-f29f-40f0-9ddf-885291c17b0f")
 		)
@@ -15550,6 +16089,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.011"
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 135.89 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
 			(at 135.89 125.73 0)
 			(effects
 				(font
@@ -15625,6 +16191,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0758"
+			(at 59.69 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C7950"
+			(at 59.69 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "93b47a9b-0d7f-4f67-a501-675ada11bbc1")
 		)
@@ -15665,7 +16249,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "658fdb94-bc75-4bad-8408-f765879fd530")
 		(property "Reference" "J4"
 			(at 180.34 65.278 0)
@@ -15675,7 +16259,7 @@
 				)
 			)
 		)
-		(property "Value" "Temp_Screw"
+		(property "Value" "Temp_Pads"
 			(at 184.404 54.102 0)
 			(effects
 				(font
@@ -15981,6 +16565,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.2048"
+			(at 41.91 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C8963"
+			(at 41.91 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ca752e16-93fa-41e9-aeef-d92956ce5715")
 		)
@@ -16009,6 +16611,76 @@
 			(project ""
 				(path "/6b64c403-4c64-487c-b054-6b4b32a14f7a"
 					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 102.87 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "6eb8b163-ade6-4e10-8c38-9facfdbbe101")
+		(property "Reference" "J5"
+			(at 105.41 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Data"
+			(at 105.41 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 102.87 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 102.87 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 102.87 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0bf1207f-37ca-4c19-8e5a-2be2d6de91fc")
+		)
+		(pin "1"
+			(uuid "22b1dd20-a011-4bc4-87ee-2dfe1cd259b0")
+		)
+		(instances
+			(project ""
+				(path "/6b64c403-4c64-487c-b054-6b4b32a14f7a"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -16060,6 +16732,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 87.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0443"
+			(at 87.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 87.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C12891"
 			(at 87.63 29.21 0)
 			(effects
 				(font
@@ -16272,6 +16971,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0758"
+			(at 182.88 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C7950"
+			(at 182.88 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "124e5021-12e6-4022-ac4e-2d2b3bea9075")
 		)
@@ -16349,6 +17066,24 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 152.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0758"
+			(at 152.4 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C7950"
 			(at 152.4 121.92 0)
 			(effects
 				(font
@@ -16511,6 +17246,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0056"
+			(at 158.75 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C19702"
+			(at 158.75 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "243bf608-66d1-4ebc-8fdb-90e7f92d8d71")
 		)
@@ -16580,6 +17333,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 125.73 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 125.73 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 125.73 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dae94d42-634f-4872-9e4a-32578e48983d")
 		)
@@ -16641,6 +17421,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 82.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.011"
+			(at 82.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 82.55 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
 			(at 82.55 29.21 0)
 			(effects
 				(font
@@ -16783,6 +17590,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0011"
+			(at 90.17 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22950"
+			(at 90.17 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "29f51eeb-659d-4045-b7cd-0180aa25b44b")
 		)
@@ -16844,6 +17669,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 110.49 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0443"
+			(at 110.49 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 110.49 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C12891"
 			(at 110.49 29.21 0)
 			(effects
 				(font
@@ -16922,6 +17774,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0009"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C25804"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cde7cb04-1d0c-48cb-bf1c-29496ff3e8e3")
 		)
@@ -16983,6 +17853,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 120.65 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0010"
+			(at 120.65 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22984"
 			(at 120.65 102.87 0)
 			(effects
 				(font
@@ -17126,6 +18014,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 120.65 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "155acbf6-f0ce-4c43-a6c4-97d905f5e4b2")
 		)
@@ -17148,7 +18063,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8e3e1f35-c5ca-442a-bd1e-417e42aa3e72")
 		(property "Reference" "J1"
 			(at 17.526 20.32 90)
@@ -17256,6 +18171,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 137.16 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0443"
+			(at 137.16 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 137.16 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C12891"
 			(at 137.16 26.67 0)
 			(effects
 				(font
@@ -17396,6 +18338,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 133.35 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0009"
+			(at 133.35 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C25804"
 			(at 133.35 53.34 0)
 			(effects
 				(font
@@ -17563,6 +18523,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "3.792"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" "Yes"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C3263277"
+			(at 220.98 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "201b5d0a-8900-4f1f-8786-e190ed61811a")
 		)
@@ -17640,6 +18627,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 290.83 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0011"
+			(at 290.83 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23162"
 			(at 290.83 72.39 0)
 			(effects
 				(font
@@ -17781,6 +18786,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.1653"
+			(at 99.06 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C6186"
+			(at 99.06 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "95529165-3790-4468-9ee9-224773999928")
 		)
@@ -17845,6 +18868,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 102.87 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0011"
+			(at 102.87 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22950"
 			(at 102.87 121.92 0)
 			(effects
 				(font
@@ -17988,6 +19029,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 16.51 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 16.51 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 16.51 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b904dd10-9499-4a42-ab68-5faa1aff287c")
 		)
@@ -18049,6 +19117,33 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 63.5 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0443"
+			(at 63.5 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 63.5 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C12891"
 			(at 63.5 29.21 0)
 			(effects
 				(font
@@ -18126,6 +19221,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0009"
+			(at 160.02 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C25804"
+			(at 160.02 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "df84e84c-518a-4175-9376-1b6bae2a6f84")
 		)
@@ -18187,6 +19300,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 127 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0011"
+			(at 127 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23025"
 			(at 127 87.63 0)
 			(effects
 				(font
@@ -18257,6 +19388,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 284.48 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0011"
+			(at 284.48 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C23162"
 			(at 284.48 72.39 0)
 			(effects
 				(font
@@ -18393,6 +19542,33 @@
 			)
 		)
 		(property "Description" "ESP32-S2-MINI-1 and ESP32-S2-MINI-1U are two powerful, generic Wi-Fi MCU modules that have a rich set of peripherals. They are an ideal choice for a wide variety of application scenarios relating to Internet of Things (IoT), wearable electronics and smart home."
+			(at 346.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "1.8960"
+			(at 346.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C3013906"
+			(at 346.71 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" "Yes"
 			(at 346.71 63.5 0)
 			(effects
 				(font
@@ -18659,6 +19835,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 290.83 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 290.83 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 290.83 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "dec9ac1f-1df4-42fa-b7e2-45bd39a20496")
 		)
@@ -18856,6 +20059,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0056"
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C19702"
+			(at 120.65 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "243bf608-66d1-4ebc-8fdb-90e7f92d8d72")
 		)
@@ -18925,6 +20146,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 297.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 297.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 297.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8d44bd64-5559-483b-b8ce-c0317b3491cc")
 		)
@@ -18984,6 +20232,24 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 58.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0758"
+			(at 58.42 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C7950"
 			(at 58.42 121.92 0)
 			(effects
 				(font
@@ -19077,7 +20343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Cost" ""
+		(property "Cost" "1.0695"
 			(at 168.91 96.52 0)
 			(effects
 				(font
@@ -19086,7 +20352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Extended" ""
+		(property "Extended" "Yes"
 			(at 168.91 96.52 0)
 			(effects
 				(font
@@ -19209,6 +20475,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0011"
+			(at 59.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22787"
+			(at 59.69 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e6965f12-6d64-4b8a-9013-ff27fdfdad02")
 		)
@@ -19270,6 +20554,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0010"
+			(at 127 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22984"
 			(at 127 102.87 0)
 			(effects
 				(font
@@ -19345,6 +20647,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0276"
+			(at 34.29 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C8678"
+			(at 34.29 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ce8ec598-bf3e-4900-9516-cea5de34e1fc")
 		)
@@ -19368,7 +20688,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d76668a1-3cf6-45fd-8f03-76d8ce374b7a")
 		(property "Reference" "J7"
 			(at 204.47 86.3599 0)
@@ -19476,6 +20796,24 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0011"
+			(at 83.82 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C22950"
 			(at 83.82 121.92 0)
 			(effects
 				(font
@@ -19707,7 +21045,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "dd230723-5399-4dfd-abfa-daa3a87897e2")
 		(property "Reference" "J8"
 			(at 191.77 91.4399 0)
@@ -19821,7 +21159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Cost" ""
+		(property "Cost" "1.0695"
 			(at 96.52 96.52 0)
 			(effects
 				(font
@@ -19830,7 +21168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Extended" ""
+		(property "Extended" "Yes"
 			(at 96.52 96.52 0)
 			(effects
 				(font
@@ -20008,6 +21346,33 @@
 			)
 		)
 		(property "Description" "12-bit Digital-to-Analog Converter, integrated EEPROM, I2C interface, SOT-23-6"
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.9"
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" "Yes"
+			(at 38.1 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C144198"
 			(at 38.1 93.98 0)
 			(effects
 				(font
@@ -20227,6 +21592,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0758"
+			(at 30.48 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C7950"
+			(at 30.48 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "93b47a9b-0d7f-4f67-a501-675ada11bbc3")
 		)
@@ -20313,6 +21696,24 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.0423"
+			(at 153.67 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C720477"
+			(at 153.67 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "96ce1cae-f75b-48bb-90cb-b2240452d84f")
 		)
@@ -20336,7 +21737,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "f034d2c9-8aff-4918-8991-2ffb6871a764")
 		(property "Reference" "J6"
 			(at 76.708 164.338 0)
@@ -20449,6 +21850,24 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
+			(at 76.2 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0056"
+			(at 76.2 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C2286"
 			(at 76.2 64.77 0)
 			(effects
 				(font
@@ -20592,6 +22011,33 @@
 				(hide yes)
 			)
 		)
+		(property "Cost" "0.011"
+			(at 68.58 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" ""
+			(at 68.58 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C1525"
+			(at 68.58 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3737762e-4e42-4239-86c0-c2b91c101397")
 		)
@@ -20651,6 +22097,33 @@
 			)
 		)
 		(property "Description" "USB Micro Type B connector"
+			(at 22.86 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0368"
+			(at 22.86 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Extended" "Yes"
+			(at 22.86 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C404969"
 			(at 22.86 60.96 0)
 			(effects
 				(font
@@ -20865,6 +22338,24 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 76.2 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Cost" "0.0010"
+			(at 76.2 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLC Part no." "C21190"
 			(at 76.2 57.15 0)
 			(effects
 				(font

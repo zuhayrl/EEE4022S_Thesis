@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "4022S")(type "KiCad")(uri "/Users/cameronclark/Documents/UCT/EEE4022S/EEE4022S_Salinity_JCP24-03/PCBs/Libraries/4022S.pretty")(options "")(descr ""))
+)
