@@ -493,15 +493,15 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "controller_BOM",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "CSV",
+      "name": "---",
       "ref_delimiter": ",",
-      "ref_range_delimiter": "",
+      "ref_range_delimiter": "-",
       "string_delimiter": "\""
     },
     "bom_presets": [],
@@ -509,15 +509,15 @@
       "exclude_dnp": false,
       "fields_ordered": [
         {
-          "group_by": false,
-          "label": "Reference",
-          "name": "Reference",
-          "show": true
-        },
-        {
           "group_by": true,
           "label": "Value",
           "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
           "show": true
         },
         {
@@ -530,6 +530,12 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB Part No.",
+          "name": "JLCPCB Part No.",
           "show": true
         },
         {
@@ -578,26 +584,20 @@
           "group_by": false,
           "label": "Price",
           "name": "Price",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Extended",
           "name": "Extended",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "JLCPCB Part No.",
-          "name": "JLCPCB Part No.",
-          "show": false
+          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "connection_grid_size": 50.0,
     "drawing": {
