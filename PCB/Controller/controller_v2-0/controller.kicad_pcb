@@ -115,7 +115,7 @@
 			(mirror no)
 			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "Gerbers/")
+			(outputdirectory "Production/Gerbers/")
 		)
 	)
 	(net 0 "")
@@ -167,7 +167,7 @@
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U4"
-			(at 0 -4.5 360)
+			(at 0 -4.5 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0d045981-5b3c-4cd9-b83d-4ca6c254453d")
@@ -179,7 +179,7 @@
 			)
 		)
 		(property "Value" "AMS1117-3.3"
-			(at 0 4.5 360)
+			(at 0 4.5 0)
 			(layer "F.Fab")
 			(uuid "e6f307cf-896a-41e2-9ac2-48414e571832")
 			(effects
@@ -3302,7 +3302,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C2"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f1311d21-db04-48f6-87bd-8262f5fbaef1")
@@ -3314,7 +3314,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "6c286863-8392-45ad-8a53-9114a9f2ad3e")
 			(effects
@@ -3508,7 +3508,7 @@
 			(uuid "17b59f18-fd6b-4703-aa0d-b4f2b3b8e655")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ee28f0d0-eded-42a0-b34d-4182ebe1a845")
 			(effects
@@ -3555,7 +3555,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C6"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "49606519-1bf8-4751-942a-4f0b2469387a")
@@ -3567,7 +3567,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "872374a7-7700-4958-a4e4-51b2374a5c01")
 			(effects
@@ -3761,7 +3761,7 @@
 			(uuid "4677ba82-a035-45fe-b8f8-2460f8b618ee")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "f385dba7-e25d-48af-a5e4-6d14c5e43bc0")
 			(effects
@@ -3808,7 +3808,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C5"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "be83aa02-41f8-458a-8bf4-8f2f02acedfa")
@@ -3820,7 +3820,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "9c8627b4-53c7-4bf2-8be8-25e6b385441e")
 			(effects
@@ -4014,7 +4014,7 @@
 			(uuid "e9a37945-70ad-4230-a57d-9de081aec7bd")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "a4da2485-f3df-41f1-b593-b024eb4b78fb")
 			(effects
@@ -4061,7 +4061,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J2"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9fdcb950-15d8-4e03-b2c3-7009907b30fa")
@@ -4368,7 +4368,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C9"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5bbd11a8-fcde-4b27-9fac-39f4c5b39e47")
@@ -4380,7 +4380,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "454e7936-ec5b-448d-b61d-8adabb6c29d8")
 			(effects
@@ -4574,7 +4574,7 @@
 			(uuid "2b0f4783-9bc1-419c-9bde-ff2a74c8103e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2b1bbfed-7972-4c74-81a1-fb56b7d6fc30")
 			(effects
@@ -4975,7 +4975,7 @@
 		(descr "Through hole straight pin header, 2x03, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x03 2.54mm double row")
 		(property "Reference" "RV1"
-			(at 1.9 -2.6 360)
+			(at 1.9 -2.6 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "dad2fd73-cad1-4e54-b664-6fda9bc1c8a6")
@@ -4987,7 +4987,7 @@
 			)
 		)
 		(property "Value" "LCD Pot"
-			(at 1.27 7.41 360)
+			(at 1.27 7.41 0)
 			(layer "F.Fab")
 			(uuid "2cdcbf5a-299d-40a8-82a1-6ded7e885633")
 			(effects
@@ -5436,7 +5436,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at 0 -1.16 360)
+			(at 0 -1.16 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8a4637e8-5849-45e6-8f37-03c718714a50")
@@ -5448,7 +5448,7 @@
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 0 1.16 360)
+			(at 0 1.16 0)
 			(layer "F.Fab")
 			(uuid "838fed0c-9679-4153-9ebb-e6be36724d88")
 			(effects
@@ -5642,7 +5642,7 @@
 			(uuid "0e0d2fcb-cf11-40df-a162-5966345025e0")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "015b5ffa-3718-4d50-861f-c1bff5631ded")
 			(effects
@@ -6195,7 +6195,7 @@
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U2"
-			(at 0 -4.5 360)
+			(at 0 -4.5 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d4899b1a-f954-4fc2-8b08-b50fcd015a11")
@@ -6207,7 +6207,7 @@
 			)
 		)
 		(property "Value" "AMS1117-5.0"
-			(at 0 4.5 360)
+			(at 0 4.5 0)
 			(layer "F.Fab")
 			(uuid "a097d673-c45a-4816-93ec-9c1d26699642")
 			(effects
@@ -6512,7 +6512,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J3"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "448bc6a5-2d80-456c-bc2e-dcff93ae4618")
@@ -7591,7 +7591,7 @@
 			(uuid "efc614c7-0cbc-4575-a9a2-06bd724c21a3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 19.05 360)
+			(at 0 19.05 0)
 			(layer "F.Fab")
 			(uuid "7fce6eec-8920-4f64-bbfa-9e5c5ccb1115")
 			(effects
