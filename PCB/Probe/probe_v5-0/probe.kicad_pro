@@ -492,7 +492,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Production/Gerbers/",
+      "plot": "./",
       "pos_files": "Production/Placement/",
       "specctra_dsn": "",
       "step": "",
