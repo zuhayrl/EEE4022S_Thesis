@@ -9445,7 +9445,7 @@
 		)
 		(uuid f826aea6-04f4-4d55-a8e0-aaec05644682)
 	)
-	(text_box "GPIOs:\nBoot - 0\nEN - Reset\nADC Usage 1,2,3,4\nI2C SDA/SCL - 8,9\nD+,D- - 20,19\n\nSensors:\nPressure INT - 18\nTemp - 42 (1 Pin)\n\nRS485:\nRO - 39\nRE,DE - 40\nDI - 41\n\nSwitch Output:\nSW R1 - 5,6,7,21\nSW R2 - 10,11 GND - 12,13\nSW Cap - 14,15,16,17\nSW GRD Au - 33,34,35,36\n\nUnused:\n22,26,37,38,43,44,45,46\n\n"
+	(text_box "GPIOs:\nBoot - 0\nEN - Reset\nADC Usage 1,2,3,4\nI2C SDA/SCL - 8,9\nD+,D- - 20,19\n\nSensors:\nPressure I2C\nTemp - 42 (1 Pin)\n\nRS485:\nRO - 39\nRE,DE - 40\nDI - 41\n\nSwitch Output:\nSW R1 - 5,6,7,21\nSW R2 - 10,11 GND - 12,13\nSW Cap - 14,15,16,17\nSW GRD Au - 33,34,35,36\n\nUnused:\n18,26,37,38,43,44,45,46\n\n"
 		(exclude_from_sim no)
 		(at 12.7 185.42 0)
 		(size 69.85 92.71)
