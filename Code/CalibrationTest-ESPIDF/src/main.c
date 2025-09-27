@@ -8,6 +8,8 @@
 #include "driver/i2c.h"                 // I²C master/slave driver
 #include "driver/uart.h"                // UART/RS485 driver
 #include "driver/adc.h"                 // ADC channels
+#include "esp_adc_cal.h"                // ADC calibration library
+#include "esp_log.h"                    // Logging functions
 
 
 // ===== Definitions =====      
@@ -24,10 +26,17 @@
 #define DAC_MAX_3V3 2200                // Limit for 3V out when powered at 5V
 
 // --- ADC Input Pins ---       
-#define ADC_UNB_PIN  1                  // ADC input from DAC output
-#define ADC_DAC_PIN  2                  // ADC input from DAC output after Buffer Op-Amp
-#define ADC_AMP_PIN  3                  // ADC input before R2
-#define ADC_SGN_PIN  4                  // ADC input from x11 ampl (drop over R2)
+//#define ADC_UNB_PIN  1                // ADC input from DAC output
+#define ADC_UNB_CHN  ADC1_CHANNEL_0
+//#define ADC_DAC_PIN  2                // ADC input from DAC output after Buffer Op-Amp
+#define ADC_DAC_CHN  ADC1_CHANNEL_1
+//#define ADC_AMP_PIN  3                // ADC input before R2
+#define ADC_AMP_CHN  ADC1_CHANNEL_2
+//#define ADC_SGN_PIN  4                // ADC input from x11 ampl (drop over R2)
+#define ADC_SGN_CHN  ADC1_CHANNEL_3
+// ADC Parameters
+#define ADC_ATTEN    ADC_ATTEN_DB_11    // maps ~0-3.3 V to full scale
+#define ADC_WIDTH    ADC_WIDTH_BIT_12   // 12-bit resolution
 
 // --- RS485 ---        
 #define RS485_RO    39                  // RS485 RO Pin
@@ -63,7 +72,7 @@ float calibrationFactor4 = 0.81;
 
 // ===== Start of app_main =====
 void app_main() {
-
+    //TODO 
 } // end of app_main
 
 
@@ -79,7 +88,7 @@ void app_main() {
 */
 
 /** 
- *  @brief Initialises I2C
+ *  @brief Initialises I²C
  */
 static void i2c_master_init(void)
 {
@@ -101,7 +110,7 @@ static void i2c_master_init(void)
 /**
  *  @brief Sets the output voltage of the MCP4725 DAC.
  *  @param value 12-bit value (0-4095) representing the desired output voltage.
- *  @return esp_err_t Error code from I2C write operation.
+ *  @return esp_err_t Error code from I²C write operation.
  */
 static esp_err_t mcp4725_set_voltage(uint16_t value)
 {
@@ -112,10 +121,17 @@ static esp_err_t mcp4725_set_voltage(uint16_t value)
 
     // Send the buffer to the MCP4725 via I2C
     return i2c_master_write_to_device(
-        I2C_PORT,           // I2C port number
-        MCP4725_ADDR,       // I2C address of MCP4725
-        write_buf,          // Data buffer to send
-        sizeof(write_buf),  // Number of bytes to send (3)
-        pdMS_TO_TICKS(100)  // Timeout in FreeRTOS ticks
+        I2C_PORT,                              // I2C port number
+        MCP4725_ADDR,                          // I2C address of MCP4725
+        write_buf,                             // Data buffer to send
+        sizeof(write_buf),                     // Number of bytes to send (3)
+        pdMS_TO_TICKS(100)                     // Timeout in FreeRTOS ticks
     );
 }
+
+// --- ADC Functions ---
+/*
+Resolution: 13 Bit: 0-8191, or 12 bit: 0-4095
+NEVER EXCEDED 3V3
+
+*/
