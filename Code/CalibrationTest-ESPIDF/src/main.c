@@ -14,12 +14,9 @@
 
 // ===== Definitions =====      
 // --- I²C ---      
-#define MCP4725_ADDR 0x60               // MCP4725A0 default address
 #define MS5837_ADDR  0x77               // MS5837 address
 
 // --- DAC Parameters ---       
-#define DAC_MAX_5V  4095                // 12-bit range
-#define DAC_MAX_3V3 2200                // Limit for 3V out when powered at 5V
 
 // --- ADC Input Pins ---       
 //#define ADC_UNB_PIN  1                // ADC input from DAC output
@@ -86,40 +83,6 @@ void app_main() {
 
 
 // ===== Functions =====
-
-
-// --- DAC Functions ---
-/*
-    The DAC expects 3 bytes: 
-    [ Command + PD bits ] [ DAC MSB ] [ DAC LSB ]
-    For a fast DAC update: command = 0x40 (writes DAC register only, no EEPROM)
-    12 Bit Value: 0-4095
-    Power-down modes: Bits PD1/PD0 in the command byte let you put the output in high-impedance or pull-down states.
-*/
-
-/**
- *  @brief Sets the output voltage of the MCP4725 DAC.
- *  @param value 12-bit value (0-4095) representing the desired output voltage.
- *  @return esp_err_t Error code from I²C write operation.
- */
-static esp_err_t mcp4725_set_voltage(uint16_t value)
-{
-    uint8_t write_buf[3];
-    write_buf[0] = 0x40;                       // Command: Fast mode, update DAC register
-    write_buf[1] = value >> 4;                 // Upper 8 bits of the 12-bit value
-    write_buf[2] = (value & 0x0F) << 4;        // Lower 4 bits, left-aligned in byte
-
-    // Send the buffer to the MCP4725 via I2C
-    return i2c_master_write_to_device(
-        I2C_PORT,                              // I2C port number
-        MCP4725_ADDR,                          // I2C address of MCP4725
-        write_buf,                             // Data buffer to send
-        sizeof(write_buf),                     // Number of bytes to send (3)
-        pdMS_TO_TICKS(100)                     // Timeout in FreeRTOS ticks
-    );
-}
-
-
 
 // --- ADC Functions ---
 /*
