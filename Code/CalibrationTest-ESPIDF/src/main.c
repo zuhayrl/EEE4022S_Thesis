@@ -1,18 +1,29 @@
 // Calibration Test
 // Zuhayr Loonat - EEE4022S - Thesis - Salinity Probe
 
-// Includes
+// ===== Includes =====
+// --- For Code ---
+#include <stdbool.h>
+
+// --- For ESP32 ---
 #include "freertos/FreeRTOS.h"          // Core RTOS definitions
 #include "freertos/task.h"              // xTaskCreate, vTaskDelay, etc.
 #include "driver/gpio.h"                // GPIO input/output
 #include "esp_log.h"                    // Logging functions
 
+// --- My Components ---
+#include "i2c_driver.h"
+#include "rs485_driver.h"
+#include "adc_driver.h"
+#include "mcp4725_driver.h"
+
+// for components (not needed coz i made seperate files for them)
+/*
 #include "driver/i2c.h"                 // I²C master/slave driver
 #include "driver/uart.h"                // UART/RS485 driver
 #include "driver/adc.h"                 // ADC channels
 #include "esp_adc_cal.h"                // ADC calibration library
-
-#include <stdbool.h>
+*/
 
 
 // ===== Definitions =====      
@@ -61,22 +72,4 @@ void app_main() {
 
 
 // ===== Functions =====
-
-
-// --- RS485 Functions ---
-
-
-// Initilise RS485
-
-
-
-
-
-
-
-
-
-
-
-
 
