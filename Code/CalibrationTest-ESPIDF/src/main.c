@@ -14,10 +14,6 @@
 
 // ===== Definitions =====      
 // --- I²C ---      
-#define I2C_PORT     I2C_NUM_0      
-#define I2C_FREQ     100000             // 100 kHz
-#define SDA_PIN      8                  // SDA GPIO PIN 
-#define SCL_PIN      9                  // SCL GPIO PIN
 #define MCP4725_ADDR 0x60               // MCP4725A0 default address
 #define MS5837_ADDR  0x77               // MS5837 address
 
@@ -81,7 +77,7 @@ float calibrationFactor4 = 0.81;
 static esp_adc_cal_characteristics_t *adc_chars;
 // RS485
 static QueueHandle_t rs485_queue;
-static bool rs485_initialized = false;
+static bool rs485_initialised = false;
 
 // ===== Start of app_main =====
 void app_main() {
@@ -91,26 +87,6 @@ void app_main() {
 
 // ===== Functions =====
 
-// --- I²C ---
-/** 
- *  @brief Initialises I²C
- */
-static void i2c_master_init(void)
-{
-    // Configure I2C parameters
-    i2c_config_t conf = {
-        .mode = I2C_MODE_MASTER,                // Set as I2C master
-        .sda_io_num = SDA_PIN,                  // SDA pin number
-        .scl_io_num = SCL_PIN,                  // SCL pin number
-        .sda_pullup_en = GPIO_PULLUP_ENABLE,    // Enable pull-up on SDA
-        .scl_pullup_en = GPIO_PULLUP_ENABLE,    // Enable pull-up on SCL
-        .master.clk_speed = I2C_FREQ,           // Set I2C clock frequency
-    };
-    // Apply I2C configuration to the specified port
-    ESP_ERROR_CHECK(i2c_param_config(I2C_PORT, &conf));
-    // Install I2C driver for the port
-    ESP_ERROR_CHECK(i2c_driver_install(I2C_PORT, conf.mode, 0, 0, 0));
-}
 
 // --- DAC Functions ---
 /*
@@ -153,7 +129,7 @@ Vdata = Vref/k * data/((2^bits)-1) where k is attenuation
 */
 
 /**
- * @brief Initialize ADC with proper configuration and calibration
+ * @brief initialise ADC with proper configuration and calibration
  *        When to call: Once during initialization, after I2C init.
  * @return esp_err_t Error code
  */
@@ -233,14 +209,14 @@ static int adc_read_raw(adc1_channel_t channel, int samples){
 
 // Initilise RS485
 /**
- * @brief Initialize RS485 communication using SP3485EN IC
+ * @brief initialise RS485 communication using SP3485EN IC
  * @param baud_rate Baud rate for communication (default: 9600)
  * @return esp_err_t Error code
  */
 static esp_err_t rs485_init(uint32_t baud_rate){
     
-    // Check if already initialized
-    if (rs485_initialized) {
+    // Check if already initialised
+    if (rs485_initialised) {
         return ESP_OK;
     }
 
@@ -276,8 +252,8 @@ static esp_err_t rs485_init(uint32_t baud_rate){
 
     // Set to receive mode (RE/DE = LOW)
     rs485_set_receive_mode();
-    rs485_initialized = true;
-    printf("RS485 initialized at %d baud\n", baud_rate);
+    rs485_initialised = true;
+    printf("RS485 initialised at %d baud\n", baud_rate);
     return ESP_OK;
 }
 
@@ -317,7 +293,7 @@ static bool rs485_is_transmit_mode(void){
 static int rs485_send_data(const uint8_t *data, size_t length, uint32_t timeout_ms){
 
     // Check if initialised
-    if (!rs485_initialized || data == NULL || length == 0) {
+    if (!rs485_initialised || data == NULL || length == 0) {
         return -1;
     }
 
@@ -349,7 +325,7 @@ static int rs485_send_data(const uint8_t *data, size_t length, uint32_t timeout_
 static int rs485_receive_data(uint8_t *buffer, size_t buffer_size, uint32_t timeout_ms){
 
     // Check if initialised
-    if (!rs485_initialized || buffer == NULL || buffer_size == 0) {
+    if (!rs485_initialised || buffer == NULL || buffer_size == 0) {
         return -1;
     }
 
@@ -413,7 +389,7 @@ static int rs485_send_command(const char *command, char *response, size_t respon
  */
 static size_t rs485_available(void){
     
-    if (!rs485_initialized) {
+    if (!rs485_initialised) {
         return 0;
     }
 
@@ -427,7 +403,7 @@ static size_t rs485_available(void){
  */
 static void rs485_flush(void){
 
-    if (rs485_initialized) {
+    if (rs485_initialised) {
         uart_flush(RS485_UART_NUM);
     }
 }
