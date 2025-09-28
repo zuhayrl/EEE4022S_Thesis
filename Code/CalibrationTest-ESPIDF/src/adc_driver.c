@@ -11,7 +11,7 @@
 #include <stdio.h>
 
 // ===== Global Vars =====
-static esp_adc_cal_characteristics_t *adc_chars;
+esp_adc_cal_characteristics_t *adc_chars;
 
 // ===== Functions =====
 
@@ -92,7 +92,7 @@ float adc_read_voltage(adc1_channel_t channel, int samples){
  * @param samples Number of samples to average (default: 64)
  * @return int Raw ADC reading (0-4095 for 12-bit)(0-8191 for 13-bit)
  */
-static int adc_read_raw(adc1_channel_t channel, int samples){
+int adc_read_raw(adc1_channel_t channel, int samples){
 
     // Check if ADC is initialised
     if (adc_chars == NULL) {
