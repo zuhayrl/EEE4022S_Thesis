@@ -91,15 +91,7 @@ void app_main() {
 
 // ===== Functions =====
 
-// --- DAC Functions ---
-/*
-    The DAC expects 3 bytes: 
-    [ Command + PD bits ] [ DAC MSB ] [ DAC LSB ]
-    For a fast DAC update: command = 0x40 (writes DAC register only, no EEPROM)
-    12 Bit Value: 0-4095
-    Power-down modes: Bits PD1/PD0 in the command byte let you put the output in high-impedance or pull-down states.
-*/
-
+// --- I²C ---
 /** 
  *  @brief Initialises I²C
  */
@@ -119,6 +111,15 @@ static void i2c_master_init(void)
     // Install I2C driver for the port
     ESP_ERROR_CHECK(i2c_driver_install(I2C_PORT, conf.mode, 0, 0, 0));
 }
+
+// --- DAC Functions ---
+/*
+    The DAC expects 3 bytes: 
+    [ Command + PD bits ] [ DAC MSB ] [ DAC LSB ]
+    For a fast DAC update: command = 0x40 (writes DAC register only, no EEPROM)
+    12 Bit Value: 0-4095
+    Power-down modes: Bits PD1/PD0 in the command byte let you put the output in high-impedance or pull-down states.
+*/
 
 /**
  *  @brief Sets the output voltage of the MCP4725 DAC.
