@@ -35,13 +35,22 @@
 //#define ADC_SGN_PIN  4                // ADC input from x11 ampl (drop over R2)
 #define ADC_SGN_CHN  ADC1_CHANNEL_3
 // ADC Parameters
-#define ADC_ATTEN    ADC_ATTEN_DB_0     // maps ~0-3.3 V to full scale (attenuate for higher voltages, 0:k=100%, 2.5:k=75%, 6:k=50%, 12:k=25%)
+#define ADC_ATTEN    ADC_ATTEN_DB_0     // Maps ~0-3.3 V to full scale (attenuate for higher voltages, 0:k=100%, 2.5:k=75%, 6:k=50%, 12:k=25%)
 #define ADC_WIDTH    ADC_BITWIDTH_13    // 13-bit resolution
 
-// --- RS485 ---        
+// --- RS485 ---    
+// Pinouts    
 #define RS485_RO    39                  // RS485 RO Pin
 #define RS485_RE_DE 40                  // RS485 RE/DE Pin
 #define RS485_DI    41                  // RS485 RI Pin
+// UART Config
+#define RS485_UART_NUM      UART_NUM_1  // UART Number
+#define RS485_BAUD_RATE     9600        // Adjust as needed
+#define RS485_BUF_SIZE      1024        // RX/TX buffer size
+#define RS485_QUEUE_SIZE    20          // Event queue size
+// Timing (N.B: this is in uSeconds) needed since this is half-duplex
+#define RS485_TX_DELAY_US   50          // Delay before transmit
+#define RS485_RX_DELAY_US   100         // Delay after transmit before receive
 
 // --- Switches ---     
 // R1 Resistor Switch       
@@ -70,6 +79,9 @@
 float calibrationFactor1 = 0.875; 
 float calibrationFactor4 = 0.81;
 static esp_adc_cal_characteristics_t *adc_chars;
+// RS485
+static QueueHandle_t rs485_queue;
+static bool rs485_initialized = false;
 
 // ===== Start of app_main =====
 void app_main() {
@@ -129,6 +141,8 @@ static esp_err_t mcp4725_set_voltage(uint16_t value)
         pdMS_TO_TICKS(100)                     // Timeout in FreeRTOS ticks
     );
 }
+
+
 
 // --- ADC Functions ---
 /*
@@ -210,4 +224,209 @@ static int adc_read_raw(adc1_channel_t channel, int samples){
     }
 
     return adc_reading / samples;
+}
+
+
+// --- RS485 Functions ---
+
+
+// Initilise RS485
+/**
+ * @brief Initialize RS485 communication using SP3485EN IC
+ * @param baud_rate Baud rate for communication (default: 9600)
+ * @return esp_err_t Error code
+ */
+static esp_err_t rs485_init(uint32_t baud_rate){
+    
+    // Check if already initialized
+    if (rs485_initialized) {
+        return ESP_OK;
+    }
+
+    // Configure UART parameters
+    uart_config_t uart_config = {
+        .baud_rate = baud_rate,
+        .data_bits = UART_DATA_8_BITS,
+        .parity = UART_PARITY_DISABLE,
+        .stop_bits = UART_STOP_BITS_1,
+        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
+        .source_clk = UART_SCLK_APB,
+    };
+
+    // Install UART driver
+    ESP_ERROR_CHECK(uart_driver_install(RS485_UART_NUM, RS485_BUF_SIZE, RS485_BUF_SIZE, RS485_QUEUE_SIZE, &rs485_queue, 0));
+
+    // Configure UART parameters
+    ESP_ERROR_CHECK(uart_param_config(RS485_UART_NUM, &uart_config));
+
+    // Set UART pins (TX, RX, RTS, CTS)
+    ESP_ERROR_CHECK(uart_set_pin(RS485_UART_NUM, RS485_DI, RS485_RO, UART_PIN_NO_CHANGE, UART_PIN_NO_CHANGE));
+
+    // Configure RE/DE pin as output (it's initially in receive mode)
+    gpio_config_t io_conf = {
+        .intr_type = GPIO_INTR_DISABLE,
+        .mode = GPIO_MODE_OUTPUT,
+        .pin_bit_mask = (1ULL << RS485_RE_DE),
+        .pull_down_en = 0,
+        .pull_up_en = 0,
+    };
+
+    ESP_ERROR_CHECK(gpio_config(&io_conf));
+
+    // Set to receive mode (RE/DE = LOW)
+    rs485_set_receive_mode();
+    rs485_initialized = true;
+    printf("RS485 initialized at %d baud\n", baud_rate);
+    return ESP_OK;
+}
+
+// Modes (Rx/Rx)
+/**
+ * @brief Set SP3485EN to transmit mode
+ */
+static void rs485_set_transmit_mode(void){
+    gpio_set_level(RS485_RE_DE, 1); // RE/DE = HIGH (transmit)
+    esp_rom_delay_us(RS485_TX_DELAY_US); // Wait for transceiver switching
+}
+
+/**
+ * @brief Set SP3485EN to receive mode  
+ */
+static void rs485_set_receive_mode(void){
+    gpio_set_level(RS485_RE_DE, 0); // RE/DE = LOW (receive)
+    esp_rom_delay_us(RS485_RX_DELAY_US); // Wait for transceiver switching
+}
+
+/**
+ * @brief Get current RS485 direction
+ * @return true if in transmit mode, false if in receive mode
+ */
+static bool rs485_is_transmit_mode(void){
+    return gpio_get_level(RS485_RE_DE) == 1;
+}
+
+// Send/Receive
+/**
+ * @brief Send data over RS485 bus
+ * @param data Pointer to data buffer
+ * @param length Number of bytes to send
+ * @param timeout_ms Timeout in milliseconds
+ * @return int Number of bytes sent, -1 on error
+ */
+static int rs485_send_data(const uint8_t *data, size_t length, uint32_t timeout_ms){
+
+    // Check if initialised
+    if (!rs485_initialized || data == NULL || length == 0) {
+        return -1;
+    }
+
+    // Clear any pending RX data (flush UART)
+    uart_flush_input(RS485_UART_NUM);
+
+    // Switch to transmit mode
+    rs485_set_transmit_mode();
+
+    // Send data
+    int bytes_sent = uart_write_bytes(RS485_UART_NUM, data, length);
+
+    // Wait for transmission to complete
+    uart_wait_tx_done(RS485_UART_NUM, pdMS_TO_TICKS(timeout_ms));
+
+    // Switch back to receive mode
+    rs485_set_receive_mode();
+
+    return bytes_sent;
+}
+
+/**
+ * @brief Receive data from RS485 bus
+ * @param buffer Pointer to receive buffer
+ * @param buffer_size Size of receive buffer
+ * @param timeout_ms Timeout in milliseconds
+ * @return int Number of bytes received, -1 on error
+ */
+static int rs485_receive_data(uint8_t *buffer, size_t buffer_size, uint32_t timeout_ms){
+
+    // Check if initialised
+    if (!rs485_initialized || buffer == NULL || buffer_size == 0) {
+        return -1;
+    }
+
+    // Ensure we're in receive mode
+    if (rs485_is_transmit_mode()) {
+        rs485_set_receive_mode();
+    }
+
+    // Read data with timeout
+    int bytes_received = uart_read_bytes(RS485_UART_NUM, buffer, buffer_size - 1, pdMS_TO_TICKS(timeout_ms));
+
+    if (bytes_received > 0) {
+        buffer[bytes_received] = '\0'; // Null terminate for string operations
+    }
+
+    return bytes_received;
+}
+
+/**
+ * @brief Send string over RS485 bus
+ * @param str Null-terminated string to send
+ * @param timeout_ms Timeout in milliseconds
+ * @return int Number of bytes sent, -1 on error
+ */
+static int rs485_send_string(const char *str, uint32_t timeout_ms){
+    if (str == NULL) {
+        return -1;
+    }
+    return rs485_send_data((const uint8_t *)str, strlen(str), timeout_ms);
+}
+
+/**
+ * @brief Send command and wait for response
+ * @param command Command string to send
+ * @param response Buffer for response
+ * @param response_size Size of response buffer
+ * @param timeout_ms Timeout for response in milliseconds
+ * @return int Number of bytes received, -1 on error
+ */
+static int rs485_send_command(const char *command, char *response, size_t response_size, uint32_t timeout_ms){
+
+    // Check if there is a command and place to store response
+    if (command == NULL || response == NULL) {
+        return -1;
+    }
+
+    // Send command
+    int sent = rs485_send_string(command, 1000);
+    if (sent <= 0) {
+        return -1;
+    }
+
+    // Wait for response
+    return rs485_receive_data((uint8_t *)response, response_size, timeout_ms);
+}
+
+// Helper functions
+/**
+ * @brief Check if data is available to read
+ * @return size_t Number of bytes available
+ */
+static size_t rs485_available(void){
+    
+    if (!rs485_initialized) {
+        return 0;
+    }
+
+    size_t bytes_available;
+    uart_get_buffered_data_len(RS485_UART_NUM, &bytes_available);
+    return bytes_available;
+}
+
+/**
+ * @brief Flush RS485 buffers (clear Rx data)
+ */
+static void rs485_flush(void){
+
+    if (rs485_initialized) {
+        uart_flush(RS485_UART_NUM);
+    }
 }
