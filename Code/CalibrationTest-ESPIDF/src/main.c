@@ -16,6 +16,7 @@
 #include "rs485_driver.h"
 #include "adc_driver.h"
 #include "mcp4725_driver.h"
+#include "ms5837_driver.h"
 
 // for components (not needed coz i made seperate files for them)
 /*
@@ -27,8 +28,6 @@
 
 
 // ===== Definitions =====      
-// --- I²C: Pressure Sensor---      
-#define MS5837_ADDR  0x77               // MS5837 address
 
 // --- ADC Input Pins ---       
 #define ADC_UNB_CHN  ADC1_CHANNEL_0     // ADC input from DAC output
@@ -64,6 +63,8 @@ float calibrationFactor1 = 0.875;
 float calibrationFactor2 = 1;
 float calibrationFactor3 = 1;
 float calibrationFactor4 = 0.81;
+// Sensor Config
+//ms5837_config_t sensor_config;
 
 // ===== Start of app_main =====
 void app_main() {
