@@ -1,9 +1,29 @@
 \chapter{Literature Review}
 \section{Introduction}
+Accurate salinity measurement is fundamental to oceanographic research.
+Traditional measurement techniques have evolved from labour-intensive chemical titration methods to modern electronic sensors, with electrical conductivity emerging as the predominant approach due to its combination of accuracy, speed, and practical deployability.
+This literature review examines the current state of salinity measurement technology with particular emphasis on conductivity-based methods and emerging machine learning approaches for electrochemical data interpretation. The review is organised into three main sections.
+First, we establish the fundamental concepts of salinity and provide a comprehensive comparison of available measurement techniques.
+Second, we examine the theoretical foundations and practical implementation of electrical conductivity measurements for salinity determination, including instrumentation, calibration procedures, and current limitations.
+Finally, we explore the application of \gls{eis} and \gls{ml} as advanced approaches for enhanced salinity analysis, examining how frequency-domain measurements and intelligent data processing can overcome limitations of traditional single-frequency conductivity methods.
+This comprehensive review provides the theoretical and methodological foundation for developing a machine learning-enhanced impedance spectroscopy approach for salinity determination.
 
-\section{Water Salinity}
+\section{Salinity: Definition}
+Salinity is a fundamental characteristic of water, and is most commonly defined as the total amount of dissolved salts in water, and in the context of oceanography, seawater.
+It is typically expressed in \gls{ppt} or \gls{psu}~\cite{salinity_def}. 
+The concept of salinity has evoloved significantly from its early definition, which was based on chlorinity measurements.
+Modern salinty is defined through the Practical Salinity Scale 1978 (PSS-78), where salinity is based on the conductivity ratio of standard seawater solutions, to a standard Potassium Chloride solution, and is dimensionless~\cite{unesco_salinity}.
+The salinity-conductivity relationship is however, quite complex, requiring corrections and calibrations needed for depth and temperature, as these both play a factor in the conductivity of the water. 
 
-\section{Salinity Measurements}
+\section{Overview of Salinity Measurement Methods}
+There are a multitude of methods which can be used to measure salinity, each with their own advatages, limitations and levels of accuracy.
+Traditional methods include gravimetric analysis, chemical titration (such as the Mohr-Knudsen method for chlorinity), and refractometry. While these techniques can provide accurate results, they are often time-consuming, require skilled operators, and are not easily adaptable to in-situ or automated measurements.
+Modern approaches predominantly rely on electrical conductivity sensors, which offer rapid, repeatable, and automated salinity determination.
+Other techniques, such as optical methods and ion-selective electrodes, have also been explored, but are less commonly used in oceanographic applications due to issues with robustness, calibration, or specificity.
+The choice of method depends on the required accuracy, operational environment, and available resources.
 
 
+\subsection{Historical Methods}
+Early salinity measurements relied on chemical titration methods, in particular the Mohr-Knudsen chlorinity titration, which used silver nitrate.
+This method was highly accurate, with results within (\pm0.001 PSU). However, this method relied heavily on toxic chemicals, and was a time-consuming laboratory procedure, with limited practical application in the field.
 
