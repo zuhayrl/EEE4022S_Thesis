@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  13 OCT 2025 09:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  13 OCT 2025 15:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -303,15 +303,56 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip76
-) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-extra\glossaries-extra.sty
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
+Package: siunitx 2025-07-09 v3.4.14 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count293
+\l__siunitx_number_exponent_fixed_int=\count294
+\l__siunitx_number_min_decimal_int=\count295
+\l__siunitx_number_min_integer_int=\count296
+\l__siunitx_number_round_precision_int=\count297
+\l__siunitx_number_lower_threshold_int=\count298
+\l__siunitx_number_upper_threshold_int=\count299
+\l__siunitx_number_group_first_int=\count300
+\l__siunitx_number_group_size_int=\count301
+\l__siunitx_number_group_minimum_int=\count302
+\l__siunitx_angle_tmp_dim=\dimen166
+\l__siunitx_angle_marker_box=\box53
+\l__siunitx_angle_unit_box=\box54
+\l__siunitx_compound_count_int=\count303
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/translations\translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_table_tmp_box=\box55
+\l__siunitx_table_tmp_dim=\dimen167
+\l__siunitx_table_column_width_dim=\dimen168
+\l__siunitx_table_integer_box=\box56
+\l__siunitx_table_decimal_box=\box57
+\l__siunitx_table_uncert_box=\box58
+\l__siunitx_table_before_box=\box59
+\l__siunitx_table_after_box=\box60
+\l__siunitx_table_before_dim=\dimen169
+\l__siunitx_table_carry_dim=\dimen170
+\l__siunitx_unit_tmp_int=\count304
+\l__siunitx_unit_position_int=\count305
+\l__siunitx_unit_total_int=\count306
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen171
+\ar@mcellbox=\box61
+\extrarowheight=\dimen172
+\NC@list=\toks31
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box62
+)) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-extra\glossaries-extra.sty
 Package: glossaries-extra 2025/08/13 v1.8 (NLCT)
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
-\XKV@toks=\toks31
-\XKV@tempa@toks=\toks32
+\XKV@toks=\toks32
+\XKV@tempa@toks=\toks33
 )
-\XKV@depth=\count293
+\XKV@depth=\count307
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossaries.sty
 Package: glossaries 2025/08/11 v4.8 (NLCT)
@@ -319,8 +360,8 @@ Package: glossaries 2025/08/11 v4.8 (NLCT)
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 ) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
 Package: mfirstuc 2025/04/03 v2.09 (NLCT)
-\@glsmfirst=\toks33
-\@glsmrest=\toks34
+\@glsmfirst=\toks34
+\@glsmrest=\toks35
 ) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 ) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.sty
@@ -330,146 +371,157 @@ Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.tex)) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-l3fp.def
 File: datatool-l3fp.def 2025/04/25 v3.4.1 (NLCT)
 )
-\@dtl@toks=\toks35
-\@dtl@tmpcount=\count294
-\dtl@tmplength=\skip77
-\l__datatool_measure_box=\box53
-\dtl@sortresult=\count295
+\@dtl@toks=\toks36
+\@dtl@tmpcount=\count308
+\dtl@tmplength=\skip79
+\l__datatool_measure_box=\box63
+\dtl@sortresult=\count309
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-utf8.ldf
 File: datatool-utf8.ldf 2025/04/25 v3.4.1 (NLCT)
 )
-\@dtl@datatype=\count296
-\l__datatool_tmpa_int=\count297
-\l__datatool_tmpb_int=\count298
-\l__datatool_tmpc_int=\count299
-\l__datatool_tmpd_int=\count300
-\l__datatool_count_int=\count301
-\l__datatool_tmp_datatype_int=\count302
-\l__datatool_tmpa_dim=\dimen166
-\l__datatool_tmpb_dim=\dimen167
-\c_datatool_unknown_int=\count303
-\l__datatool_year_int=\count304
-\l__datatool_month_int=\count305
-\l__datatool_day_int=\count306
-\l__datatool_hour_int=\count307
-\l__datatool_minute_int=\count308
-\l__datatool_second_int=\count309
-\l__datatool_tzhour_int=\count310
-\l__datatool_tzminute_int=\count311
-\l__datatool_julian_int=\count312
-\l__datatool_local_julian_int=\count313
-\l__datatool_prefix_int=\count314
-\l__datatool_suffix_int=\count315
-\@dtl@foreach@level=\count316
-\dtl@codeA=\count317
-\dtl@codeB=\count318
+\@dtl@datatype=\count310
+\l__datatool_tmpa_int=\count311
+\l__datatool_tmpb_int=\count312
+\l__datatool_tmpc_int=\count313
+\l__datatool_tmpd_int=\count314
+\l__datatool_count_int=\count315
+\l__datatool_tmp_datatype_int=\count316
+\l__datatool_tmpa_dim=\dimen173
+\l__datatool_tmpb_dim=\dimen174
+\c_datatool_unknown_int=\count317
+\l__datatool_year_int=\count318
+\l__datatool_month_int=\count319
+\l__datatool_day_int=\count320
+\l__datatool_hour_int=\count321
+\l__datatool_minute_int=\count322
+\l__datatool_second_int=\count323
+\l__datatool_tzhour_int=\count324
+\l__datatool_tzminute_int=\count325
+\l__datatool_julian_int=\count326
+\l__datatool_local_julian_int=\count327
+\l__datatool_prefix_int=\count328
+\l__datatool_suffix_int=\count329
+\@dtl@foreach@level=\count330
+\dtl@codeA=\count331
+\dtl@codeB=\count332
 )
-\gls@level=\count319
-\@gls@tmpb=\toks36
-\gls@tmplen=\skip78
-\l__glossaries_tmpa_dim=\dimen168
-\l__glossaries_tmpb_dim=\dimen169
-\glskeylisttok=\toks37
-\glslabeltok=\toks38
-\glsshorttok=\toks39
-\glslongtok=\toks40
+\gls@level=\count333
+\@gls@tmpb=\toks37
+\gls@tmplen=\skip80
+\l__glossaries_tmpa_dim=\dimen175
+\l__glossaries_tmpb_dim=\dimen176
+\glskeylisttok=\toks38
+\glslabeltok=\toks39
+\glsshorttok=\toks40
+\glslongtok=\toks41
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
 Package: glossary-hypernav 2025/08/11 v4.8 (NLCT)
 ) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
 Package: glossary-list 2025/08/11 v4.8 (NLCT)
-\glslistdottedwidth=\skip79
+\glslistdottedwidth=\skip81
 ) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
 Package: glossary-long 2025/08/11 v4.8 (NLCT)
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
-\LTleft=\skip80
-\LTright=\skip81
-\LTpre=\skip82
-\LTpost=\skip83
-\LTchunksize=\count320
-\LTcapwidth=\dimen170
-\LT@head=\box54
-\LT@firsthead=\box55
-\LT@foot=\box56
-\LT@lastfoot=\box57
-\LT@gbox=\box58
-\LT@cols=\count321
-\LT@rows=\count322
-\c@LT@tables=\count323
-\c@LT@chunks=\count324
-\LT@p@ftn=\toks41
+\LTleft=\skip82
+\LTright=\skip83
+\LTpre=\skip84
+\LTpost=\skip85
+\LTchunksize=\count334
+\LTcapwidth=\dimen177
+\LT@head=\box64
+\LT@firsthead=\box65
+\LT@foot=\box66
+\LT@lastfoot=\box67
+\LT@gbox=\box68
+\LT@cols=\count335
+\LT@rows=\count336
+\c@LT@tables=\count337
+\c@LT@chunks=\count338
+\LT@p@ftn=\toks42
 )
-\glsdescwidth=\skip84
-\glspagelistwidth=\skip85
+\glsdescwidth=\skip86
+\glspagelistwidth=\skip87
 ) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
 Package: glossary-super 2025/08/11 v4.8 (NLCT)
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabular.sty
 Package: supertabular 2024/07/20 v4.2c the supertabular environment
-\c@tracingst=\count325
-\ST@wd=\dimen171
-\ST@rightskip=\skip86
-\ST@leftskip=\skip87
-\ST@parfillskip=\skip88
-\ST@pageleft=\dimen172
-\ST@headht=\dimen173
-\ST@tailht=\dimen174
-\ST@pagesofar=\dimen175
-\ST@pboxht=\dimen176
-\ST@rowht=\dimen177
-\ST@prevht=\dimen178
-\ST@toadd=\dimen179
-\ST@dimen=\dimen180
-\ST@pbox=\box59
+\c@tracingst=\count339
+\ST@wd=\dimen178
+\ST@rightskip=\skip88
+\ST@leftskip=\skip89
+\ST@parfillskip=\skip90
+\ST@pageleft=\dimen179
+\ST@headht=\dimen180
+\ST@tailht=\dimen181
+\ST@pagesofar=\dimen182
+\ST@pboxht=\dimen183
+\ST@rowht=\dimen184
+\ST@prevht=\dimen185
+\ST@toadd=\dimen186
+\ST@dimen=\dimen187
+\ST@pbox=\box69
 )) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
 Package: glossary-tree 2025/08/11 v4.8 (NLCT)
-\l__glossaries_tree_max_known_level_int=\count326
-\l__glossaries_tree_offset_dim=\dimen181
-\l__glossaries_tree_namewidth_dim=\dimen182
-\l__glossaries_tree_symbolwidth_dim=\dimen183
-\l__glossaries_tree_prenamesym_width_dim=\dimen184
-\l__glossaries_tree_presubnamesym_width_dim=\dimen185
-\l__glossaries_tree_namewidth_padding_dim=\dimen186
-\l__glossaries_tree_symbolwidth_padding_dim=\dimen187
-\l__glossaries_tree_namesymbolwidth_dim=\dimen188
-\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen189
-\l__glossaries_tree_level_int=\count327
-\glstreeindent=\skip89
+\l__glossaries_tree_max_known_level_int=\count340
+\l__glossaries_tree_offset_dim=\dimen188
+\l__glossaries_tree_namewidth_dim=\dimen189
+\l__glossaries_tree_symbolwidth_dim=\dimen190
+\l__glossaries_tree_prenamesym_width_dim=\dimen191
+\l__glossaries_tree_presubnamesym_width_dim=\dimen192
+\l__glossaries_tree_namewidth_padding_dim=\dimen193
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen194
+\l__glossaries_tree_namesymbolwidth_dim=\dimen195
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen196
+\l__glossaries_tree_level_int=\count341
+\glstreeindent=\skip91
 ))
-\@glsxtr@leveloffset=\count328
-\glsxtrresourcecount=\count329
-\@glsxtrnewgls@inner=\count330
-\glsshortpltok=\toks42
-\glslongpltok=\toks43
+\@glsxtr@leveloffset=\count342
+\glsxtrresourcecount=\count343
+\@glsxtrnewgls@inner=\count344
+\glsshortpltok=\toks43
+\glslongpltok=\toks44
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-extra\glossaries-extra-abbrstyles.def
 File: glossaries-extra-abbrstyles.def 2025/08/13 v1.8 (NLCT)
 )
-\mglselementindex=\count331
-) (glossary.tex) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count332
-\l__pdf_internal_box=\box60
+\mglselementindex=\count345
+) (glossary.tex)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 41.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-No file Main.aux.
+Package color Info: Driver file: pdftex.def on input line 149.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count346
+\l__pdf_internal_box=\box70
+) (Main.aux (Body/Introduction.aux) (Body/Literature.aux
+\g__glossaries_gls_ref_acronym_int=\count347
+\g__glossaries_gls_ref_main_int=\count348
+) (Body/Methodology.aux) (Body/Results.aux) (Body/Discussion.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 40.
-LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -506,106 +558,111 @@ LaTeX Font Info:    ... okay on input line 40.
 
 (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen190
-\scratchbox=\box61
-\nofMPsegments=\count334
-\nofMParguments=\count335
-\everyMPshowfont=\toks44
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen191
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks45
+\scratchcounter=\count349
+\scratchdimen=\dimen197
+\scratchbox=\box71
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen198
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks46
 ) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 40.
+Package hyperref Info: Link coloring OFF on input line 41.
+ (Main.out) (Main.out)
 \@outlinefile=\write3
 \openout3 = `Main.out'.
 
-<Figures/uctLogo.png, id=3, 418.56375pt x 425.59pt>
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 41.
+<Figures/uctLogo.png, id=130, 418.56375pt x 425.59pt>
 File: Figures/uctLogo.png Graphic file (type png)
 <use Figures/uctLogo.png>
-Package pdftex.def Info: Figures/uctLogo.png  used on input line 54.
+Package pdftex.def Info: Figures/uctLogo.png  used on input line 55.
 (pdftex.def)             Requested size: 146.4995pt x 148.95872pt.
  [1
 
 {C:/Users/zuhay/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/uctLogo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 198.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 199.
 (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 198.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 199.
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1]
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 
  []
 
 
-Overfull \hbox (2.01349pt too wide) in paragraph at lines 198--198
+Overfull \hbox (2.01349pt too wide) in paragraph at lines 199--199
 []\OT1/cmr/m/n/12 The terms of reference page is an agreement between yourself and your supervisor outlining
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 198--198
+Underfull \hbox (badness 10000) in paragraph at lines 199--199
 
  []
 
-[4]
-No file Main.toc.
+[4] (Main.toc [5
+
+] [6])
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
-[5
+ [7]
 
-]
-
-Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 198.
-
-
-Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acronym}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 198.
+Package glossaries Info: Preparing to sort glossary `main' (total number of
+(glossaries)             referenced entries: 2)
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+Package glossaries Info: Preparing to sort glossary `acronym' (total number of
+(glossaries)             referenced entries: 2)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198 }
-       }% for nohyphens and line spacing [1]
+l.199 }
+       } % for nohyphens and line spacing [1
+
+
+] [2
+
+
+]
 \openout2 = `Body/Introduction.aux'.
 
  (Body/Introduction.tex
 Chapter 1.
 
-LaTeX Warning: Citation `smt2011' on page 2 undefined on input line 5.
+LaTeX Warning: Citation `smt2011' on page 3 undefined on input line 5.
 
 
 Overfull \hbox (0.1075pt too wide) in paragraph at lines 14--17
 \OT1/cmr/m/n/12 Scope indicates to the reader what has and has not been included in the study. Limitations
  []
 
-[2
+[3
 
 
 ])
@@ -616,7 +673,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3]
+[4]
 \openout2 = `Body/Literature.aux'.
 
  (Body/Literature.tex
@@ -631,13 +688,7 @@ Overfull \hbox (17.28833pt too wide) in paragraph at lines 3--10
 \OT1/cmr/m/n/12 examining how frequency-domain measurements and intelligent data processing can overcome
  []
 
-
-LaTeX Warning: Citation `salinity_def' on page 4 undefined on input line 13.
-
-
-LaTeX Warning: Citation `unesco_salinity' on page 4 undefined on input line 15.
-
-[4
+[5
 
 
 
@@ -652,25 +703,36 @@ Overfull \hbox (12.21431pt too wide) in paragraph at lines 19--24
 \OT1/cmr/m/n/12 automated measurements. Modern approaches predominantly rely on electrical conductivity
  []
 
-Body/Literature.tex:28: Missing $ inserted.
-<inserted text> 
-                $
-l.28 ... highly accurate, with results within (\pm
-                                                  0.001 PSU). However, this ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-Body/Literature.tex:29: Missing $ inserted.
-<inserted text> 
-                $
-l.29 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+Overfull \hbox (28.64238pt too wide) in paragraph at lines 41--45
+\OT1/cmr/m/n/12 Hydrometric methods using density measurements via hydrometers, offer salinity measurements
+ []
 
 
-Overfull \hbox (73.57446pt too wide) in paragraph at lines 27--29
-\OT1/cmr/m/n/12 with results within ($\OMS/cmsy/m/n/12 ^^F\OT1/cmr/m/n/12 0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 001\OML/cmm/m/it/12 PSU\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :However; thismethodreliedheavilyontoxicchemicals; andwasatime \OMS/cmsy/m/n/12 ^^@
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+Overfull \hbox (14.02695pt too wide) in paragraph at lines 94--99
+\OT1/cmr/m/n/12 ions in seawater. The main ions found in sea water, these being $\OML/cmm/m/it/12 Na; Cl; Mg[]; SO[]; Ca[]andK$\OT1/cmr/m/n/12 ,
  []
 
 )
@@ -681,12 +743,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5]
+[9]
 \openout2 = `Body/Methodology.aux'.
 
  (Body/Methodology.tex
 Chapter 3.
-) [6
+) [10
 
 
 
@@ -701,7 +763,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 []\OT1/cmr/m/n/12 Present your results in a suitable format using tables and graphs where necessary. Remember
  []
 
-) [7
+) [11
 
 
 
@@ -711,7 +773,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 
  (Body/Discussion.tex
 Chapter 5.
-) [8
+) [12
 
 
 
@@ -721,7 +783,7 @@ Chapter 5.
 
  (Body/Conclusions.tex
 Chapter 6.
-) [9
+) [13
 
 
 
@@ -731,7 +793,7 @@ Chapter 6.
 
  (Body/Recommendations.tex
 Chapter 7.
-) [10
+) [14
 
 
 
@@ -739,31 +801,33 @@ Chapter 7.
 ]
 \openout2 = `Referencing/References.aux'.
 
- (Referencing/References.tex (Main.bbl))
+ (Referencing/References.tex (Main.bbl)) [15
+
+
+
+
+
+]
 \openout2 = `Appendix/appendixa.aux'.
 
  (Appendix/appendixa.tex
 Appendix A.
 
 Underfull \hbox (badness 3098) in paragraph at lines 20--20
-[]\OT1/cmr/m/n/12 Investigations, experiments and
+[]|\OT1/cmr/m/n/12 Investigations, experiments and
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--24
-[]\OT1/cmr/m/n/12 Professional and technical
+[]|\OT1/cmr/m/n/12 Professional and technical
  []
 
 
-Overfull \hbox (21.77759pt too wide) in paragraph at lines 14--31
+Overfull \hbox (24.17755pt too wide) in paragraph at lines 14--31
  [] 
  []
 
-[11
-
-
-
-
+[16
 
 
 
@@ -776,12 +840,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12]
+[17]
 \openout2 = `Appendix/appendixb.aux'.
 
  (Appendix/appendixb.tex
 Appendix B.
-) [13
+) [18
 
 
 
@@ -791,36 +855,14 @@ Appendix B.
 
  (Appendix/appendixc.tex
 Appendix C.
-) [14
+) [19
 
 
 
 
-]
-
-Package lastpage Warning: Rerun to get the references right on input line 199.
-
-
+] 
 AED: lastpage setting LastPage
-
-Package glossaries Warning: entry `eis' indexing changed since previous run (or no previous run) on input line 199.
-
-
-Package glossaries Warning: entry `ml' indexing changed since previous run (or no previous run) on input line 199.
-
-
-Package glossaries Warning: entry `ppt' indexing changed since previous run (or no previous run) on input line 199.
-
-
-Package glossaries Warning: entry `psu' indexing changed since previous run (or no previous run) on input line 199.
-
-
-Package glossaries Warning: Rerun required to get \printnoidxglossary up to date on input line 199.
-
-(Main.aux (Body/Introduction.aux) (Body/Literature.aux
-\g__glossaries_gls_ref_acronym_int=\count339
-\g__glossaries_gls_ref_main_int=\count340
-) (Body/Methodology.aux) (Body/Results.aux) (Body/Discussion.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
+(Main.aux (Body/Introduction.aux) (Body/Literature.aux) (Body/Methodology.aux) (Body/Results.aux) (Body/Discussion.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -829,42 +871,21 @@ L3 programming layer <2024-01-04>
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C0042FC7B30B465D9949DAABA64EC5B9;3425.
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: 35C644BB27B03619776161984451C726;4838.
  ) 
 Here is how much of TeX's memory you used:
- 21841 strings out of 474486
- 421478 string characters out of 5743755
- 1932542 words of memory out of 5000000
- 43787 multiletter control sequences out of 15000+600000
- 565175 words of font info for 62 fonts, out of 8000000 for 9000
+ 25944 strings out of 474486
+ 547900 string characters out of 5743755
+ 1933542 words of memory out of 5000000
+ 47806 multiletter control sequences out of 15000+600000
+ 565863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,11n,80p,2604b,967s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{glo:psu} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:ppt} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:ml} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{glo:eis} has been referenced but does not exist, replaced by a fixed one
-
- <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Main.pdf (20 pages, 274761 bytes).
+ 77i,12n,80p,2604b,1556s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Main.pdf (27 pages, 345662 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 54 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 399 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

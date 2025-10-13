@@ -24,6 +24,85 @@ The choice of method depends on the required accuracy, operational environment, 
 
 
 \subsection{Historical Methods}
+\subsubsection{Chlorinity Titration}
 Early salinity measurements relied on chemical titration methods, in particular the Mohr-Knudsen chlorinity titration, which used silver nitrate.
-This method was highly accurate, with results within (\pm0.001 PSU). However, this method relied heavily on toxic chemicals, and was a time-consuming laboratory procedure, with limited practical application in the field.
+The chlorinity of a solution has the definition `the mass of silver required to precipitate completely the halogens in $0.3 285 234 kg$ of the ocean-water sample'
+This method was highly accurate, with results within ($\pm0.001$ PSU). However, it relied heavily on toxic chemicals, and was a time-consuming laboratory procedure, with limited practical application in the field.
+
+\subsubsection{Gravimetric Methods}
+Gravimetric analysis, a technique used to determine an amount of a substance, by measuring its change in mass, invloves evaporation and the weighing of dissovled solids.
+This method directly provided measurements of the salt content, within accuracies of ($\pm0.001$ PSU), under controlled laboratory conditions.
+This method remains the reference standard for calibration processes, but is however, extremely slow.
+
+\subsection{Physical Property Based Methods}
+There are several methods that utilise the relationship between salinity and the physical properties of water.
+
+\subsubsection{Hydrometric and Density Methods}
+Hydrometric methods using density measurements via hydrometers, offer salinity measurements that are low-cost, and electronics free. 
+However, they are limited in precision with accuracies of $\pm 1-2$ PSU, and require large sample volumes.
+The hydrometer is a floating instrument, that sinks to different depths depending on the density of the solution, and by measuring how high or low it floats, the density of the solution can be determined.
+The following equation is used to map the relationship between salinity and density.
+
+\begin{equation}
+    \rho = \rho_0(1+kS)
+\end{equation}
+
+where $\rho$ is the density, $\rho_0$ is the density of fresh water, $S$ is the salinity and $k$ is the proportionality constant. 
+
+This can then be inverted to give Salinity from Density:
+
+\begin{equation}
+S = \frac{\frac{\rho}{\rho_0}-1}{k}
+\end{equation}
+
+This however, does not include temperature correction.
+
+\subsubsection{Refractometric Thechniques}
+Refractometric techniques measure the refractive index changes cuased by the dissovled salts.
+The refractive index of seawater is influenced by wavelength, temperature, salinity, and pressure. 
+Within the range of 500-700~nm wavelength, 0-30$^\circ$C temperature, 0-40~PSU salinity, and 0-11000~dbar pressure, the refractive index equation provides an accuracy of 0.4-80~ppm~PSU, with accuracy decreasing as pressure increases.
+Refractometers, which require only a small sample volume, are compact devices, making them suitable for portable field measurements.
+Fibre optic refractometers have improved portability and reduced temperature sensitivity, with moderate accuracy (±0.5-1 PSU), making them increasingly popular in aquaculture applications. 
+
+
+\subsubsection{Freezing Point Osmometry}
+Freezing point depression osmometry exploits the colligative (i.e.~relating to the binding together of molecules) properties of dissolved salts.
+The main principle relies on freezing point depression, which is the phenomenon where a solvents freeving point is lowered when a solute is added to it.
+To perform the measurement, the water is cooled till its freezing point and the temperature drop is measured, which is then used to calculate the osmolality.
+This method can achieve accuracies as high as ($\pm0.001$ PSU), however its requirement for precise temperature control limits its usage to laboratory applications.
+
+\subsubsection{Interferometry}
+Interferometry is a measurement technique which measures how electro-magnetic waves are affected by changes in a solution.
+Two identical light waves are passed through two solutions, one benchmark and one test sample solution.
+The gain and phase shift between the waves is then used to calculate the salinity. 
+This method requires precisely aligned mirrors to direct the light waves, causing it to be relatively large.
+
+\subsubsection{Electromagnetic Induction and Magnetic Permeability}
+
+
+\subsection{Advanced Analytical Methods}
+
+
+\subsection{Remote Autonomous Sensing}
+
+
+\section{Conductivity-Based Salinity Measurements}
+\subsection{Theoretical Foundation}
+Electrical conductivity has emerged as the predominant method for salinity measurement due to its practical implementation, high accuracy and fast response time.
+The technique utilises the strong correlation between dissolved ionic content and electrical conductivity.
+
+The conductivity of a liquid is measured by its ability to conduct electrical current.
+The relationship between conductivity and salinity is based on the concentration of dissolved ions in seawater.
+The main ions found in sea water ($Na, Cl, Mg^2, SO^2, Ca^2 and K$) maintain a relatively constant proportional relationship, in ocean waters.
+This enables robust corrections between conductivity and total dissolved salt content.
+Unlike other measurement techniques, conductivity accounts for all the ions in the water, not only chlorine, which is why it is considered a more accurate measure of salinity.
+The Practical Salinity Scale 1978 (PSS-78) defines salinity through the conductivity ratio, as shown below:
+
+\begin{equation}
+    K_{15} = \frac{C(S, 15, 0)}{C(KCl, 15, 0)}
+\end{equation}
+
+where $C(S, 15, 0)$ represents the conductivity of sewater sample $S$ at 15$^\circ$C and standard atmospheric pressure (1 atm/101.325 kPa), and $C(KCl, 15, 0)$ is the conductivity of a standard $KCl$ solution under identical conditions.
+
+\subsection{Temperature Compensation}
 
