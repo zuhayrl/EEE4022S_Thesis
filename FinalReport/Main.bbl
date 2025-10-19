@@ -9,4 +9,25 @@ R.~H. Stewart, ``Introduction to {Physical} {Oceanography},'' 2008.
   standards,'' {\em UNESCO Technical Papers in Marine Science}, vol.~36,
   pp.~1--25, 1981.
 
+\bibitem{chemical_ocean}
+F.~J. Millero, {\em Chemical {Oceanography}}.
+\newblock Boca Raton: CRC Press, 4~ed., 2013.
+
+\bibitem{salinity_def_calc}
+E.~L. Lewis and R.~G. Perkin, ``Salinity: {Its} definition and calculation,''
+  {\em Journal of Geophysical Research: Oceans}, vol.~83, no.~C1, pp.~466--478,
+  1978.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/JC083iC01p00466.
+
+\bibitem{teos-10}
+{International Oceanographic Commission,}, ``{TEOS}-10: {The} {International}
+  thermodynamic equation of seawater – 2010: calculation and use of
+  thermodynamic properties.,'' {\em Manuals and Guides}, vol.~56, 2015.
+\newblock Publisher: UNESCO.
+
+\bibitem{lewis_pss78}
+E.~Lewis, ``The practical salinity scale 1978 and its antecedents,'' {\em IEEE
+  Journal of Oceanic Engineering}, vol.~5, pp.~3--8, Jan. 1980.
+
 \end{thebibliography}

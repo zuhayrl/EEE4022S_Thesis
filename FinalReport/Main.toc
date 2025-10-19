@@ -24,16 +24,17 @@
 \contentsline {subsection}{\numberline {2.3.4}Remote Autonomous Sensing}{9}{subsection.2.3.4}%
 \contentsline {section}{\numberline {2.4}Conductivity-Based Salinity Measurements}{9}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Theoretical Foundation}{9}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Temperature Compensation}{9}{subsection.2.4.2}%
-\contentsline {chapter}{\numberline {3}Methodology}{10}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Results}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Simulation Results}{11}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Experimental Results}{11}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Discussion}{12}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{13}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Recommendations}{14}{chapter.7}%
-\contentsline {chapter}{Bibliography}{15}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Additional Files and Schematics}{16}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Addenda}{18}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Ethics Forms}{18}{section.B.1}%
-\contentsline {chapter}{\numberline {C}GitHub Repository}{19}{appendix.C}%
+\contentsline {subsection}{\numberline {2.4.2}Temperature and Pressure Compensation}{10}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Instrumentation and Technology}{11}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Methodology}{12}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Results}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Simulation Results}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Experimental Results}{13}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Discussion}{14}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{15}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Recommendations}{16}{chapter.7}%
+\contentsline {chapter}{Bibliography}{17}{chapter.7}%
+\contentsline {chapter}{\numberline {A}Additional Files and Schematics}{18}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Addenda}{20}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Ethics Forms}{20}{section.B.1}%
+\contentsline {chapter}{\numberline {C}GitHub Repository}{21}{appendix.C}%

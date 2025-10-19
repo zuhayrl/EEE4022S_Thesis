@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  13 OCT 2025 15:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  18 OCT 2025 23:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,7 +486,7 @@ File: glossaries-extra-abbrstyles.def 2025/08/13 v1.8 (NLCT)
 )
 \mglselementindex=\count345
 ) (glossary.tex)
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 41.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 42.
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -503,24 +503,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (Body/Methodology.aux) (Body/Results.aux) (Body/Discussion.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -575,7 +575,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 42.
  (Main.out) (Main.out)
 \@outlinefile=\write3
 \openout3 = `Main.out'.
@@ -583,43 +583,43 @@ Package hyperref Info: Link coloring OFF on input line 41.
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 41.
-<Figures/uctLogo.png, id=130, 418.56375pt x 425.59pt>
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 42.
+<Figures/uctLogo.png, id=134, 418.56375pt x 425.59pt>
 File: Figures/uctLogo.png Graphic file (type png)
 <use Figures/uctLogo.png>
-Package pdftex.def Info: Figures/uctLogo.png  used on input line 55.
+Package pdftex.def Info: Figures/uctLogo.png  used on input line 56.
 (pdftex.def)             Requested size: 146.4995pt x 148.95872pt.
  [1
 
 {C:/Users/zuhay/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/uctLogo.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 199.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 200.
 (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 199.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 200.
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1]
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 
  []
 
 
-Overfull \hbox (2.01349pt too wide) in paragraph at lines 199--199
+Overfull \hbox (2.01349pt too wide) in paragraph at lines 200--200
 []\OT1/cmr/m/n/12 The terms of reference page is an agreement between yourself and your supervisor outlining
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 199--199
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 
  []
 
@@ -642,7 +642,7 @@ Package glossaries Info: Preparing to sort glossary `acronym' (total number of
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.199 }
+l.200 }
        } % for nohyphens and line spacing [1
 
 
@@ -731,8 +731,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-Overfull \hbox (14.02695pt too wide) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 ions in seawater. The main ions found in sea water, these being $\OML/cmm/m/it/12 Na; Cl; Mg[]; SO[]; Ca[]andK$\OT1/cmr/m/n/12 ,
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+Overfull \hbox (0.5544pt too wide) in paragraph at lines 150--152
+\OT1/cmr/m/n/12 Practical salinity $\OML/cmm/m/it/12 S[]$ \OT1/cmr/m/n/12 can be calculated from Equation []2.3[]. For cases where the temperature
+ []
+
+
+Overfull \hbox (20.1706pt too wide) in paragraph at lines 162--177
+ [][] 
  []
 
 )
@@ -743,12 +764,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9]
+[11]
 \openout2 = `Body/Methodology.aux'.
 
  (Body/Methodology.tex
 Chapter 3.
-) [10
+) [12
 
 
 
@@ -763,7 +784,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 []\OT1/cmr/m/n/12 Present your results in a suitable format using tables and graphs where necessary. Remember
  []
 
-) [11
+) [13
 
 
 
@@ -773,7 +794,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 
  (Body/Discussion.tex
 Chapter 5.
-) [12
+) [14
 
 
 
@@ -783,7 +804,7 @@ Chapter 5.
 
  (Body/Conclusions.tex
 Chapter 6.
-) [13
+) [15
 
 
 
@@ -793,7 +814,7 @@ Chapter 6.
 
  (Body/Recommendations.tex
 Chapter 7.
-) [14
+) [16
 
 
 
@@ -801,7 +822,12 @@ Chapter 7.
 ]
 \openout2 = `Referencing/References.aux'.
 
- (Referencing/References.tex (Main.bbl)) [15
+ (Referencing/References.tex (Main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 24--28
+[]\OT1/cmr/m/n/12 International Oceanographic Commission,, ``TEOS-10: The International
+ []
+
+)) [17
 
 
 
@@ -827,7 +853,7 @@ Overfull \hbox (24.17755pt too wide) in paragraph at lines 14--31
  [] 
  []
 
-[16
+[18
 
 
 
@@ -840,12 +866,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17]
+[19]
 \openout2 = `Appendix/appendixb.aux'.
 
  (Appendix/appendixb.tex
 Appendix B.
-) [18
+) [20
 
 
 
@@ -855,7 +881,7 @@ Appendix B.
 
  (Appendix/appendixc.tex
 Appendix C.
-) [19
+) [21
 
 
 
@@ -872,20 +898,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 35C644BB27B03619776161984451C726;4838.
+(rerunfilecheck)             Checksum: 3B4DA373FA1A939F12B4EAC5E3942EC3;5127.
  ) 
 Here is how much of TeX's memory you used:
- 25944 strings out of 474486
- 547900 string characters out of 5743755
- 1933542 words of memory out of 5000000
- 47806 multiletter control sequences out of 15000+600000
+ 25972 strings out of 474486
+ 548336 string characters out of 5743755
+ 1942542 words of memory out of 5000000
+ 47819 multiletter control sequences out of 15000+600000
  565863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,12n,80p,2604b,1556s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Main.pdf (27 pages, 345662 bytes).
+ 77i,12n,80p,2604b,1584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Main.pdf (29 pages, 375694 bytes).
 PDF statistics:
- 399 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 450 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 270 words of extra memory for PDF output out of 10000 (max. 10000000)
 

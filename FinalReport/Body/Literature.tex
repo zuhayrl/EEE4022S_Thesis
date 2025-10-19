@@ -93,16 +93,96 @@ The technique utilises the strong correlation between dissolved ionic content an
 
 The conductivity of a liquid is measured by its ability to conduct electrical current.
 The relationship between conductivity and salinity is based on the concentration of dissolved ions in seawater.
-The main ions found in sea water ($Na, Cl, Mg^2, SO^2, Ca^2 and K$) maintain a relatively constant proportional relationship, in ocean waters.
+The main ions found in sea water ($Na^+, Cl^-, Mg^{2+}, {SO_4}^{2-}, Ca^{2+}, K^+$) maintain a relatively constant proportional relationship, in ocean waters~\cite{chemical_ocean}.
 This enables robust corrections between conductivity and total dissolved salt content.
-Unlike other measurement techniques, conductivity accounts for all the ions in the water, not only chlorine, which is why it is considered a more accurate measure of salinity.
-The Practical Salinity Scale 1978 (PSS-78) defines salinity through the conductivity ratio, as shown below:
+Unlike other measurement techniques, conductivity accounts for all the ions in the water, not only chlorine, which is why it is considered a more accurate measure of salinity~\cite{salinity_def_calc}.
 
-\begin{equation}
-    K_{15} = \frac{C(S, 15, 0)}{C(KCl, 15, 0)}
+The Practical Salinity Scale 1978 (PSS-78) defines Practical Salinity $S_p$ through the conductivity ratio $K_{15}$, as shown below~\cite{teos-10}:
+
+\begin{equation}\label{eqn:k15_salinity}
+    K_{15} = \frac{C(S_p, 15, 0)}{C(KCl, 15, 0)}
 \end{equation}
 
-where $C(S, 15, 0)$ represents the conductivity of sewater sample $S$ at 15$^\circ$C and standard atmospheric pressure (1 atm/101.325 kPa), and $C(KCl, 15, 0)$ is the conductivity of a standard $KCl$ solution under identical conditions.
+where the numerator, $C(S, 15, 0)$ represents the conductivity of seawater sample at 15$^\circ$C and standard atmospheric pressure ($1 atm/101.325 kPa/0dbar$), and the denomimator, $C(KCl, 15, 0)$ is the conductivity of a standard $KCl$ (Potassium Chloride) solution under identical temperature and pressure.
+The standard $KCl$ solution consists of $32.4356 \times 10^{-3}kg$ of $KCl$ dissolved in $1kg$ of water~\cite{lewis_pss78}.
+When the ratio between the water sample and the $KCl$ solution is 1, i.e. $K_{15} = 1$, then the Practical Salinity $S_p$ is, according to the definition, 35~\cite{teos-10}.
 
-\subsection{Temperature Compensation}
+It is important to note that Practical Salinity is a unit-less quantity, and though it may be convenient, it would be incorrect to quote it in \gls{psu}. 
+Practical salinity should rather be quoted as a certain Practical Salinity `on the Practical Salinity Scale PSS-78'~\cite{teos-10}. 
 
+When $K_{15}$ does not equal 1, Practical Salinity, $S_p$ can be calculated using the equation below~\cite{teos-10}: 
+\begin{equation}\label{eqn:salinity_short}
+    S_p = \sum_{i=0}^{5}a_i{(K_{15})}^{i/2} 
+\end{equation}
+
+where $K_{15}$ is the equation defined above (Equation~\ref{eqn:k15_salinity}), and the coefficients $a_i$ are given in Table (\ref{tabel:pss-78}).
+
+
+\subsection{Temperature and Pressure Compensation}
+When calculating salinity at conditions other than 15$^\circ$C, and $0dbar$, the conductivity ratio $R$ is expanded to the product of three ratios $R_p$, $R_t$ and $r_t$ as follows~\cite{teos-10}:
+\begin{equation}
+    R=\frac{C(S_p, t, p)}{C(35, 15, 0)} = R_p R_t r_t
+\end{equation}
+
+where $t$, and $p$ are the temperature and pressure valid over the ranges $-2^{\circ}C \leq t \leq 35^{\circ}C$ and $0 \leq p \leq 10 000dbar$ respectively.
+
+These ratios can be expanded as follows:
+
+\begin{equation}
+    R = \frac{C(S_p, t, p)}{C(35, 15^{\circ} C, 0)} = \frac{C(S_p, t, p)}{C(S_p, t, 0)} \cdot \frac{C(S_p, t, 0)}{C(35, t, 0)} \cdot \frac{C(35, t, 0)}{C(35, 15^{\circ} C, 0)} = R_p R_t r_t
+\end{equation}
+
+This equation represents the ratio between the conductivity measurement of a sample $C(S_p,t,p)$ and the conductivity of the standard solution $C(35, 15^{\circ}, 0)$~\cite{teos-10}. 
+In order to find the salinity, $R_p$, $R_t$ and $r_t$ need to be caculated.
+First, $r_t$ is calculated using the temperature of the sample:
+\begin{equation}
+    r_t = \sum_{i=0}^{4} {c_i}{t_i}
+\end{equation}
+$R_p$ is then calculated as a function of the temperature $t$, pressure $p$, and conductivity ratio $R$:
+\begin{equation}
+    R_p = 1 + \frac{\sum_{i=1}^{3}{e_i}{p^i}}{1+d_1{t}+d_2{t^2}+R[d_3+d_4 {t}]}
+\end{equation}
+Finally, $R_t$ can be evaluated using $R$, $R_p$ and $r_t$:
+\begin{equation}
+    R_t = \frac{R}{{R_p}{r_t}}
+\end{equation} 
+
+At standard conditions, i.e., temperature $t=15{^\circ}$C, $R_t$ is equal to $K_{15}$ an therefore Practical salinity $S_p$ can be calculated from Equation~\ref{eqn:k15_salinity}.
+For cases where the temperature is not $t=15^\circ$C, Practical Salinity $S_p$ is given as a function of $R_t$, with $k=0.0162$~\cite{teos-10}:
+\begin{equation}\label{eqn:salinity_full}
+S_p = \sum_{i=0}^{5} a_i {(R_t)}^{i/2} + \frac{t-15}{1+k(t-15)} \sum_{i=0}^{5} b_i {(R_t)}^{i/2}
+\end{equation}
+
+Note that Equations~(\ref{eqn:k15_salinity}) to~(\ref{eqn:salinity_full}) are only valid in the range $2 < S_p < 42$, $-2^{\circ}C \leq t \leq 35^{\circ}C$ and $0 \leq p \leq 10 000dbar$.
+
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[h!]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{1cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{3cm}|
+                >{\centering\arraybackslash}m{3cm}|
+                >{\centering\arraybackslash}m{3cm}|}
+            \hline
+            $i$ & $a_i$ & $b_i$ & $c_i$ & $d_i$ & $e_i$ \\ \hline
+            0 & $0.0080$ & $0.0005$ & $\num{6.766097e-1}$ &  &  \\ \hline
+            1 & $-0.1692$ & $-0.0056$ & $\num{2.00564e-2}$ & $\num{3.426e-2}$ & $\num{2.070e-5}$ \\ \hline
+            2 & $25.3851$ & $-0.0066$ & $\num{1.104259e-4}$ & $\num{4.464e-4}$ & $\num{-6.370e-10}$ \\ \hline
+            3 & $14.0941$ & $-0.0375$ & $\num{-6.9698e-7}$ & $\num{4.215e-1}$ & $\num{3.989e-15}$ \\ \hline
+            4 & $-7.0261$ & $0.0636$ & $\num{1.0031e-9}$ & $\num{-3.107e-3}$ &  \\ \hline
+            5 & $2.7081$ & $-0.0144$ &  &  &  \\ \hline
+            \end{tabular}
+        \caption{Table of Coefficients for PSS-78 Equations~\cite{teos-10}}
+        \label{tabel:pss-78}
+    \end{table}
+\endgroup
+
+It must be noted that the PSS-78 equations use the IPTS-68 temperature scale and in order for them to work with the current ITS-90 scale, must be converted using the equation below~\cite{teos-10}:
+\begin{equation}
+    t_{68}^{circ}C = 1.00024\times{t_{90}^{circ}C}
+\end{equation}
+
+
+\subsection{Instrumentation and Technology}

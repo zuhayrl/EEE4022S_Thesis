@@ -1,0 +1,146 @@
+Helper Functions Etc
+
+// --- Perform DC Sweep (for debugging)---
+void calibrationSweep() {
+  // turn on relevant switches
+  digitalWrite(SW_R1_100, HIGH);
+  digitalWrite(SW_Calib, HIGH);
+  digitalWrite(SW_SGN, HIGH);
+  //sweep 0 → 3V
+  for (int val = 0; val <= DAC_MAX_3V3; val += 200) {
+    writeDAC(val);
+
+    // DAC voltage (scaled to 5V ref, but capped at 3)
+    float dacVolt = (val / (float)DAC_MAX_5V) * 5.0;
+    
+    // Read ADC over DAC
+    int adcRaw = analogRead(ADC_DAC);
+    float adcVoltRaw = (adcRaw / 8191.0) * 3.3;
+    float adcVoltCalibrated = adcVoltRaw * calibrationFactor1;
+    
+    // Print for ADC Measuring DAC Output
+    //Serial.println("ADC over DAC");
+    //printADC_Test(val, dacVolt, adcRaw, adcVoltRaw, adcVoltCalibrated);
+
+    // Read ADC over 11x Op Amp
+    adcRaw = analogRead(ADC_SGN);
+    adcVoltRaw = (adcRaw / 8191.0) * 3.3;
+    adcVoltCalibrated = adcVoltRaw * calibrationFactor4;
+    
+    // Print x11 output over the calibration resistor woth R1 being 100 Ohms
+    Serial.println("ADC from 11x Op Amp");
+    printADC_Calib(dacVolt, adcRaw, adcVoltRaw, adcVoltCalibrated);
+    
+    delay(5000);
+  }
+
+  Serial.println("=== Sweep Complete ===");
+  sendRS485("Sweep Complete");
+
+  // turn off switches
+  // turn on relevant switches
+  digitalWrite(SW_R1_100, LOW);
+  digitalWrite(SW_Calib, LOW);
+  digitalWrite(SW_SGN, LOW);
+}
+
+
+//extra, can take out prints calib sweep data to serial
+void printADC_Calib(float dacVolt, int adcRaw, float adcVoltRaw, float adcVoltCalibrated) {
+  Serial.print("  DAC V: ");
+  Serial.print(dacVolt, 3);
+  Serial.print(" V | ADC Raw: ");
+  Serial.print(adcRaw);
+  Serial.print("  ADC V Raw: ");
+  Serial.print(adcVoltRaw, 3);
+  Serial.print(" V | ADC V Cal: ");
+  Serial.print(adcVoltCalibrated, 3);
+  Serial.print(" V | Math: ");
+  Serial.println(11*dacVolt*5/105, 3);
+}
+
+
+
+String readADCs() {
+  int adcUNB = analogRead(ADC_UNB);
+  int adcDAC = analogRead(ADC_DAC);
+  int adcAMP = analogRead(ADC_AMP);
+  int adcSGN = analogRead(ADC_SGN);
+
+  float adcVoltUNB = (adcUNB / 8191.0) * 3.3;
+  float adcVoltDAC = (adcDAC / 8191.0) * 3.3;
+  float adcVoltAMP = (adcAMP / 8191.0) * 3.3;
+  float adcVoltSGN = (adcSGN / 8191.0) * 3.3;
+
+  String adc_readings = String(adcUNB)+','+String(adcDAC)+','+String(adcAMP)+','+String(adcSGN)+'\n'+
+                        String(adcVoltUNB, 3)+','+String(adcVoltDAC, 3)+','+String(adcVoltAMP, 3)+','+String(adcVoltSGN, 3)+'\n';
+
+  return adc_readings;
+}
+
+
+void DC_Test(int val) {
+  // Write "DC Test @ x volts"
+  float dacVolt = (val / (float)DAC_MAX_5V) * 5.0;
+  printBoth("DC Test Voltage: " + String(dacVolt,3)+" V");
+  // turn on DAC at desired voltage
+  writeDAC_Unclamped(val);
+  
+  // first test over calibration resistor and R1_100
+  digitalWrite(SW_R1_100, HIGH); // set R1 to 100 Ohms ON
+  digitalWrite(SW_Calib, HIGH); // set R2 to calib ON
+  delay(100);
+  String adcVals = readADCs();
+  digitalWrite(SW_Calib, LOW); // set R2 to calib OFF
+
+  // Get pressure sensor data
+  String presReading = readPressure();
+  Serial.println(presReading);
+
+  // turn on positive probe
+    posProbe(1);
+    // +probe and R1_100
+    delay(100);
+    adcVals = adcVals + readADCs();
+    digitalWrite(SW_R1_100, LOW); // set R1 to 100 Ohms OFF
+    // +probe and R1_1k
+    digitalWrite(SW_R1_1K, HIGH); // set R1 to 1K Ohms ON
+    delay(100);
+    adcVals = adcVals + readADCs();
+    digitalWrite(SW_R1_1K, LOW); // set R1 to 1K Ohms OFF
+    // +probe and R1_10k
+    digitalWrite(SW_R1_10K, HIGH); // set R1 to 10K Ohms ON
+    delay(100);
+    adcVals = adcVals + readADCs();
+    digitalWrite(SW_R1_10K, LOW); // set R1 to 10K Ohms OFF
+
+  // turn off pos and turn on negative probe
+    posProbe(0);
+    negProbe(1);
+    // -probe and R1_100
+    delay(100);
+    adcVals = adcVals + readADCs();
+    digitalWrite(SW_R1_100, LOW); // set R1 to 100 Ohms OFF
+    // -probe and R1_1k
+    digitalWrite(SW_R1_1K, HIGH); // set R1 to 1K Ohms ON
+    delay(100);
+    adcVals = adcVals + readADCs();
+    digitalWrite(SW_R1_1K, LOW); // set R1 to 1K Ohms OFF
+    // -probe and R1_10k
+    digitalWrite(SW_R1_10K, HIGH); // set R1 to 10K Ohms ON
+    delay(100);
+    adcVals = adcVals + readADCs();
+    digitalWrite(SW_R1_10K, LOW); // set R1 to 10K Ohms OFF
+    // turn of neg probe
+    negProbe(0);
+
+    //turn off dac
+    writeDAC(0);
+
+
+    //Print 
+    Serial.println(adcVals);
+    Serial.println("DC test complete :)");
+}
+
+
