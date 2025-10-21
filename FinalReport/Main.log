@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  19 OCT 2025 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  21 OCT 2025 00:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -584,7 +584,7 @@ Package hyperref Info: Link coloring OFF on input line 42.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 42.
-<Figures/uctLogo.png, id=134, 418.56375pt x 425.59pt>
+<Figures/uctLogo.png, id=138, 418.56375pt x 425.59pt>
 File: Figures/uctLogo.png Graphic file (type png)
 <use Figures/uctLogo.png>
 Package pdftex.def Info: Figures/uctLogo.png  used on input line 56.
@@ -636,7 +636,7 @@ Package glossaries Info: Preparing to sort glossary `main' (total number of
 
 
 Package glossaries Info: Preparing to sort glossary `acronym' (total number of
-(glossaries)             referenced entries: 2)
+(glossaries)             referenced entries: 3)
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -756,7 +756,11 @@ Overfull \hbox (20.1706pt too wide) in paragraph at lines 162--177
  [][] 
  []
 
-)
+
+Overfull \hbox (0.64267pt too wide) in paragraph at lines 189--194
+\OT1/cmr/m/n/12 The most common method for measuring salinity is by using a [][]Conductivity, Temperature,
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -765,11 +769,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
+Overfull \hbox (8.41064pt too wide) in paragraph at lines 199--200
+\OT1/cmr/m/n/12 capacity to conduct electricity, freshawater applications require specialised low-conductivity
+ []
+
+)
+Overfull \hbox (6.2565pt too wide) in paragraph at lines 201--200
+[]\OT1/cmr/m/n/12 The method's reliance on emperical correlations derived from typical seawater compositions
+ []
+
+
+Overfull \hbox (6.06067pt too wide) in paragraph at lines 201--200
+\OT1/cmr/m/n/12 or freshwater inflow from connecting rivers, which can alter ionic composition and introduce
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
 \openout2 = `Body/Methodology.aux'.
 
  (Body/Methodology.tex
 Chapter 3.
-) [12
+) [13
 
 
 
@@ -784,7 +810,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 []\OT1/cmr/m/n/12 Present your results in a suitable format using tables and graphs where necessary. Remember
  []
 
-) [13
+) [14
 
 
 
@@ -794,7 +820,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 
  (Body/Discussion.tex
 Chapter 5.
-) [14
+) [15
 
 
 
@@ -804,7 +830,7 @@ Chapter 5.
 
  (Body/Conclusions.tex
 Chapter 6.
-) [15
+) [16
 
 
 
@@ -814,7 +840,7 @@ Chapter 6.
 
  (Body/Recommendations.tex
 Chapter 7.
-) [16
+) [17
 
 
 
@@ -827,7 +853,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--28
 []\OT1/cmr/m/n/12 International Oceanographic Commission,, ``TEOS-10: The International
  []
 
-)) [17
+)) [18
 
 
 
@@ -853,7 +879,7 @@ Overfull \hbox (24.17755pt too wide) in paragraph at lines 14--31
  [] 
  []
 
-[18
+[19
 
 
 
@@ -866,12 +892,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+[20]
 \openout2 = `Appendix/appendixb.aux'.
 
  (Appendix/appendixb.tex
 Appendix B.
-) [20
+) [21
 
 
 
@@ -881,7 +907,7 @@ Appendix B.
 
  (Appendix/appendixc.tex
 Appendix C.
-) [21
+) [22
 
 
 
@@ -898,20 +924,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 3B4DA373FA1A939F12B4EAC5E3942EC3;5127.
+(rerunfilecheck)             Checksum: F9D2427A75988C1FAF5CDF7430E0CDEC;5335.
  ) 
 Here is how much of TeX's memory you used:
- 25973 strings out of 474486
- 548351 string characters out of 5743755
- 1943542 words of memory out of 5000000
- 47819 multiletter control sequences out of 15000+600000
+ 26017 strings out of 474486
+ 549021 string characters out of 5743755
+ 1944542 words of memory out of 5000000
+ 47860 multiletter control sequences out of 15000+600000
  565863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,80p,2604b,1586s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Main.pdf (29 pages, 377196 bytes).
+Output written on Main.pdf (30 pages, 381532 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 270 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 103 named destinations out of 1000 (max. 500000)
+ 278 words of extra memory for PDF output out of 10000 (max. 10000000)
 
