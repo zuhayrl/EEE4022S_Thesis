@@ -46,7 +46,7 @@ The \gls{pcb} was designed to allow for easy calculation of the conductivity $\s
 \end{equation}
 
 where $L$ is the distance between the electrodes, $R$ is the resistance of the water, and A is the cross-sectional area of the electrodes.
-A square face of $20mm\times 20mm$ was chsoen to allow for easy cross-sectional area calculations, and a distance of $10mm$ was chosen as the seperation distance.
+A square face of $20mm\times 20mm$ was chosen to allow for easy cross-sectional area calculations, and a distance of $10mm$ was chosen as the seperation distance.
 This distance was chosen as it is close enough to reduce current spreading, but not too small to where the water could not flow easily between the electrodes.
 A $2mm$ fringe guard was added around the main electrode area to reduce current fringing, which is an effect that causes the current to spread beyond the edges of the gap~\cite{roshen_fringing}.
 The fringe guards counteract this by saturating the area surrounding the main pads with current, preventing them from fringing.
@@ -58,11 +58,12 @@ To accomodate this, solder pads were added to allow the electrodes to be soldere
 Supports were also factored into the design to ensure that the electrodes stayed straight and secure.
 The design can be seen in Figure [insert figure].
 
-\section{Resistance Measurement}
+\section{Resistance Measurement}\label{sec:res_mes}
 There are multiple ways to measure resistance, however most rely on the same principle, which is the voltage divider principle.
 This principle works by using a series circuit with two resistors, and a constant known input voltage.
 The voltage over each of the resistors will be proportional to their resistance, and therefore, if the resistance of one resistor is known, the resistance of the other can be calculated.
 A simple voltage divider circuit can be seen in Figure~\ref{fig:voltage_divider}.
+For this application the electrodes were chosen as the R2 resistor, with R1 being a large resistor of known resistance.
 
 \begin{figure}[H]\label{fig:voltage_divider}
     \centering
@@ -82,22 +83,62 @@ Equations \ref{eqn:voltage_divider} and \ref{eqn:resistance_divider} are used to
 \section{Circuit Design}
 \subsection{Probe Circuit}
 The probe circuit is the circuit which contains the resistor divider, was designed to be printed onto a \gls{pcb}.
-This design was influenced by Reference \cite{cam_clark}, where a similar device was designed.
+This design was influenced by Reference~\cite{cam_clark}, where a similar device was designed for salinity measurements in ice columns.
+A \gls{pcb} was chosen for this circuit as the researcher had significant experience with \gls{pcb} design, and the manufacturing process offered higher precision than hand soldering, and is relatively cost-effective.
+Significant improvements and modifications were made to the resistor divider circuit, to allow for a wider range of testing.
 
+For input power, a \gls{dac} was used to drive the circuit. This allowed to the input voltage to be varied between $0 V$ and the referencevoltage, which was chosen to be $5V$.
+This allowed for a range of voltages to be applied, which allowed for the measurement of the water's voltage-resistance relationship, and the creation of \gls{ac} signals.
+A function generator was considered for generating the \gls{ac} signal, as it would allow for signals of a wider frequency and and high precision, however the price could not be accomodated by the budget.
+The choice of \gls{dac}, and all following components, was first influenced by availability on JLCPCB, the \gls{pcb} manufacturing house.
+The MCP4725 was chosen for its high resolution of 12-bits, offering a digital range of 0-4095, fast update time of $6{\mu}s$, and interface speed of 3.4MHz.
+These features allow for both \gls{dc} and \gls{ac} signal analysis.
 
+An op-amp with unity gain was the connected to the output of the \gls{dac}.
+This is because \gls{dac}s have limited output drive capabilities, and the op-amp would allow for heavier loads to be driven.
+Additionally the op-amp offers improved output stability, introduces impedance isolation, which protects the \gls{dac} from load variations and feedback effects, and allows for better sine wave quality.
 
-
-
-For this application the electrodes were chosen as the R2 resistor, with R1 being a large resistor of known resistance.
+As mentioned in Section~\ref{sec:res_mes}, for the resistor divider circuit, the electrodes would serve as R2 and a known resistor as R1.
 Three alernative values of R1 were chosen, to accomodate for any circuit errors.
-These values were chosen to be $100\Omega$, $1K\Omega$ and $10K\Omega$.
-These values would be used when the resistance between the probes was $1-10\Omega$, $10-100\Omega$, and $100-1K\Omega$ respectively.
+These could be switched between using the TS3A4751 multiplexer \gls{ic}.
+This switching multiplexer was chosen, for its low on-state resistance of $0.9\Omega$, and fast switching speed of $4-5ns$~\cite{cam_clark}.
 
-Since the electrodes had an expected resistance of $7.55\Omega$, falling into the $1-10\Omega$ range, this would allow for a minumum resolution of $11\%$ of $V_{DAC}$ and maximum of $100\%$ of $V_{DAC}$, for the voltage measurement by the \gls{adc}, as shown in Equations~\ref{eqn:dac_11} and~\ref{eqn:dac_100}.
+The R1 resistor values were chosen to be $100\Omega$, $1K\Omega$ and $10K\Omega$.
+These values would be used when the resistance between the probes was $1-10\Omega$, $10-100\Omega$, and $100-1K\Omega$ respectively.
+Each \gls{ic} contained 4 switches.
+
+For measuring the output resistor, the voltage over it was directed into a multiplying op-amp with a gain of 11.
+This increases the resolution for the \gls{adc} readings, as low voltages may be hard to differentiate between when converted to digital data. 
+
+This configuration would allow for a minumum resolution of $11\%$ of $V_{DAC}$ and maximum of $100\%$ of $V_{DAC}$, for the voltage measurement by the \gls{adc}, as shown in Equations~\ref{eqn:dac_11} and~\ref{eqn:dac_100}~\cite{cam_clark}.
+Equations~\ref{eqn:dac_11} and~\ref{eqn:dac_100} show for the expected resistance of $7.55\Omega$ falling into the $1-10\Omega$ range.
+However, if the resistance falls into the $10-100\Omega$, or $100-1K\Omega$, the respective R1 resistors would be used and the maximum and minimum \gls{dac} resolutions would be the same.
+
 \begin{equation}\label{eqn:dac_11}
     \frac{1\Omega}{1\Omega + 100\Omega}\times V_{DAC} \times 11 = 11\% V_{DAC}
 \end{equation}
 
 \begin{equation}\label{eqn:dac_100}
     \frac{10\Omega}{10\Omega + 100\Omega}\times V_{DAC} \times 11 = 100\% V_{DAC}
+\end{equation}
+
+The accuarcy of the R1 resistor is integral to acheiving an accurate R2 measurement.
+The resistors available on JLCPCB had an acurracy of $\pm{1}\%$.
+To increase the accuracy 3 equal resistors were put in parallel. This decreases the uncertainty of the total equivalent resistance~\cite{cam_clark}.
+This is shown in Equations~\ref{eqn:parallel_r} to~\ref{eqn:parallel_uncertainty}.
+
+\begin{equation}\label{eqn:parallel_r}
+    R_{Equivalent} = {\left[{\sum_{i=1}^{n}{\frac{1}{R_n}}}\right]}^{-1}
+\end{equation}
+If all the Resistors are equal this simplifies to: 
+\begin{equation}\label{eqn:parallel_r_equal}
+    R_{Equivalent} = ({\frac{n}{R}})^{-1} = \frac{1}{n} \times R
+\end{equation}
+To propogate uncertainty the standard equation for combined uncertainty can be used:
+
+If a quantity $y$ depends on several independent variables $x_1, x_2, ..., x_n$: \\
+$y=f(x_1, x_2, ..., x_n)$ \\
+and each $x_i$ has a standard uncertainty $u(x_i)$ then the combined standard uncertainty of $y$, denoted $u_c(y)$, is:
+\begin{equation}\label{standard_uncertainty}
+    u_c(y)=\root{\sum_{i=1}^{n}{({\frac{\partial{f}}{\partial{x_i}}}{u(x_i)})}^2}
 \end{equation}
