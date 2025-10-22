@@ -20,6 +20,8 @@
 \usepackage{hyperref}
 \usepackage{siunitx}
 \usepackage{array}
+\usepackage{float}
+
 % Glossary package
 % \usepackage[acronyms]{glossaries}
 % \setacronymstyle{long-short}
@@ -45,7 +47,7 @@
 \thispagestyle{empty}
     {\Huge \begin{center}
         % Modify the line below to insert your title.
-        Measurement of Water Salinity \\for Antarctic Research
+        The Measurement of Water Salinity \\for Antarctic Research
         %\hrule 
         % Modify the line below to insert your subtitle.
         %{\Large Insert a subtitle here (if applicable)}
@@ -108,11 +110,11 @@
         \item I know that plagiarism is wrong.
         Plagiarism is to use another's work and pretend that it is one's own.
         \item I have used the IEEE convention for citation and referencing.
-        Each contribution to, and quotation in, this report `The Measurement of Water Salinity in Water Towers' from the work{(s)} of other people has been attributed and has been cited and referenced.
+        Each contribution to, and quotation in, this report `The Measurement of Water Salinity for Antarctic Research' from the work{(s)} of other people has been attributed and has been cited and referenced.
         Any section taken from an internet source has been referenced to that source.
-        \item This report `The Measurement of Water Salinity in Water Towers' is my own work and is in my own words (except where I have attributed it to others).
+        \item This report `The Measurement of Water Salinity for Antarctic Research' is my own work and is in my own words (except where I have attributed it to others).
         \item I have not paid a third party to complete my work on my behalf.
-        My use of artificial intelligence software has been limited to giving overviews of topics, aiding with {\LaTeX} commands, and aiding with making BibTeX citations of sources (specify precisely how you used AI to assist with this assignment, and then give examples of the prompts you used in your first appendix).
+        My use of artificial intelligence software has been limited to giving overviews of topics, checking grammar, aiding with {\LaTeX} commands, and aiding with making BibTeX citations of sources (specify precisely how you used AI to assist with this assignment, and then give examples of the prompts you used in your first appendix).
         \item I have not allowed and will not allow anyone to copy my work with the intention of passing it off as his or her own work.
         \item I acknowledge that copying someone else's assignment or essay, or part of it, is wrong, and declare that this is my own work
     \end{enumerate}
@@ -123,12 +125,12 @@
         \end{tabular*}
         \vskip10mm
 
-\newpage
+%\newpage
     %\thispagestyle{empty}
-    {\Huge Terms of Reference}\\
+    %{\Huge Terms of Reference}\\
     %\hrule
-    \vskip 10mm
-    The terms of reference page is an agreement between yourself and your supervisor outlining what is expected of you in your final year project. Please make sure that this is discussed and written at the beginning of your thesis project. 
+    %\vskip 10mm
+    %The terms of reference page is an agreement between yourself and your supervisor outlining what is expected of you in your final year project. Please make sure that this is discussed and written at the beginning of your thesis project. 
 
 
 %\fancyfoot[C]{\thepage}
@@ -138,8 +140,13 @@
 {\Huge Acknowledgments}\\
 %\hrule
 \vskip 10mm
-Make relevant acknowledgements to people who have helped you complete or conduct this work, including sponsors or research funders.
+I would like to express my sincere gratitude to my supervisor, Justin Pead, for his invaluable guidance, support, and expertise throughout this research.
+His insights and encouragement were instrumental in bringing this work to fruition.
 
+I am also deeply grateful to my friends for their unwavering moral support during this journey.
+Their encouragement and understanding made the challenges of this process far more manageable.
+
+Lastly, I would like to thank my family for their support during my studies.
 
 \newpage
     {\Huge Abstract}\\
@@ -147,14 +154,16 @@ Make relevant acknowledgements to people who have helped you complete or conduct
     \vskip 10mm
 
     % Place your abstract here.
-    \begin{itemize}
-        \item Open the {\bf Project Report Template.tex} file and carefully follow the comments (starting with \%).
-        \item Process the file with {\bf pdflatex}, using other processors may need you to change some features such as graphics types.
-        \item Note the files included in the  {\bf Project Report Template.tex} (with the {.tex} extension excluded). You can open these files separately and modify their contents 
-        or create new ones.
-        \item Contact the latex namual for more features in your document such as equations, subfigures, footnotes, subscripts \& superscripts, special characters etc.
-        \item I recommend using the {\bf kile} latex IDE, as it is simple to use.
-    \end{itemize}
+    Ice shelves form when glaciers flow from the Antarctic out over the ocean.
+    This ice, which is originally freshwater ice is formed from accumulated snow, extends over the water and floats, because ice is less dense than water.
+    When saltwater freezes at the bottom of the ice shelves, salt is expelled, forming a brine like solution, with a high salt density, directly under the ice shelves.
+
+    The salinity of this brine solution and the seawater underneath need to be measured to aid in Antarctic research.
+    This project documents the design and testing of a conductivity-based salinity measuring device to measure the salt content in these areas.
+    The prototype was designed in two parts, a probe module, which would be lowered down through a hole drilled into the ice shelves to measure the salinity, and a controller, which would be used to send instructions and receive data from the probe.
+    The probe utilised gold electrodes to measure and analyse the salinity through conductivity.
+    Two methods were investigated,~\gls{dc}, where point voltage measurements and voltage sweeps were conducted, and~\gls{ac} where a machine learning model was used to map properties of the input and output waves to a salinity value.
+    [Talk about accuracy #TODO]
 
 %\newpage
     %{\Huge Glossary}\\

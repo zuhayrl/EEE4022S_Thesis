@@ -219,33 +219,32 @@ function salinity = calculate_salinity(conductivity_sample, conductivity_standar
     salinity = calculate_salinity_from_ratio(R_corrected, temp_sample, pressure);
 end
 
-%% Example usage
-% Uncomment to test the functions
+%% Example usage ===================================================================================================
 
 % Probe parameters
-V_INPUT = 1.65;              % ESP32 voltage (V)
-R1 = 100;                  % 1k ohm series resistor
+V_INPUT = 1.5;              % ESP32 voltage (V)
+R1 = 10000;                  % 1k ohm series resistor
 d = 0.01;      % 1cm between plates (m)
 A = 0.0004;        % 2cm² plates (m²)
  
 % Standard solution (35 PSU at 15°C) - measure this value
-STANDARD_CONDUCTIVITY = 5.0; % S/m (example value, measure yours!)
+STANDARD_CONDUCTIVITY = 0.037; % S/m (example value, measure yours!)
 STANDARD_TEMP = 15.0;        % °C
  
 % Sample measurement
-v_probe = 1.5;               % Measured voltage (V)
-sample_temp = 25.0;          % Sample temperature (°C)
+v_probe = 0.12;               % Measured voltage (V)
+sample_temp = 24;          % Sample temperature (°C)
  
-% Or step-by-step:
+% Step-by-step:
 resistance = calculate_resistance(V_INPUT, v_probe, R1);
 fprintf('Resistance: %.2f Ohms\n', resistance);
  
 conductivity = calculate_conductivity(resistance, d, A);
 fprintf('Conductivity: %.4f S/m\n', conductivity);
-% 
-% salinity = calculate_salinity(conductivity, STANDARD_CONDUCTIVITY, ...
-%                               sample_temp, STANDARD_TEMP, 0);
-% fprintf('Salinity: %.2f PSU\n', salinity);
+
+salinity = calculate_salinity(conductivity, STANDARD_CONDUCTIVITY, ...
+                               sample_temp, STANDARD_TEMP, 0);
+ fprintf('Salinity: %.2f PSU\n', salinity);
 
 % Calculate salinity
 %salinity = voltage_to_salinity(V_INPUT, v_probe, R1, ...
