@@ -55,8 +55,27 @@ The resistance of the electrodes was calculated using the Equation~\ref{eqn:cond
 
 The electrode \gls{pcb} was designed with the consideration of mounting to the probe \gls{pcb}.
 To accomodate this, solder pads were added to allow the electrodes to be soldered to the probe \gls{pcb}.
-Supports were also factored into the design to ensure that the electrodes stayed straight and secure.
-The design can be seen in Figure [insert figure]. %TODO
+Mounting legs were also factored into the design to ensure that the electrodes stayed straight and secure.
+The design can be seen in Figure~\ref{fig:electrode_pcb}.
+
+\begin{figure}[H]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.6\textwidth]{Figures/electrode_pcb.png}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tabular}{cl} \hline
+            1 & Main Pad \\ \hline
+            2 & Fringe Guard \\ \hline
+            3 & Solder Pads \\ \hline
+            4 & Mounting Legs \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \caption{Gold Electrode PCB}
+    \label{fig:electrode_pcb} %chktex 24
+\end{figure}
+
 
 \section{Resistance Measurement}\label{sec:res_mes}
 There are multiple ways to measure resistance, however most rely on the same principle, which is the voltage divider principle.
@@ -166,10 +185,17 @@ A simplified circuit diagram showing the resistance measuring circuit is shown i
     \centering
     \includegraphics[width=0.75\textwidth]{figures/fig_resistance_circuit.png}
     \caption{Simple circuit diagram of the resistance measuring circuit.}
+    \textit{Note: Au1 Denotes Gold Electrode 1, and Au2 Gold electrode 2.}
 \end{figure}
 
 A third switch was added to allow for the configuration of the fringe guard, allowing the fringe guard paired with an electrode to share the same voltage configuration, i.e.~when an electrode acted as the anode its fringe guard would also act as an anode, and vice versa.
 The voltage of $R_1$ was directed through a unity gain buffer op-amp, and then connected on its output to the fringe guard, allowing for the same voltage over the electrodes to be over the fringe guards without affecting the measurement of the electrode voltage.
+
+Four points on the resistance circuit were routed to seperate \gls{adc}s, and a test point added to allow for the comparison between the voltage measured by the \gls{adc} and by a multimeter.
+These points were at the \gls{dac} output before the unity gain buffer op-amp, after the unity gain buffer op amp, before the 11x multiplying op-amp and after the 11x multiplying op-amp.
+A seperate capacitor was connected across each of these points and ground to stabilise the \gls{adc} readings and remove noise.
+These capacitors were connected via switches, to allow them to be disconnected when an \gls{ac} signal needed to be measured.
+Two additional test points were added to measure the rail voltages from the voltage regulators.
 
 In addition to the resistance measuring circuitry, a waterproof pressure and temperature sensor was included, as these values are needed for calculating salinity.
 The MS583702BA01-50 was chosen for its low price and availability on JLCPCB.
@@ -178,10 +204,10 @@ Lastly, an RS-485 \gls{ic} was included for inter board communication.
 
 A ESP-32 S2-Mini-2 was chosen for the microcontroller, as it was the most cost effective ESP32 based microcontroller.
 It offered an FPU, allowing for the complex salinity calculations to be done, did not require a \gls{uart} bridge as it has built-in USB OTG support, allowing it to connect directly to a computer for easy programming, which was done via a USB-Micro port, and offered 13-bit \gls{adc}s, allowing for a good voltage measurement resolution.
-Additionally the wireless capabilities allowed for easy debugging, through a web interface, as the reasearchers computer only had one USB port.
+Additionally the wireless capabilities allowed for easy debugging, through a web interface, as the reasearcher's computer only had one USB port.
 The researcher also had significant experience with this microcontroller.
 
-A Controller \gls{pcb} was designed alongside the probe \gls{pcb}.
+A controller \gls{pcb} was designed alongside the probe \gls{pcb}.
 This controller was designed to communicate with the probe while it was submerged, sending it instructions and receiving results.
 It allowed for the measurements to be recorded in a $.txt$ file on a micro-SD card, and displayed on a $16\times2$ LCD screen.
 The \gls{pcb} for this controller was minimal, and relied on external breakout circuit boards.
@@ -209,7 +235,18 @@ This size also made debugging easier.
 In addition to the components required for transmission and measurement, test points with headers were added for easy debugging, and an indicator \gls{led}, to indicate power.
 The probe is shown in Figure~\ref{fig:probe_pcb}.
 
-\begin{figure}[ht] %TODO
+%space
+
+
+The controller was relatively simple, and only require a 2-layer \gls{pcb}, with dimensions of $70\times55mm$.
+This size and layer count fell into the same discounted bracket as the probe \gls{pcb}.
+The external micro-SD card reader was connected to the \gls{pcb} through a breadboard.
+The chosen ESP32-Wroom Devkit module when designing the \gls{pcb} was not the same one the researcher had access to when assembling the controller, and differed in size.
+To accomodate for this the available ESP32-Wroom module was also placed on the breadboard and was connected to the \gls{pcb} via jumper cables.
+Additionally the 16x2 LCD display was not used because of this.
+The complete Controller \gls{pcb} and additional circuitry can be seen in Figure~\ref{fig:controller_pcb}.
+
+\begin{figure}[H]
     \begin{minipage}{0.5\textwidth}
         \centering
         \includegraphics[width=0.8\textwidth]{Figures/probe_pcb.jpg}
@@ -237,44 +274,31 @@ The probe is shown in Figure~\ref{fig:probe_pcb}.
     \label{fig:probe_pcb} %chktex 24
 \end{figure}
 
-
-The controller was relatively simple, and only require a 2-layer \gls{pcb}, with dimensions of $70\times55mm$.
-This size and layer count fell into the same discounted bracket as the probe \gls{pcb}.
-The external micro-SD card reader was connected to the \gls{pcb} through a breadboard.
-The chosen ESP32-Wroom Devkit module when designing the \gls{pcb} was not the same one the researcher had access to when assembling the controller, and differed in size.
-To accomodate for this the available ESP32-Wroom module was also placed on the breadboard and was connected to the \gls{pcb} via jumper cables.
-The complete Controller \gls{pcb} and additional circuitry can be seen in Figure~\ref{fig:controller_pcb}.
-
-\begin{figure}[ht] %TODO
+\begin{figure}[H]
     \begin{minipage}{0.5\textwidth}
         \centering
-        \includegraphics[width=0.8\textwidth]{Figures/probe_pcb.jpg}
+        \includegraphics[width=0.8\textwidth]{Figures/controller_circuit.jpg}
     \end{minipage}
     \begin{minipage}{0.5\textwidth}
         \centering
         \begin{tabular}{cl} \hline
-            1 & USB-Micro Port \\ \hline
-            2 & Test Points \\ \hline
-            3 & Pressure Sensor \\ \hline
-            4 & Op-Amps \\ \hline
-            5 & Switch \gls{ic}s \\ \hline
-            6 & Gold Electrode Mounts \\ \hline
-            7 & Gold Electrode Solder Pads \\ \hline
-            8 & Voltage Regulators \\ \hline
-            9 & \gls{dac} \\ \hline
-            10 & Boot and Enable Buttons\\ \hline
-            11 & RS-485 Port \\ \hline
-            12 & RS-485 \gls{ic} \\ \hline
-            13 & ESP32 Microcontroller \\ \hline
-            14 & Power Indicator \gls{led} \\ \hline
+            1 & ESP32-Wroom-Devkit \\ \hline
+            2 & RS-485 IC \\ \hline
+            3 & RS-485 Port \\ \hline
+            4 & Voltage Regulators \\ \hline
+            5 & Input Power \\ \hline
+            6 & Micro-SD Card Reader \\ \hline
         \end{tabular}
     \end{minipage}
     \caption{Controller PCB and Additional Circuitry}
     \label{fig:controller_pcb} %chktex 24
 \end{figure}
 
+\hfill \break
+
 The two \gls{pcb}s were connected via 4-core communication cable, with pins for RS-485 Tx and Rx, Ground and 9V Power.
 Additionally, 6 core wire was connected to the probe \gls{pcb} along the 6 test points, to allow for easy debugging when submerged.
+Both PCBs were powered by an input voltage of 9V which was stepped down appropriately, using voltage regular \gls{ic}s, for a stable power input.
 
 The electrode manufacturing was trivial, as it consisted of the gold plated solder pads, as mentioned in Section~\ref{sec:electrode_design}.
 No additional modifications had to be made to the electrode \gls{pcb}s, and they were hand soldered to the corresponding solder pads on the probe \gls{pcb}.
@@ -294,6 +318,50 @@ The sheets were cut using a saw and joined using waterproof superglue.
 The electrodes were spaced using two pieces of acrylic measured to 10mm (i.e.~the electrode seperation distance).
 A plastic straw was used to isolate the pressure sensor as the diamter of the stray matched the pressure sensor perfectly.
 This ensured that the sensor could measure the pressure of the water accurately.
-A fully encapsulated probe \gls{pcb} can be seen in Figure [TODO]
+A fully encapsulated probe \gls{pcb} can be seen in Figure~\ref{fig:encapsulated_probe}.
 
-\subsection{Programming}
+\begin{figure}[H]
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{Figures/encapsulated_probe.jpg}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tabular}{cl} \hline
+            1 & Probe Board \\ \hline
+            2 & Gold Electrodes \\ \hline
+            3 & RS-485 and Power Cable \\ \hline
+            4 & Test Point Cable \\ \hline
+            5 & Programming Cable \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \caption{Encapsulated Probe}
+    \label{fig:encapsulated_probe} %chktex 24
+\end{figure}
+
+\subsection{Microcontroller Programming}
+The controller was programmed to send commands to the probe via RS-485, and the probe to follow the command and return the data back to the controller.
+These commands would first be sent by a computer to the serial monitor on the controller board, and then would be sent from the controller to the probe.
+Multiple measurement modes were programmed into the probe board and they were trigered with specific commands.
+A seperate C++ header file, with functions for the salinity calculation equations, was created for ease of coding and and reusability.
+
+The voltage measurements were done using the ESP32's built in \gls{adc}s, which used a referencevoltage of $3.3V$.
+To account for measurement inaccuracies caused by the \gls{dac}, \gls{adc} or op-amp, the calibration resistor was used to find a calibration factor, which will be denoted by $C_F$.
+This factor was calculated by connecting the calibration resistor ($R_2$) to a chosen $R_1$ resistor, and measuring the voltage drop over it.
+This value would then be compared to the expected voltage drop, calculated mathematically.
+The expected voltage is divided by the measured voltage to give the calibration factor $C_F$.
+Readings from the \gls{adc} would then be multiplied by this calibration factor, removing any inaccuracies.
+The calculation of the calibration factor is shown in Equations~\ref{eqn:caibration_equation1} to~\ref{eqn:caibration_equation4}.
+
+\begin{gather}
+    \text{Given calibration resistor }R_{C} = 5\Omega \label{eqn:caibration_equation1} \\
+    \text{Expected }V_{C} = 11\times V_{IN}\times\frac{R_C}{R_C+R_1} \\
+    \text{Meausured }V_{C} = \frac{\text{ADC Reading}}{\text{ADC Resolution}} \times V_{Ref} \\
+    \text{Calibration Factor }C_F = \frac{\text{Expected }V_C}{\text{Meausured }V_C} \label{eqn:caibration_equation4}
+\end{gather}
+
+\subsubsection{DC Voltage Sweep}
+
+\subsubsection{DC Single Voltage}
+
+\subsection{Machine Learning Programming}
