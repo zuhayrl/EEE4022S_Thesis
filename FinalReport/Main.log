@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  23 OCT 2025 14:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  23 OCT 2025 18:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -590,7 +590,7 @@ Package hyperref Info: Link coloring OFF on input line 43.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 43.
-<Figures/uctLogo.png, id=174, 418.56375pt x 425.59pt>
+<Figures/uctLogo.png, id=190, 418.56375pt x 425.59pt>
 File: Figures/uctLogo.png Graphic file (type png)
 <use Figures/uctLogo.png>
 Package pdftex.def Info: Figures/uctLogo.png  used on input line 57.
@@ -641,7 +641,7 @@ Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}].
 
 
 Package glossaries Info: Preparing to sort glossary `acronym' (total number of
-(glossaries)             referenced entries: 15)
+(glossaries)             referenced entries: 16)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -795,17 +795,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-Overfull \hbox (8.41064pt too wide) in paragraph at lines 201--202
+Overfull \hbox (8.41064pt too wide) in paragraph at lines 201--204
 \OT1/cmr/m/n/12 capacity to conduct electricity, freshawater applications require specialised low-conductivity
  []
 
 
-Overfull \hbox (6.2565pt too wide) in paragraph at lines 203--205
-[]\OT1/cmr/m/n/12 The method's reliance on emperical correlations derived from typical seawater compositions
+Overfull \hbox (6.2565pt too wide) in paragraph at lines 201--204
+\OT1/cmr/m/n/12 The method's reliance on emperical correlations derived from typical seawater compositions
  []
 
 
-Overfull \hbox (6.06067pt too wide) in paragraph at lines 203--205
+Overfull \hbox (6.06067pt too wide) in paragraph at lines 201--204
 \OT1/cmr/m/n/12 or freshwater inflow from connecting rivers, which can alter ionic composition and introduce
  []
 
@@ -820,28 +820,76 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.205 
+l.204 
       ]
-Overfull \hbox (11.91985pt too wide) in paragraph at lines 206--206
+Overfull \hbox (11.91985pt too wide) in paragraph at lines 205--205
 []\OT1/cmr/bx/n/17.28 Machine Learning Applications in Electrochemical 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 206.
+(hyperref)                removing `\\' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 207.
+(hyperref)                removing `\gls' on input line 206.
 
 
-Overfull \hbox (17.60094pt too wide) in paragraph at lines 209--214
+Overfull \hbox (17.60094pt too wide) in paragraph at lines 208--213
 [][]\OT1/cmr/m/n/12 Electrochemical Impedance Spectroscopy (EIS)[] is an analytical technique used to characterise
  []
 
 
-Overfull \hbox (3.21358pt too wide) in paragraph at lines 218--220
+Overfull \hbox (3.21358pt too wide) in paragraph at lines 217--219
 []\OT1/cmr/m/n/12 EIS has demonstrated success in quantitative concentration analysis across diverse solution
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]
+Overfull \hbox (36.78181pt too wide) in paragraph at lines 229--229
+[]\OT1/cmr/bx/n/17.28 Machine Learning for Impedance to Salinity Mapping 
+ []
+
+
+Overfull \hbox (1.94405pt too wide) in paragraph at lines 238--244
+\OT1/cmr/m/n/12 Machine learning approaches offer advantages by learning complex non-linear relationships
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+Overfull \hbox (0.44684pt too wide) in paragraph at lines 256--259
+\OT1/cmr/m/n/12 approach for impedance-based concentration prediction due to their exceptional capability
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15]
+
+LaTeX Warning: Citation `ibm_randomforrest' on page 16 undefined on input line 267.
+
+
+LaTeX Warning: Citation `salman_random_2024' on page 16 undefined on input line 270.
+
+
+Overfull \hbox (24.46881pt too wide) in paragraph at lines 269--271
+\OT1/cmr/m/n/12 enabling simultaneous utilisation of raw impedance values, derived electrochemical parameters,
  []
 
 )
@@ -852,15 +900,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14]
+[16]
 \openout2 = `Body/Methodology.aux'.
 
  (Body/Methodology.tex
@@ -880,7 +920,7 @@ Overfull \hbox (6.2565pt too wide) in paragraph at lines 17--18
 \OT1/cmr/m/n/12 laboratory methods measure salinity only, and require seperate temperature measurements. 
  []
 
-[15
+[17
 
 
 
@@ -893,34 +933,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]
-<figures/fig_voltage_divider.png, id=527, 581.17125pt x 298.11375pt>
+[18]
+<figures/fig_voltage_divider.png, id=587, 581.17125pt x 298.11375pt>
 File: figures/fig_voltage_divider.png Graphic file (type png)
 <use figures/fig_voltage_divider.png>
 Package pdftex.def Info: figures/fig_voltage_divider.png  used on input line 70.
 (pdftex.def)             Requested size: 271.7835pt x 139.41295pt.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.95 
-      <./figures/fig_voltage_divider.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -936,12 +955,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.95 
+      <./figures/fig_voltage_divider.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
 Overfull \hbox (5.88994pt too wide) in paragraph at lines 163--164
 []\OT1/cmr/m/n/12 A simplified circuit diagram showing the resistance measuring circuit is shown in Figure []3.4[]. 
  []
 
-<figures/fig_resistance_circuit.png, id=589, 414.79968pt x 367.3725pt>
+<figures/fig_resistance_circuit.png, id=648, 414.79968pt x 367.3725pt>
 File: figures/fig_resistance_circuit.png Graphic file (type png)
 <use figures/fig_resistance_circuit.png>
 Package pdftex.def Info: figures/fig_resistance_circuit.png  used on input line 167.
@@ -958,7 +998,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21
+[23
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -980,8 +1020,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
-<Figures/probe_pcb.jpg, id=617, 963.6pt x 1284.8pt>
+[24]
+<Figures/probe_pcb.jpg, id=677, 963.6pt x 1284.8pt>
 File: Figures/probe_pcb.jpg Graphic file (type jpg)
 <use Figures/probe_pcb.jpg>
 Package pdftex.def Info: Figures/probe_pcb.jpg  used on input line 215.
@@ -1007,7 +1047,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23
+[25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1020,7 +1060,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24
+[26
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1033,7 +1073,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
+[27]
 \openout2 = `Body/Results.aux'.
 
  (Body/Results.tex
@@ -1043,7 +1083,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 []\OT1/cmr/m/n/12 Present your results in a suitable format using tables and graphs where necessary. Remember
  []
 
-) [26
+) [28
 
 
 
@@ -1053,7 +1093,7 @@ Overfull \hbox (12.93237pt too wide) in paragraph at lines 4--6
 
  (Body/Discussion.tex
 Chapter 5.
-) [27
+) [29
 
 
 
@@ -1063,7 +1103,7 @@ Chapter 5.
 
  (Body/Conclusions.tex
 Chapter 6.
-) [28
+) [30
 
 
 
@@ -1073,7 +1113,7 @@ Chapter 6.
 
  (Body/Recommendations.tex
 Chapter 7.
-) [29
+) [31
 
 
 
@@ -1096,7 +1136,7 @@ Underfull \hbox (badness 1292) in paragraph at lines 56--60
 []\OT1/cmr/m/n/12 V. Rana, P. Kumar, S. Banerjee, and A. Biswas, ``Magnetic susceptibility
  []
 
-[30
+[32
 
 
 
@@ -1108,7 +1148,17 @@ Underfull \hbox (badness 8189) in paragraph at lines 78--82
  []
 
 
-Underfull \hbox (badness 1077) in paragraph at lines 88--91
+Underfull \hbox (badness 1102) in paragraph at lines 84--89
+\OT1/cmr/m/n/12 Salinity Measurements for Small Submersibles and Biologgers,'' \OT1/cmr/m/it/12 International
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 84--89
+\OT1/cmr/m/it/12 Journal of Oceanography\OT1/cmr/m/n/12 , vol. 2013, no. 1, p. 529674, 2013.  []-eprint:
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 110--113
 []\OT1/cmr/m/n/12 E. Barsoukov and J. R. Macdonald, eds., \OT1/cmr/m/it/12 Impedance Spectroscopy: Theory,
  []
 
@@ -1119,7 +1169,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]))
+[33]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 133.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
+))
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1127,7 +1184,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
+[34]
 \openout2 = `Appendix/appendixa.aux'.
 
  (Appendix/appendixa.tex
@@ -1147,7 +1204,7 @@ Overfull \hbox (24.17755pt too wide) in paragraph at lines 14--31
  [] 
  []
 
-[33
+[35
 
 
 
@@ -1160,12 +1217,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34]
+[36]
 \openout2 = `Appendix/appendixb.aux'.
 
  (Appendix/appendixb.tex
 Appendix B.
-) [35
+) [37
 
 
 
@@ -1175,7 +1232,7 @@ Appendix B.
 
  (Appendix/appendixc.tex
 Appendix C.
-) [36
+) [38
 
 
 
@@ -1192,20 +1249,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 3E336FFBE1DEFA9B3719F9ED6C906502;7181.
+(rerunfilecheck)             Checksum: CC52A81F05809E50657622D2E5DF336E;8477.
  ) 
 Here is how much of TeX's memory you used:
- 25908 strings out of 474486
- 545211 string characters out of 5743755
+ 25999 strings out of 474486
+ 546764 string characters out of 5743755
  1943542 words of memory out of 5000000
- 47683 multiletter control sequences out of 15000+600000
+ 47753 multiletter control sequences out of 15000+600000
  565863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,12n,80p,2604b,1749s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,12n,80p,2604b,1751s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Main.pdf (43 pages, 662601 bytes).
+Output written on Main.pdf (45 pages, 678671 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 167 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 863 PDF objects out of 1000 (max. 8388607)
+ 185 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 

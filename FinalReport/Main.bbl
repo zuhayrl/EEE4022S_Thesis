@@ -80,6 +80,28 @@ E.~L. Lewis and R.~G. Perkin, ``Salinity: {Its} definition and calculation,''
   thermodynamic properties.,'' {\em Manuals and Guides}, vol.~56, 2015.
 \newblock Publisher: UNESCO.
 
+\bibitem{chip_based_ctd}
+J.~Jonsson, K.~Smedfors, L.~Nyholm, and G.~Thornell, ``Towards {Chip}-{Based}
+  {Salinity} {Measurements} for {Small} {Submersibles} and {Biologgers},'' {\em
+  International Journal of Oceanography}, vol.~2013, no.~1, p.~529674, 2013.
+\newblock \_eprint:
+  https://onlinelibrary.wiley.com/doi/pdf/10.1155/2013/529674.
+
+\bibitem{ctd_accuracy}
+S.-B. Scientific, ``How accurate is salinity measured by my {CTD}? {What}
+  factors impact accuracy?.''
+
+\bibitem{roemmich_argo_2009}
+D.~Roemmich, G.~C. Johnson, S.~Riser, R.~Davis, J.~Gilson, W.~B. Owens, S.~L.
+  Garzoli, C.~Schmid, and M.~Ignaszewski, ``The {Argo} {Program},'' {\em
+  Oceanography}, vol.~22, no.~2, pp.~34--43, 2009.
+\newblock Publisher: Oceanography Society.
+
+\bibitem{uncles_estuarine_2002}
+R.~J. Uncles, ``Estuarine {Physical} {Processes} {Research}: {Some} {Recent}
+  {Studies} and {Progress},'' {\em Estuarine, Coastal and Shelf Science},
+  vol.~55, pp.~829--856, Dec. 2002.
+
 \bibitem{canales_electrochemical_2021}
 C.~Canales, ``Electrochemical {Impedance} {Spectroscopy} and {Its}
   {Applications},'' pp.~1--21, Dec. 2021.
@@ -93,6 +115,31 @@ E.~Barsoukov and J.~R. Macdonald, eds., {\em Impedance {Spectroscopy}:
 M.~Orazem and B.~Tribollet, {\em Electrochemical {Impedance} {Spectroscopy}.
   {Wiley}-{Interscience}, {New} {York}}.
 \newblock Feb. 2008.
+
+\bibitem{bongiorno_exploring_2022}
+V.~Bongiorno, S.~Gibbon, E.~Michailidou, and M.~Curioni, ``Exploring the use of
+  machine learning for interpreting electrochemical impedance spectroscopy
+  data: evaluation of the training dataset size,'' {\em Corrosion Science},
+  vol.~198, p.~110119, Apr. 2022.
+
+\bibitem{xu_electrochemical_2020}
+Y.~Xu, C.~Li, Y.~Jiang, M.~Guo, Y.~Yang, Y.~Yang, and H.~Yu, ``Electrochemical
+  {Impedance} {Spectroscopic} {Detection} of {E}.coli with {Machine}
+  {Learning},'' {\em Journal of The Electrochemical Society}, vol.~167,
+  p.~047508, Feb. 2020.
+\newblock Publisher: IOP Publishing.
+
+\bibitem{ibm_nn}
+``What {Is} a {Neural} {Network}? {\textbar} {IBM},'' Oct. 2021.
+
+\bibitem{christopher_m_bishop_pattern_2006}
+{Christopher M. Bishop}, {\em Pattern {Recognition} and {Machine} {Learning}}.
+\newblock Springer, 2006.
+
+\bibitem{ann_eis_hsueh}
+K.-L. Hsueh, ``A {Study} of {Artificial} {Neural} {Networks} for
+  {Electrochemical} {Data} {Analysis},'' {\em Journal of the Chinese Chemical
+  Society}, vol.~57, Aug. 2010.
 
 \bibitem{conductivities}
 ``A {Table} of {Electrical} {Conductivity} and {Resistivity} of {Common}

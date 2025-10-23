@@ -32,45 +32,45 @@ Warning--empty journal in salinity_def
 Warning--empty booktitle in canales_electrochemical_2021
 Warning--empty publisher in canales_electrochemical_2021
 Warning--empty publisher in orazem_electrochemical_2008
-You've used 26 entries,
+You've used 35 entries,
             1876 wiz_defined-function locations,
-            644 strings with 8081 characters,
-and the built_in function-call counts, 6055 in all, are:
-= -- 624
-> -- 201
+            696 strings with 9812 characters,
+and the built_in function-call counts, 8255 in all, are:
+= -- 842
+> -- 298
 < -- 0
-+ -- 80
-- -- 54
-* -- 410
-:= -- 845
-add.period$ -- 32
-call.type$ -- 26
-change.case$ -- 25
++ -- 117
+- -- 82
+* -- 557
+:= -- 1152
+add.period$ -- 44
+call.type$ -- 35
+change.case$ -- 33
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 311
-empty$ -- 580
-format.name$ -- 54
-if$ -- 1486
+cite$ -- 39
+duplicate$ -- 428
+empty$ -- 774
+format.name$ -- 82
+if$ -- 2030
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 23
-newline$ -- 91
-num.names$ -- 24
-pop$ -- 77
+int.to.str$ -- 35
+missing$ -- 31
+newline$ -- 122
+num.names$ -- 32
+pop$ -- 103
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 239
+skip$ -- 339
 stack$ -- 0
-substring$ -- 348
-swap$ -- 128
+substring$ -- 440
+swap$ -- 185
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 60
-width$ -- 28
-write$ -- 248
+while$ -- 77
+width$ -- 37
+write$ -- 336
 (There were 5 warnings)

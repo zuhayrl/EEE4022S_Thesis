@@ -72,7 +72,7 @@ To perform the measurement, the water is cooled till its freezing point and the 
 This method can achieve accuracies of $\pm2 mOsm/kg H_{2}O$ which is approximately $\pm0.1-0.2$ \gls{ppt}. However its requirement for precise temperature control limits its usage to laboratory applications~\cite{freezing_accuracy}.
 
 
-\subsubsection{Electromagnetic Induction and Magnetic Permeability}
+\subsubsection{Magnetic Permeability}
 Magnetic properties of liquids, particularly magnetic susceptibility, vary with ion concentration, offering a potential method for salinity determination.
 Research has demonstrated that bulk magnetic susceptibility (BMS) of saline water correlates with salinity and conductivity measurements, with water quality parameters exhibiting an inverse relationship with magnetic susceptibility values.
 This approach offers the benefit of non-contact measurement, potentially avoiding sample contamination or disturbance~\cite{rana_magnetic_2021}.
@@ -191,17 +191,16 @@ It must be noted that the PSS-78 equations use the IPTS-68 temperature scale and
 The most common method for measuring salinity is by using a~\gls{ctd} device.
 The fundamental concept of these devices involves placing two electrodes in a sample of water, applying a voltage across them and measuring the water's response. This is then paired with a temperature and depth correction, allowing for an accurate salinity measurement.
 The depth value for these calculations is taken from the pressure at which the measurement is taken.
-This pressure is then traslated to depth using the standard depth to pressure equation.
-Modern CTD systems achieve salinity accuracies better than $\pm0.005$ \gls{psu}, with some instruments like the Sea-Bird 911 Plus demonstrating historical accuracies of $\pm0.002$ \gls{psu} or $\pm0.0002$ \gls{psu}.
+This pressure is then translated to depth using the standard depth to pressure equation~\cite{chip_based_ctd}.
+Modern CTD systems achieve salinity accuracies better than $\pm0.005$ \gls{psu}, with some instruments like the Sea-Bird 911 Plus demonstrating historical accuracies of $\pm0.002$ \gls{psu} or $\pm0.0002$ \gls{psu}~\cite{chip_based_ctd}~\cite{ctd_accuracy}.
 
 \subsection{Applications and Limitations}
 Conductivity-based salinity measurements excel in most oceanographic and water quality applications due to its accuracy, speed, and reliability.
-The conductivity method allows for real-time data capture, continuous monitoring, and easy integration with autonomous devices. 
+The conductivity method allows for real-time data capture, continuous monitoring, and easy integration with autonomous devices~\cite{roemmich_argo_2009}. 
 
 However, this method does face some limitations. Due to its dependance on the water's capacity to conduct electricity, freshawater applications require specialised low-conductivity sensors, while hyper-saline environments could exceed the standard calibration range.
-
 The method's reliance on emperical correlations derived from typical seawater compositions can introduce errors in waters ocean waters affected by external factors such as pollution or freshwater inflow from connecting rivers, which can alter ionic composition and introduce variability not captured by standard seawater-based calibrations.
-In such environments supplementry practices may be necessary for accurate salinity measurements.
+In such environments supplementry practices may be necessary for accurate salinity measurements~\cite{uncles_estuarine_2002}.
 
 \section{Machine Learning Applications in Electrochemical \\ Impedance Spectroscopy}
 \subsection{Electrochemical Impedance Spectroscopy (\gls{eis})}
@@ -224,4 +223,49 @@ The \gls{eis} measuring process invloves applying an AC signal at a specific fre
 By sweeping across a multitude of frequencies, a complete impedance spectrum can be obtained.
 The impedance magnitude $|Z|$ and phase angle $\phi$ at each frequency is recorded, and are used to analyse the electrical properties of the solution~\cite{orazem_electrochemical_2008}.
 For salinity, it can be used to characterise the electrical properties of ionic solutions, including seawater, by analyzing how ions affect the impedance spectrum. 
-This data can be used to approximate the system using \glspl{eec}, which are circuit ussed to describe the system with discrete electrical circuit elements~\cite{barsoukov_impedance_2005}.
+This data can be used to approximate the system using \glspl{eec}, which are circuits ussed to describe a system with discrete electrical circuit elements~\cite{barsoukov_impedance_2005}.
+\glspl{eec} fulfill the overall goal of \gls{eis} is to describe the behaviour of the electrode and solution in terms of electrical parameters such as resistances and capacitances~\cite{canales_electrochemical_2021}.
+
+\section{Machine Learning for Impedance to Salinity Mapping}
+\subsection{Limitations of Traditional Calibration Approaches}
+Traditional impedance analysis relies on the modelling of \glspl{eec}, to derive the salinity from the impedance.
+This process requires extensive electrochemical expertise, in order to understand the chemical composition of the solution.
+Manual parameter extraction from impedance spectra is time consuming and may fail to capture subtle features that correlate with salinity.
+Linear calibration methods assume simple relationships between impedance measurements and concentration, which may not hold across wide salinity ranges or in solutions with varying ionic compositions.
+Temperature effects and electrode aging can further complicate traditional calibration approaches~\cite{barsoukov_impedance_2005}.
+
+\subsection{Machine Learning Modelling for Impedance Analysis}
+Machine learning approaches offer advantages by learning complex non-linear relationships directly from experimental data without the need for explicit physical models or \glspl{eec}.
+Supervised learning algorithms can map measured impedance values at specific input signal frequencies and amplitudes to target salinity concentrations through automated pattern recognition.
+The general framework involves training a model on a dataset of known salinity samples, where each sample is characterised by its impedance response to AC excitation at defined frequencies and amplitudes~\cite{bongiorno_exploring_2022}. 
+The trained model can then predict salinity from new impedance measurements, effectively learning the impedance-salinity mapping function.
+Machine learning eliminates subjective bias inherent in manual impedance interpretation and consistently applies identical analysis procedures across all measurements.
+The algorithms can identify complex patterns in multi-frequency impedance data that may be overlooked in traditional analysis~\cite{xu_electrochemical_2020}.
+
+\subsection{Machine Learning Algorithms for Salinity Prediction}
+\subsubsection{Neural Networks}
+Neural networks are machine learning programs that make decisions similarly to the human brain, using processes that mimic how biological neurons work together to identify patterns, weigh options, and reach conclusions.
+
+Every neural network consists of layers of nodes (artificial neurons), these being an input layer, one or more hidden layers, and an output layer. Each node connects to others and has its own weight and threshold value.
+When a node's output exceeds its threshold value, it activates and sends data to the next layer, if not, no data passes through.
+This creates a feed-forward process where information flows from input to output. Each node functions like a linear regression model with inputs, weights, a bias, and an output.
+Weights determine how important each input is, with larger weights having greater significance. Inputs are multiplied by their weights, summed together, and passed through an activation function to determine if the node fires.
+Neural networks rely on training data to learn and improve accuracy over time.
+They use cost functions to evaluate accuracy and adjust their weights and biases through gradient descent and backpropagation to minimize errors and reach optimal performance~\cite{ibm_nn}.
+
+\glspl{ann} represent the most widely adopted machine learning approach for impedance-based concentration prediction due to their exceptional capability for modelling complex non-linear relationships.
+The architecture typically consists of an input layer receiving impedance features such as frequency and phase, one or more hidden layers that extract relevant patterns, and an output layer producing predictions~\cite{christopher_m_bishop_pattern_2006}.
+Hidden layers with non-linear activation functions enable the network to capture complex impedance-salinity relationships~\cite{ann_eis_hsueh}.
+
+Deep neural networks with multiple hidden layers can learn hierarchical representations, potentially identifying frequency dependent patterns at different levels.
+However, they require larger training datasets and careful regularisation to prevent overfitting~\cite{ann_eis_hsueh}.
+
+\subsubsection{Random Forrest Algorithms}
+Random forest is a machine learning algorithm which combines the output of multiple decision trees to reach a single result. It handles both classification and regression problems.
+The model is built from multiple decision trees. Decision trees start with a basic question and use a series of questions (decision nodes) to split data, ultimately leading to a final decision at the leaf node. They're trained through the Classification and Regression Tree (CART) algorithm.
+Unlike single decision trees that can be prone to bias and overfitting, when multiple uncorrelated decision trees form an ensemble in random forest, they predict more accurate results.
+By accounting for potential variability in the data through feature randomness, random forests reduce the risk of overfitting, bias, and overall variance, resulting in more precise predictions~\cite{ibm_randomforrest}.
+
+Random Forest methods demonstrate excellent performance with mixed data types, enabling simultaneous utilisation of raw impedance values, derived electrochemical parameters, and statistical features within unified prediction models.
+The algorithm's resistance to overfitting makes it particularly suitable for limited training data scenarios common in analytical applications~\cite{salman_random_2024}.
+

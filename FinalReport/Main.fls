@@ -370,6 +370,9 @@ INPUT .\Main.bbl
 INPUT .\Main.bbl
 INPUT Main.bbl
 INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
+INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
+INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex\latex\base\omscmr.fd
 INPUT .\Appendix\appendixa.tex
 INPUT .\Appendix\appendixa.tex
 OUTPUT Appendix\appendixa.aux
