@@ -1,0 +1,132 @@
+\begin{thebibliography}{10}
+
+\bibitem{salinity_def}
+R.~H. Stewart, ``Introduction to {Physical} {Oceanography},'' 2008.
+\newblock Publisher: Robert H. Stewart.
+
+\bibitem{unesco_salinity}
+{UNESCO}, ``Tenth report of the joint panel on oceanographic tables and
+  standards,'' {\em UNESCO Technical Papers in Marine Science}, vol.~36,
+  pp.~1--25, 1981.
+
+\bibitem{lewis_pss78}
+E.~Lewis, ``The practical salinity scale 1978 and its antecedents,'' {\em IEEE
+  Journal of Oceanic Engineering}, vol.~5, pp.~3--8, Jan. 1980.
+
+\bibitem{chemical_ocean}
+F.~J. Millero, {\em Chemical {Oceanography}}.
+\newblock Boca Raton: CRC Press, 4~ed., 2013.
+
+\bibitem{the_globe_program_hydrometer}
+{The Globe Program}, ``Salinity {Protocol} {Using} a {Hydrometer}.''
+
+\bibitem{kjerfve_density}
+B.~Kjerfve, ``Measurement and analysis of water current, temperature, salinity
+  and density.,'' {\em Estuarine hydrography and sedimentation}, vol.~1, no.~7,
+  pp.~186--227, 1979.
+
+\bibitem{refraction_millard}
+R.~C. Millard and G.~Seaver, ``An index of refraction algorithm for seawater
+  over temperature, pressure, salinity, density, and wavelength,'' {\em Deep
+  Sea Research Part A. Oceanographic Research Papers}, vol.~37, pp.~1909--1926,
+  Dec. 1990.
+
+\bibitem{malarde_high-resolution_refractometer}
+D.~Malardé, Z.~Y. Wu, P.~Grosso, J.-L. De~Bougrenet De La~Tocnaye, and
+  M.~Le~Menn, ``High-resolution and compact refractometer for salinity
+  measurements,'' {\em Measurement Science and Technology}, vol.~20, p.~015204,
+  Jan. 2009.
+
+\bibitem{zhang_high-temperature_fibre}
+Y.~Zhang, L.~Yuan, X.~Lan, A.~Kaur, J.~Huang, and H.~Xiao, ``High-temperature
+  fiber-optic {Fabry}–{Perot} interferometric pressure sensor fabricated by
+  femtosecond laser,'' {\em Optics Letters}, vol.~38, pp.~4609--4612, Nov.
+  2013.
+\newblock Publisher: Optica Publishing Group.
+
+\bibitem{freeze_abele}
+J.~Abele, ``The physical background to freezing point osmometry and its
+  medical-biological applications,'' {\em The American journal of medical
+  electronics}, vol.~2, pp.~32--41, Jan. 1963.
+
+\bibitem{freezing_accuracy}
+``Freezing {Point} {Depression} {Theory}.''
+
+\bibitem{rana_magnetic_2021}
+V.~Rana, P.~Kumar, S.~Banerjee, and A.~Biswas, ``Magnetic susceptibility
+  investigation of the saline water intrusion problem: {The} {LAMP}-{BHU}
+  protocol,'' {\em Journal of Earth System Science}, vol.~130, p.~140, July
+  2021.
+
+\bibitem{ion_chromatography}
+``Ion {Chromatography}.''
+
+\bibitem{gros_ionic_2008}
+N.~Gros, M.~F. Camões, C.~Oliveira, and M.~C.~R. Silva, ``Ionic composition of
+  seawaters and derived saline solutions determined by ion chromatography and
+  its relation to other water quality parameters,'' {\em Journal of
+  Chromatography A}, vol.~1210, pp.~92--98, Nov. 2008.
+
+\bibitem{salinity_def_calc}
+E.~L. Lewis and R.~G. Perkin, ``Salinity: {Its} definition and calculation,''
+  {\em Journal of Geophysical Research: Oceans}, vol.~83, no.~C1, pp.~466--478,
+  1978.
+\newblock \_eprint:
+  https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/JC083iC01p00466.
+
+\bibitem{teos-10}
+{International Oceanographic Commission,}, ``{TEOS}-10: {The} {International}
+  thermodynamic equation of seawater – 2010: calculation and use of
+  thermodynamic properties.,'' {\em Manuals and Guides}, vol.~56, 2015.
+\newblock Publisher: UNESCO.
+
+\bibitem{canales_electrochemical_2021}
+C.~Canales, ``Electrochemical {Impedance} {Spectroscopy} and {Its}
+  {Applications},'' pp.~1--21, Dec. 2021.
+
+\bibitem{barsoukov_impedance_2005}
+E.~Barsoukov and J.~R. Macdonald, eds., {\em Impedance {Spectroscopy}:
+  {Theory}, {Experiment}, and {Applications}}.
+\newblock Wiley, 1~ed., Apr. 2005.
+
+\bibitem{orazem_electrochemical_2008}
+M.~Orazem and B.~Tribollet, {\em Electrochemical {Impedance} {Spectroscopy}.
+  {Wiley}-{Interscience}, {New} {York}}.
+\newblock Feb. 2008.
+
+\bibitem{conductivities}
+``A {Table} of {Electrical} {Conductivity} and {Resistivity} of {Common}
+  {Materials}.''
+\newblock Section: ThoughtCo.
+
+\bibitem{ocean_conductivity_tyler}
+R.~H. Tyler, T.~P. Boyer, T.~Minami, M.~M. Zweng, and J.~R. Reagan,
+  ``Electrical conductivity of the global ocean,'' {\em Earth, Planets and
+  Space}, vol.~69, p.~156, Nov. 2017.
+
+\bibitem{zhang_silver}
+H.~Zhang and X.~Xue, ``The research progress on corrosion and protection of
+  silver layer,'' {\em SN Applied Sciences}, vol.~1, p.~464, Apr. 2019.
+
+\bibitem{materials_ocean_structures}
+D.~Sarode, U.~Saharkar, H.~Ahire, M.~Darade, S.~Chougule, S.~Dalvi, and
+  A.~Kurhade, ``Corrosion-{Resistant} {Materials} for {Ocean} {Structures}:
+  {Innovations}, {Mechanisms}, and {Applications},'' {\em Sustainable Marine
+  Structures}, July 2025.
+
+\bibitem{roshen_fringing}
+W.~A. Roshen, ``Fringing {Field} {Formulas} and {Winding} {Loss} {Due} to an
+  {Air} {Gap},'' {\em IEEE Transactions on Magnetics}, vol.~43, pp.~3387--3394,
+  Aug. 2007.
+
+\bibitem{cam_clark}
+C.~Clark, {\em The {Design} of {Salinity} {Sensor} for {Antarctic} {Research}}.
+\newblock {B.Sc Thesis}, University of Cape Town, Cape Town, 2024.
+
+\bibitem{waves_in_water}
+S.~Jiang and S.~Georgakopoulos, ``Electromagnetic {Wave} {Propagation} into
+  {Fresh} {Water},'' {\em Journal of Electromagnetic Analysis and
+  Applications}, vol.~3, pp.~261--266, July 2011.
+\newblock Publisher: Scientific Research Publishing.
+
+\end{thebibliography}

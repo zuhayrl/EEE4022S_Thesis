@@ -26,13 +26,13 @@ The choice of method depends on the required accuracy, operational environment, 
 \subsection{Historical Methods}
 \subsubsection{Chlorinity Titration}
 Early salinity measurements relied on chemical titration methods, in particular the Mohr-Knudsen chlorinity titration, which used silver nitrate.
-The chlorinity of a solution has the definition `the mass of silver required to precipitate completely the halogens in $0.3 285 234 kg$ of the ocean-water sample'
-This method was highly accurate, with results within ($\pm0.001$ PSU). However, it relied heavily on toxic chemicals, and was a time-consuming laboratory procedure, with limited practical application in the field.
+The chlorinity of a solution has the definition `the mass of silver required to precipitate completely the halogens in $0.3 285 234 kg$ of sample seawater'.
+This method was highly accurate, with results within ($\pm0.001$ PSU). However, it relied heavily on toxic chemicals, and was a time-consuming laboratory procedure, with limited practical application in the field~\cite{lewis_pss78}.
 
 \subsubsection{Gravimetric Methods}
 Gravimetric analysis, a technique used to determine an amount of a substance, by measuring its change in mass, invloves evaporation and the weighing of dissovled solids.
 This method directly provided measurements of the salt content, within accuracies of ($\pm0.001$ PSU), under controlled laboratory conditions.
-This method remains the reference standard for calibration processes, but is however, extremely slow.
+This method remains the reference standard for calibration processes, but is however, extremely slow~\cite{chemical_ocean}.
 
 \subsection{Physical Property Based Methods}
 There are several methods that utilise the relationship between salinity and the physical properties of water.
@@ -40,8 +40,8 @@ There are several methods that utilise the relationship between salinity and the
 \subsubsection{Hydrometric and Density Methods}
 Hydrometric methods using density measurements via hydrometers, offer salinity measurements that are low-cost, and electronics free. 
 However, they are limited in precision with accuracies of $\pm 1-2$ PSU, and require large sample volumes.
-The hydrometer is a floating instrument, that sinks to different depths depending on the density of the solution, and by measuring how high or low it floats, the density of the solution can be determined.
-The following equation is used to map the relationship between salinity and density.
+The hydrometer is a floating instrument, that sinks to different depths depending on the density of the solution, and by measuring how high or low it floats, the density of the solution can be determined~\cite{the_globe_program_hydrometer}.
+The following equation is used to map the relationship between salinity and density~\cite{kjerfve_density}.
 
 \begin{equation}
     \rho = \rho_0(1+kS)
@@ -60,31 +60,33 @@ This however, does not include temperature correction.
 \subsubsection{Refractometric Thechniques}
 Refractometric techniques measure the refractive index changes cuased by the dissovled salts.
 The refractive index of seawater is influenced by wavelength, temperature, salinity, and pressure. 
-Within the range of 500-700~nm wavelength, 0-30$^\circ$C temperature, 0-40~PSU salinity, and 0-11000~dbar pressure, the refractive index equation provides an accuracy of 0.4-80~ppm~PSU, with accuracy decreasing as pressure increases.
-Refractometers, which require only a small sample volume, are compact devices, making them suitable for portable field measurements.
-Fibre optic refractometers have improved portability and reduced temperature sensitivity, with moderate accuracy (±0.5-1 PSU), making them increasingly popular in aquaculture applications. 
+Within the range of 500-700~nm wavelength, 0-30$^\circ$C temperature, 0-40~PSU salinity, and 0-11000~dbar pressure, the refractive index equation provides an accuracy of 0.4-80~ppm~PSU, with accuracy decreasing as pressure increases~\cite{refraction_millard}.
+Refractometers, which require only a small sample volume, are compact devices, making them suitable for portable field measurements~\cite{malarde_high-resolution_refractometer}.
+Fibre optic refractometers have improved portability and reduced temperature sensitivity, with moderate accuracy (±0.5-1 PSU), making them increasingly popular in aquaculture applications~\cite{zhang_high-temperature_fibre}. 
 
 
 \subsubsection{Freezing Point Osmometry}
 Freezing point depression osmometry exploits the colligative (i.e.~relating to the binding together of molecules) properties of dissolved salts.
 The main principle relies on freezing point depression, which is the phenomenon where a solvents freeving point is lowered when a solute is added to it.
-To perform the measurement, the water is cooled till its freezing point and the temperature drop is measured, which is then used to calculate the osmolality.
-This method can achieve accuracies as high as ($\pm0.001$ PSU), however its requirement for precise temperature control limits its usage to laboratory applications.
+To perform the measurement, the water is cooled till its freezing point and the temperature drop is measured, which is then used to calculate the osmolality~\cite{freeze_abele}.
+This method can achieve accuracies of $\pm2 mOsm/kg H_{2}O$ which is approximately $\pm0.1-0.2$ \gls{ppt}. However its requirement for precise temperature control limits its usage to laboratory applications~\cite{freezing_accuracy}.
 
-\subsubsection{Interferometry}
-Interferometry is a measurement technique which measures how electro-magnetic waves are affected by changes in a solution.
-Two identical light waves are passed through two solutions, one benchmark and one test sample solution.
-The gain and phase shift between the waves is then used to calculate the salinity. 
-This method requires precisely aligned mirrors to direct the light waves, causing it to be relatively large.
 
 \subsubsection{Electromagnetic Induction and Magnetic Permeability}
+Magnetic properties of liquids, particularly magnetic susceptibility, vary with ion concentration, offering a potential method for salinity determination.
+Research has demonstrated that bulk magnetic susceptibility (BMS) of saline water correlates with salinity and conductivity measurements, with water quality parameters exhibiting an inverse relationship with magnetic susceptibility values.
+This approach offers the benefit of non-contact measurement, potentially avoiding sample contamination or disturbance~\cite{rana_magnetic_2021}.
+However, the technique requires sophisticated instrumentation, which are typically designed for laboratory use rather than field deployment. 
+
 
 
 \subsection{Advanced Analytical Methods}
-
-
-\subsection{Remote Autonomous Sensing}
-
+\subsubsection{Ion Chromatography}
+Ion chromatography is an analytical technique used to separate and quantify ionic species in solution, making it highly valuable for determining the individual ion concentrations in seawater samples~\cite{ion_chromatography}.
+The method works by passing a liquid sample through a column containing special resin beads that selectively hold onto different ions.
+As a liquid solution flows through, ions are released at different times based on their properties and detected by measuring electrical conductivity.
+For seawater analysis, ion chromatography can separately measure major ions like chloride, sulfate, sodium, magnesium, calcium, and potassium, providing detailed compositional data rather than just total salinity. 
+The technique offers high precision and can detect ions at very low concentrations, though it requires more sophisticated equipment and longer analysis times compared to simpler methods~\cite{gros_ionic_2008}.
 
 \section{Conductivity-Based Salinity Measurements}
 \subsection{Theoretical Foundation}
@@ -201,5 +203,25 @@ However, this method does face some limitations. Due to its dependance on the wa
 The method's reliance on emperical correlations derived from typical seawater compositions can introduce errors in waters ocean waters affected by external factors such as pollution or freshwater inflow from connecting rivers, which can alter ionic composition and introduce variability not captured by standard seawater-based calibrations.
 In such environments supplementry practices may be necessary for accurate salinity measurements.
 
-\section{Machine Learning Applications in Electrical Impedance Spectroscopy}
-\subsection{Electrical Impedance Spectroscopy}
+\section{Machine Learning Applications in Electrochemical \\ Impedance Spectroscopy}
+\subsection{Electrochemical Impedance Spectroscopy (\gls{eis})}
+
+\glsfirst{eis} is an analytical technique used to characterise the electrical properties of materials and interfaces, usually electrode or an electrolyte, by measuring impedance (opposition to current flow) across a range of frequencies~\cite{canales_electrochemical_2021}.
+In essence, EIS describes the electrode behavior in the presence of an electrolyte in terms of electrical parameters, including resistances and capacitances.
+It involves measuring the system's response to an applied electrical signal, and then transforming these time-domain signals into the frequency domain.
+The technique is based on applying an /gls{ac} signal to the electrodes and determining the corresponding response.
+Unlike simple conductivity measurements that capture only resistive properties at a single frequency, EIS measures both the magnitude and phase of impedance across a range of frequencies, typically from 0.001 Hz to 1 MHz~\cite{barsoukov_impedance_2005}.
+
+The complex impedance $Z(\omega)=Z'(\omega)+jZ''(\omega)$ contains both resistive (real) and reactive (imaginary) components, that respond differently to ionic concentration, species mobility, and electrode interface effects.
+High-frequency impedance primarily reflects bulk solution resistance, while lower frequencies reveal interfacial (between two faces) phenomena including double-layer capacitance and charge transfer resistance~\cite{orazem_electrochemical_2008}.
+
+EIS has demonstrated success in quantitative concentration analysis across diverse solution systems.
+In electrolyte analysis, multi-frequency measurements enable determination of ionic strength through characteristic impedance signatures that are less sensitive to temperature variations and electrode fouling than DC conductivity measurements~\cite{barsoukov_impedance_2005}.
+
+
+\subsection{EIS Fundamentals}
+The \gls{eis} measuring process invloves applying an AC signal at a specific frequency and amplitude to a sample.
+By sweeping across a multitude of frequencies, a complete impedance spectrum can be obtained.
+The impedance magnitude $|Z|$ and phase angle $\phi$ at each frequency is recorded, and are used to analyse the electrical properties of the solution~\cite{orazem_electrochemical_2008}.
+For salinity, it can be used to characterise the electrical properties of ionic solutions, including seawater, by analyzing how ions affect the impedance spectrum. 
+This data can be used to approximate the system using \glspl{eec}, which are circuit ussed to describe the system with discrete electrical circuit elements~\cite{barsoukov_impedance_2005}.

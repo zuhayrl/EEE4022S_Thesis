@@ -19,7 +19,7 @@ The alternative methods either require sample collection, or cannot measure cont
 
 These factors coupled with the researcher's significant experience with PCB design and electronics influenced the choice for a \gls{ctd} sensor.
 
-\section{Electrode Design}
+\section{Electrode Design}\label{sec:electrode_design}
 When measuring conductivity, choosing an electrode material plays a significant role in the accuracy of the measurements.
 To get an accurate measurement of the resistance of the water, ideally, a electrode resistance of zero is required.
 This would allow the resistance measurement to be entirely due to the resistance of the water.
@@ -56,7 +56,7 @@ The resistance of the electrodes was calculated using the Equation~\ref{eqn:cond
 The electrode \gls{pcb} was designed with the consideration of mounting to the probe \gls{pcb}.
 To accomodate this, solder pads were added to allow the electrodes to be soldered to the probe \gls{pcb}.
 Supports were also factored into the design to ensure that the electrodes stayed straight and secure.
-The design can be seen in Figure [insert figure].
+The design can be seen in Figure [insert figure]. %TODO
 
 \section{Resistance Measurement}\label{sec:res_mes}
 There are multiple ways to measure resistance, however most rely on the same principle, which is the voltage divider principle.
@@ -174,10 +174,11 @@ The voltage of $R_1$ was directed through a unity gain buffer op-amp, and then c
 In addition to the resistance measuring circuitry, a waterproof pressure and temperature sensor was included, as these values are needed for calculating salinity.
 The MS583702BA01-50 was chosen for its low price and availability on JLCPCB.
 This sensor only allowed for up to 2 Bar pressure measurements, which was enough for this prototype, but would not satisfy the real-world requirements of the salinity probe.
-Lastly, an RS-485 \gls(ic) was included for inter board communication.
+Lastly, an RS-485 \gls{ic} was included for inter board communication.
 
 A ESP-32 S2-Mini-2 was chosen for the microcontroller, as it was the most cost effective ESP32 based microcontroller.
-It offered an FPU, allowing for the complex salinity calculations to be done, did not require a \gls{uart} bridge as it has built-in USB OTG support, allowing it to connect directly to a computer for easy programming, and offered 13-bit \gls{adc}s, allowing for a good voltage measurement resolution.
+It offered an FPU, allowing for the complex salinity calculations to be done, did not require a \gls{uart} bridge as it has built-in USB OTG support, allowing it to connect directly to a computer for easy programming, which was done via a USB-Micro port, and offered 13-bit \gls{adc}s, allowing for a good voltage measurement resolution.
+Additionally the wireless capabilities allowed for easy debugging, through a web interface, as the reasearchers computer only had one USB port.
 The researcher also had significant experience with this microcontroller.
 
 A Controller \gls{pcb} was designed alongside the probe \gls{pcb}.
@@ -185,10 +186,114 @@ This controller was designed to communicate with the probe while it was submerge
 It allowed for the measurements to be recorded in a $.txt$ file on a micro-SD card, and displayed on a $16\times2$ LCD screen.
 The \gls{pcb} for this controller was minimal, and relied on external breakout circuit boards.
 This was due to budget constraints, and did not affect the effectiveness of the controller.
-Only the voltage regualtion circuitry, and inter-board communication (RS-485) \gls{ic} were included in the production.
-Headers were included on the controller \gls{pcb} to allow an ESP-Wroom-32 to be mounted to it.
+Only the voltage regualtion circuitry, and inter-board communication (RS-485) circuitry were included in the production.
+Headers were included on the controller \gls{pcb} to allow an ESP-Wroom-32 Devkit moduleto be mounted to it.
 Additional headers were included to allow the breakout boards for the LCD display and SD card reader to connect to the ESP32. 
 
 For the inter-board connection the RS-485 communication protocol was chosen.
 The ESP32 microcontrollers do support wireless communication through bluetooth and Wi-Fi.
-However, 
+However, wireless communication, especially electro-magnetic waves suffer interference~\cite{waves_in_water}.
+A wired connection medium, the RS-485 protocol was chosen. 
+Compared to most other communication protocols which typically support distances no longer than $\pm50m$, RS-485 supports up to 1200m, and has good underwater stability.
+The \gls{ic} only requires simple $I^2C$ and is relatively cheap.
+RS-485 usually uses a pair of twisted cables, which strengthens the electromagnetic magnetic interference rejection and reduces signal degradation.
+However, due to availability, simple 4-core communication was used, where the additional two cores were used to transmit power between the \gls{pcb}s.
+
+\section{Assembly and Programming}
+\subsection{PCB and Circuit Assembly}
+The Probe, Controller and electrode circuirty \gls{pcb}s were designed using KiCAD software, and manufactured bu JLCPCB. The KiCAD design files for these can be found in the GitHub repository linked in Appendix~\ref{app:c_github}.
+
+The probe \gls{pcb} had dimensions of $50\times50$mm was fabricated onto a 4-layer \gls{pcb}.
+This was chosen as the probe would need to fit in the ice hole, witha diameter of 100mm, and JLCPCB offeres a discounted rate on 4-layer \gls{pcb}s if the dimensions are $50\times50$mm or less. 
+This size also made debugging easier.
+In addition to the components required for transmission and measurement, test points with headers were added for easy debugging, and an indicator \gls{led}, to indicate power.
+The probe is shown in Figure~\ref{fig:probe_pcb}.
+
+\begin{figure}[ht] %TODO
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{Figures/probe_pcb.jpg}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tabular}{cl} \hline
+            1 & USB-Micro Port \\ \hline
+            2 & Test Points \\ \hline
+            3 & Pressure Sensor \\ \hline
+            4 & Op-Amps \\ \hline
+            5 & Switch \gls{ic}s \\ \hline
+            6 & Gold Electrode Mounts \\ \hline
+            7 & Gold Electrode Solder Pads \\ \hline
+            8 & Voltage Regulators \\ \hline
+            9 & \gls{dac} \\ \hline
+            10 & Boot and Enable Buttons\\ \hline
+            11 & RS-485 Port \\ \hline
+            12 & RS-485 \gls{ic} \\ \hline
+            13 & ESP32 Microcontroller \\ \hline
+            14 & Power Indicator \gls{led} \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \caption{The probe PCB}
+    \label{fig:probe_pcb} %chktex 24
+\end{figure}
+
+
+The controller was relatively simple, and only require a 2-layer \gls{pcb}, with dimensions of $70\times55mm$.
+This size and layer count fell into the same discounted bracket as the probe \gls{pcb}.
+The external micro-SD card reader was connected to the \gls{pcb} through a breadboard.
+The chosen ESP32-Wroom Devkit module when designing the \gls{pcb} was not the same one the researcher had access to when assembling the controller, and differed in size.
+To accomodate for this the available ESP32-Wroom module was also placed on the breadboard and was connected to the \gls{pcb} via jumper cables.
+The complete Controller \gls{pcb} and additional circuitry can be seen in Figure~\ref{fig:controller_pcb}.
+
+\begin{figure}[ht] %TODO
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.8\textwidth]{Figures/probe_pcb.jpg}
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{tabular}{cl} \hline
+            1 & USB-Micro Port \\ \hline
+            2 & Test Points \\ \hline
+            3 & Pressure Sensor \\ \hline
+            4 & Op-Amps \\ \hline
+            5 & Switch \gls{ic}s \\ \hline
+            6 & Gold Electrode Mounts \\ \hline
+            7 & Gold Electrode Solder Pads \\ \hline
+            8 & Voltage Regulators \\ \hline
+            9 & \gls{dac} \\ \hline
+            10 & Boot and Enable Buttons\\ \hline
+            11 & RS-485 Port \\ \hline
+            12 & RS-485 \gls{ic} \\ \hline
+            13 & ESP32 Microcontroller \\ \hline
+            14 & Power Indicator \gls{led} \\ \hline
+        \end{tabular}
+    \end{minipage}
+    \caption{Controller PCB and Additional Circuitry}
+    \label{fig:controller_pcb} %chktex 24
+\end{figure}
+
+The two \gls{pcb}s were connected via 4-core communication cable, with pins for RS-485 Tx and Rx, Ground and 9V Power.
+Additionally, 6 core wire was connected to the probe \gls{pcb} along the 6 test points, to allow for easy debugging when submerged.
+
+The electrode manufacturing was trivial, as it consisted of the gold plated solder pads, as mentioned in Section~\ref{sec:electrode_design}.
+No additional modifications had to be made to the electrode \gls{pcb}s, and they were hand soldered to the corresponding solder pads on the probe \gls{pcb}.
+
+\subsection{Waterproofing}
+Since the probe \gls{pcb} would need to be submerged in water, it will would need to waterproofed.
+A multitude of methods were considered including conformal coating, a 3D-printed waterproof enclosure, and resin casting.
+Conformal coating is a thin proctective layer applied to shield circuitry and \gls{pcb}s from moisture and extreme temperature, and usually comes in a spary can.
+It is relatively cheap but has a low pressure resistance, and offers low physical protection.
+A 3D-printed enclosure was considered too complex, ultimately leaving a resin cast as the chosen method.
+This method offers good physical protection and is considered the most reliable.
+
+The RE33/HE33 resin from AMT Composites was chosen for the \gls{pcb} to be cast in, as it is specifically designed for the encapsulation of electrical components.
+The cast was made using acrylic sheeting, which were chosen because they do not stick to the resin.
+The sheets were cut using a saw and joined using waterproof superglue.
+
+The electrodes were spaced using two pieces of acrylic measured to 10mm (i.e.~the electrode seperation distance).
+A plastic straw was used to isolate the pressure sensor as the diamter of the stray matched the pressure sensor perfectly.
+This ensured that the sensor could measure the pressure of the water accurately.
+A fully encapsulated probe \gls{pcb} can be seen in Figure [TODO]
+
+\subsection{Programming}
