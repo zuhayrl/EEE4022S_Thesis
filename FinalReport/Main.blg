@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Main.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: Body/Introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: Body/Literature.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: Body/Methodology.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: Body/Results.aux
+Reallocating 'name_of_file' (item size: 1) to 20 items.
+A level-1 auxiliary file: Body/Discussion.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: Body/Conclusions.aux
+Reallocating 'name_of_file' (item size: 1) to 25 items.
+A level-1 auxiliary file: Body/Recommendations.aux
+Reallocating 'name_of_file' (item size: 1) to 27 items.
+A level-1 auxiliary file: Referencing/References.aux
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: Appendix/appendixa.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: Appendix/appendixb.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: Appendix/appendixc.aux
+Database file #1: Referencing/References.bib
+Warning--I didn't find a database entry for "smt2011"
+Warning--empty journal in salinity_def
+Warning--empty booktitle in canales_electrochemical_2021
+Warning--empty publisher in canales_electrochemical_2021
+Warning--empty publisher in orazem_electrochemical_2008
+You've used 37 entries,
+            1876 wiz_defined-function locations,
+            703 strings with 10023 characters,
+and the built_in function-call counts, 8657 in all, are:
+= -- 883
+> -- 310
+< -- 0
++ -- 122
+- -- 85
+* -- 586
+:= -- 1203
+add.period$ -- 46
+call.type$ -- 37
+change.case$ -- 35
+chr.to.int$ -- 0
+cite$ -- 41
+duplicate$ -- 446
+empty$ -- 817
+format.name$ -- 85
+if$ -- 2131
+int.to.chr$ -- 0
+int.to.str$ -- 37
+missing$ -- 32
+newline$ -- 128
+num.names$ -- 33
+pop$ -- 112
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 355
+stack$ -- 0
+substring$ -- 464
+swap$ -- 192
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 81
+width$ -- 39
+write$ -- 352
+(There were 5 warnings)

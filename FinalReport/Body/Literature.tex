@@ -89,7 +89,7 @@ For seawater analysis, ion chromatography can separately measure major ions like
 The technique offers high precision and can detect ions at very low concentrations, though it requires more sophisticated equipment and longer analysis times compared to simpler methods~\cite{gros_ionic_2008}.
 
 \section{Conductivity-Based Salinity Measurements}
-\subsection{Theoretical Foundation}
+\subsection{Theoretical Foundation}\label{sec:salinity_theory}
 Electrical conductivity has emerged as the predominant method for salinity measurement due to its practical implementation, high accuracy and fast response time.
 The technique utilises the strong correlation between dissolved ionic content and electrical conductivity.
 
@@ -120,7 +120,7 @@ When $K_{15}$ does not equal 1, Practical Salinity, $S_p$ can be calculated usin
 where $K_{15}$ is the equation defined above (Equation~\ref{eqn:k15_salinity}), and the coefficients $a_i$ are given in Table (\ref{tabel:pss-78}).
 
 
-\subsection{Temperature and Pressure Compensation}
+\subsection{Temperature and Pressure Compensation}\label{sec:salinity_compensation}
 When calculating salinity at conditions other than 15$^\circ$C, and $0dbar$, the conductivity ratio $R$ is expanded to the product of three ratios $R_p$, $R_t$ and $r_t$ as follows~\cite{teos-10}:
 \begin{equation}
     R=\frac{C(S_p, t, p)}{C(35, 15, 0)} = R_p R_t r_t
