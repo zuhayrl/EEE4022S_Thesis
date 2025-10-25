@@ -88,6 +88,7 @@ For this application the electrodes were chosen as the $R_2$ resistor, with $R_1
     \centering
     \includegraphics[width=0.6\textwidth]{figures/fig_voltage_divider.png}
     \caption{Simple voltage divider circuit used for resistance measurement.}
+    \label{fig:voltage_divider}
 \end{figure}
 
 Equations~\ref{eqn:voltage_divider} and~\ref{eqn:resistance_divider} are used to calculate the resistance from the voltage divider equation.
@@ -186,6 +187,7 @@ A simplified circuit diagram showing the resistance measuring circuit is shown i
     \includegraphics[width=0.75\textwidth]{figures/fig_resistance_circuit.png}
     \caption{Simple circuit diagram of the resistance measuring circuit.}
     \textit{Note: Au1 Denotes Gold Electrode 1, and Au2 Gold electrode 2.}
+    \label{fig:resistance_circuit}
 \end{figure}
 
 A third switch was added to allow for the configuration of the fringe guard, allowing the fringe guard paired with an electrode to share the same voltage configuration, i.e.~when an electrode acted as the anode its fringe guard would also act as an anode, and vice versa.
@@ -400,7 +402,7 @@ The values for the input and output waves were exported to a $.csv$ file and the
 \subsubsection{Inter-Board Communication}
 As mentioned previously, the controller board was programmed to send instructions to the probe, and receive the readings for those functions, from the probe.
 Half-Duplex RS-485 was effectively used as only one board could communicate at a time.
-The probe board would be set by default to receive mode. (The default setting of the probe board is receive mode.)
+The probe board would be set by default to receive mode, and controller to transmit mode.
 The controller would send an instruction to the probe, and would then change to receive mode, awaiting the readings from the probe.
 Once the probe received the instruction it would change to transmit mode, allowing it to send the readings.
 Once the readings were sent, the probe would return to receive mode, and upon receiving the readings the controller would return to transmit mode.

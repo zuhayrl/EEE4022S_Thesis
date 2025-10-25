@@ -117,7 +117,7 @@ When $K_{15}$ does not equal 1, Practical Salinity, $S_p$ can be calculated usin
     S_p = \sum_{i=0}^{5}a_i{(K_{15})}^{i/2} 
 \end{equation}
 
-where $K_{15}$ is the equation defined above (Equation~\ref{eqn:k15_salinity}), and the coefficients $a_i$ are given in Table (\ref{tabel:pss-78}).
+where $K_{15}$ is the equation defined above (Equation~\ref{eqn:k15_salinity}), and the coefficients $a_i$ are given in Table (\ref{table:pss-78}).
 
 
 \subsection{Temperature and Pressure Compensation}\label{sec:salinity_compensation}
@@ -177,7 +177,7 @@ Note that Equations~(\ref{eqn:k15_salinity}) to~(\ref{eqn:salinity_full}) are on
             5 & $2.7081$ & $-0.0144$ &  &  &  \\ \hline
             \end{tabular}
         \caption{Table of Coefficients for PSS-78 Equations~\cite{teos-10}}
-        \label{tabel:pss-78}
+        \label{table:pss-78}
     \end{table}
 \endgroup
 
@@ -189,7 +189,7 @@ It must be noted that the PSS-78 equations use the IPTS-68 temperature scale and
 
 \subsection{Instrumentation and Technology}
 The most common method for measuring salinity is by using a~\gls{ctd} device.
-The fundamental concept of these devices involves placing two electrodes in a sample of water, applying a voltage across them and measuring the water's response. This is then paired with a temperature and depth correction, allowing for an accurate salinity measurement.
+The fundamental concept behind these devices involves placing two electrodes in a sample of water, applying a voltage across them and measuring the water's response. This is then paired with a temperature and depth correction, allowing for an accurate salinity measurement.
 The depth value for these calculations is taken from the pressure at which the measurement is taken.
 This pressure is then translated to depth using the standard depth to pressure equation~\cite{chip_based_ctd}.
 Modern CTD systems achieve salinity accuracies better than $\pm0.005$ \gls{psu}, with some instruments like the Sea-Bird 911 Plus demonstrating historical accuracies of $\pm0.002$ \gls{psu} or $\pm0.0002$ \gls{psu}~\cite{chip_based_ctd}~\cite{ctd_accuracy}.
