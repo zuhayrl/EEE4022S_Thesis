@@ -26,12 +26,11 @@
 \contentsline {subsection}{\numberline {2.4.3}Instrumentation and Technology}{12}{subsection.2.4.3}%
 \contentsline {subsection}{\numberline {2.4.4}Applications and Limitations}{12}{subsection.2.4.4}%
 \contentsline {section}{\numberline {2.5}Machine Learning Applications in Electrochemical \\ Impedance Spectroscopy}{13}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Electrochemical Impedance Spectroscopy (\gls {eis})}{13}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.1}\gls {eis}}{13}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}EIS Fundamentals}{14}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Machine Learning for Impedance to Salinity Mapping}{14}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Limitations of Traditional Calibration Approaches}{14}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Machine Learning Modelling for Impedance Analysis}{14}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Machine Learning Algorithms for Salinity Prediction}{15}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.5.3}Limitations of Traditional Equivalent Circuit Modelling}{14}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Machine Learning Modelling for Impedance Analysis}{14}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Machine Learning Algorithms for Salinity Prediction}{15}{subsection.2.5.5}%
 \contentsline {subsubsection}{Neural Networks}{15}{section*.11}%
 \contentsline {subsubsection}{Random Forrest Algorithms}{16}{section*.12}%
 \contentsline {chapter}{\numberline {3}Methodology}{17}{chapter.3}%
@@ -48,14 +47,22 @@
 \contentsline {subsubsection}{DC Single Voltage}{30}{section*.15}%
 \contentsline {subsubsection}{AC Wave Generator}{30}{section*.16}%
 \contentsline {subsubsection}{Inter-Board Communication}{30}{section*.17}%
-\contentsline {subsection}{\numberline {3.5.4}Machine Learning Programming}{31}{subsection.3.5.4}%
-\contentsline {chapter}{\numberline {4}Testing and Evaluation}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Component and Equipment Testing}{32}{section.4.1}%
-\contentsline {chapter}{\numberline {5}Discussion}{33}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{34}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Recommendations}{35}{chapter.7}%
-\contentsline {chapter}{Bibliography}{36}{chapter.7}%
-\contentsline {chapter}{\numberline {A}Additional Files and Schematics}{39}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Addenda}{41}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Ethics Forms}{41}{section.B.1}%
-\contentsline {chapter}{\numberline {C}GitHub Repository}{42}{appendix.C}%
+\contentsline {subsection}{\numberline {3.5.4}Machine Learning Programming and AC Analysis}{31}{subsection.3.5.4}%
+\contentsline {chapter}{\numberline {4}Testing and Evaluation}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Component and Equipment Testing}{33}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Resistor Testing}{33}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}DAC and ADC Accuracy}{34}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Accuracy of Resistance Meausring Circuitry}{36}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Salinity Testing}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Voltage Measurement Accuracy and Repeatability}{37}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Conductivity and Salinity Measurement}{38}{subsection.4.2.2}%
+\contentsline {subsubsection}{Obtaining Conductivity of the Standard Solution}{38}{section*.18}%
+\contentsline {subsubsection}{Measuring Salinity of Sample Solutions}{38}{section*.19}%
+\contentsline {section}{\numberline {4.3}EIS and Machine Learning}{38}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Conclusions}{39}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Recommendations}{40}{chapter.6}%
+\contentsline {chapter}{Bibliography}{41}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Additional Files and Schematics}{45}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Addenda}{47}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Ethics Forms}{47}{section.B.1}%
+\contentsline {chapter}{\numberline {C}GitHub Repository}{48}{appendix.C}%

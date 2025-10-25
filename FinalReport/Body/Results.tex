@@ -4,7 +4,154 @@ To properly evaluate the system, multiple testing procedures were implemented.
 These started with first testing the accuarcy of individual components on the \gls{pcb}, and then testing the probes ability to measure salinity, through voltage measurements relating to conductivity.
 Additionally, tests were done on the \gls{ml} model programmed to map the salinity.
 
+A summary of the tests and their outcomes can be seen in Table~\ref{table:test_summary}. %TODO
+
+
 \section{Component and Equipment Testing}
 Before the probe could be used to measure salinity, the accuarcy of its components needed to be tested.
 These procedures were completed before the probe was encased in resin, as access to the circuitry was required.
+
+\subsection{Resistor Testing}
+For accurate electrode resistance to be measured, the the $R1$ parallel resistor combinations would need to be measured.
+As shown in Section~\ref{sec:circuit_design}, by calculation, the $R1$ resistors should have equivalent resistances of $100\Omega$, $1K\Omega$ and $10K\Omega$, with an uncertainty of $\pm0.33\%$.
+These were measured using the $Keysight Technologies U3401A$ multimeter, which had a resistance accuracy of $0.1\%$.
+This multimeter would be used for all subsequent \gls{dc} voltage measurements, and has a voltage accuracy of $0.02\%$.
+The multimeter probes had a resistance of $0.154\Omega$ which was accounted for.
+The $R1$ resistors were measured and are shown in Table~\ref{tabel:resistance_test}.
+
+
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[h!]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{5cm}|
+                >{\centering\arraybackslash}m{5cm}|}
+            \hline
+            Theoretical R ($\Omega$) & Meausured R ($\Omega$) \\ \hline
+            $99.67-100.33$ & $99.888$ \\ \hline
+            $996.7-1003.3$ & $1000.146$ \\ \hline
+            $9967-10033$ & $10005.746$ \\ \hline
+            \end{tabular}
+        \caption{Table of $R_1$ resistor measurements}
+        \label{tabel:resistance_test}
+    \end{table}
+\endgroup
+
+The calibration resistor with an expected resistance of $5\Omega\pm0.25\%$ was measured to have a resistance of $5.142\Omega$.
+Taking into account the probe resistance, the calibration resistor had a resistance of $4.988\Omega$.
+
+\subsection{DAC and ADC Accuracy}
+Both the accuracy of the \gls{dac} and \gls{adc} needed to be measured as these were used for the output and measurement, respectively.
+
+The first test was done by programming the \gls{dac} to output from its minimum to maximum value.
+This would allow for the evaluation of the \gls{dac}s output offset and gain to be measured.
+The \gls{adc}s were also used to measure the output of the \gls{dac}, and these measurements were compared relative to the voltage measured by the multimeter.
+Figure~\ref{fig:dac_test} shows the relationship between the voltage inputted to the \gls{dac}, and its output voltage, with the output measured on the multimeter.
+Note that the reference voltage of the \gls{dac} was measured to be $5.001V$.
+
+\begin{figure}[H]\label{fig:dac_test}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/dac_test.png}
+    \caption{DAC Output Voltage vs Input Voltage}
+\end{figure}
+
+Based on the measurements made by the multimeter, the \gls{dac} had a output range of $0.0098V - 4.91V$, an offset of $0.0098V$ and gain of $0.98688$.
+
+The accuracy of the \gls{adc} was then tested by comparing the \gls{dac} output measured by the \gls{adc} and multimeter.
+Note, this \gls{adc} measurement was taken after the unity gain buffer op-amp.
+For this test, the \gls{adc} took 5 measurements at each voltage step, which were taken at $1\mu{s}$ interval. 
+These 5 values were averaged to give the voltage at that step.
+The results of this test can be seen in Figure~\ref{fig:adc_test}.
+
+\begin{figure}[H]\label{fig:adc_test}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/adc_test.png}
+    \caption{DAC Output Measured by the ADC vs Multimeter}
+\end{figure}
+
+Once the voltage measured by the \gls{adc} reaches $3.3V$ the \gls{adc} saturates as its reference voltage is $3.3V$.
+The gain of the \gls{adc} was calculated to be 1.28072 compared to the mulimeter.
+
+\subsection{Accuracy of Resistance Meausring Circuitry}
+In order to evaluate the resistance circuit's ability to accurately measure resistance, resistors were attached to the electrode's solder pads.
+This resistor acted as the $R2$ resistor and its value was calculated using Equation~\ref{eqn:resistance_divider}.
+The resistance was calculated using the voltage sweep and single voltage functions mentioned in Section~\ref{sec:uc_program} with some slight adjustments for calculating resistance only.
+These values were then compared to a multimeter measurement of the resistors, and the probe resistance taken into account.
+Resistances were measured at $0\Omega$, or a short circuit, and then $10-82\Omega$ using resistors from the E12-Series, with an accuracy of $\pm5\%$
+The $100\Omega$ $R1$ resistor was used.
+The outcome of this test can be seen in Table~\ref{tabel:resistance_measurement_test}.
+
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[h!]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{4cm}|
+                >{\centering\arraybackslash}m{5cm}|
+                >{\centering\arraybackslash}m{6cm}|}
+            \hline
+            \textbf{Multimeter Resistance $\Omega$} & \textbf{Measured R $\Omega$} & \textbf{Acceptable Range $\Omega$} \\ \hline
+                0 & 0 & 0-0 \\ \hline
+                9.848 & 9.99578925 & 9.5-10.5 \\ \hline
+                11.972 & 12.0007881 & 11.4-12.6 \\ \hline
+                15.124 & 15.0062442 & 14.25-15.75 \\ \hline
+                18.872 & 18.1212224 & 17.1-18.9 \\ \hline
+                22.004 & 22.0162646 & 20.9-23.1 \\ \hline
+                27.101 & 26.9989572 & 25.65-28.35 \\ \hline
+                33.012 & 33.0181212 & 31.35-34.65 \\ \hline
+                39.201 & 39.0305398 & 37.05-40.95 \\ \hline
+                47.100 & 47.0431559 & 44.65-49.35 \\ \hline
+                56.023 & 56.0306769 & 53.2-58.8 \\ \hline
+                68.014 & 68.0599057 & 64.6-71.4 \\ \hline
+                79.785 & 78.208607 & 77.9-86.1 \\ \hline
+            \end{tabular}
+        \caption{Table for Resistor Measurement Test}
+        \textit{Note 1: For this test an input of 2V was used} \\
+        \textit{Note 2: Accepectable range indicates resistance values due to $\pm5\%$ accuarcy}
+        \label{tabel:resistance_measurement_test}
+    \end{table}
+\endgroup
+
+The voltage sweep test, from 0-2V, achieved a similar measuring accuracy as seen in Figure~\ref{fig:resistance_measurement_test}
+\begin{figure}[H]\label{fig:resistance_measurement_test}
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/resistance_measurement_test.png}
+    \caption{Resistance Measurement Test via Voltage Sweep}
+\end{figure}
+
+For both these tests, voltage calibration via the calibration resistor was done to ensure accurate voltage measurements.
+
+\section{Salinity Testing}
+In order for the probe to conduct salinity based tests, it was cast in epoxy as described in Section~\ref{sec:waterproofing}.
+Following this a range of tests were conducted, ranging from testing voltage measurements on saline solutions, to measuring salinity via conductivity.
+
+\subsection{Voltage Measurement Accuracy and Repeatability}
+In order to get an understanding of how the electrodes interact with saline solutions, a voltage sweep test was conducted multiple times with the same solution.
+This was done using the voltage sweep function, mentioned in Section~\ref{sec:uc_program}, with some alterations, allowing for the function to return the raw voltage instead of the conductivity.
+
+
+
+\subsection{Conductivity and Salinity Measurement}
+
+\subsubsection{Obtaining Conductivity of the Standard Solution}
+For the measurement of salinity from conductivity, the conductivity of the standard solution of $35$ \gls{psu} at $15^{\circ}C$ and $0dbar$ must first be obtained.
+To evaluate this, both the voltage sweep and single voltage measurements wer taken in a solution at standard conditions.
+To achieve these conditions salt was mied into water until the salinity was 34.8 \gls{psu}.This value was used at creating a solution of a specific salinity is a time-consuming process, and it was considered close enough for this experiment.
+To achieve a temperature of $15^\circ$C the water was cooled in a fridge to $4^\circ$C and then left out until it reached $15^\circ$C.
+Once the required conditions were achieved, a voltage sweep from 0-2V was done using the previously mentioned voltage sweep function.
+As mentioned in Section~\ref{sec:uc_program}, in the voltage sweep discription, this returns the conductivity and resistance for each step.
+
+From this test the average conductivity of the standard solution was found to be 0.0
+
+%Ponit
+A similar result was obtained using single voltage measurements, where readings were taken 
+
+\subsubsection{Measuring Salinity of Sample Solutions}
+Once the conductivity of the standard solution was found, the PSS-78 salinity equations could be used to find the salinity of sample solutions.
+The both the DC Single Voltage and DC Sweep Voltage functions were updated to return the salinity of a measure solution.
+
+
+
+\section{EIS and Machine Learning}
+
+
 

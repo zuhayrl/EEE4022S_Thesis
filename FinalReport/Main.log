@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  24 OCT 2025 17:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  25 OCT 2025 17:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -506,7 +506,7 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__pdf_internal_box=\box72
 ) (Main.aux
 \g__glossaries_gls_ref_acronym_int=\count348
- (Body/Introduction.aux) (Body/Literature.aux) (Body/Methodology.aux) (Body/Results.aux) (Body/Discussion.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
+ (Body/Introduction.aux) (Body/Literature.aux) (Body/Methodology.aux) (Body/Results.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
 \openout1 = `Main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
@@ -590,7 +590,7 @@ Package hyperref Info: Link coloring OFF on input line 43.
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 43.
-<Figures/uctLogo.png, id=190, 418.56375pt x 425.59pt>
+<Figures/uctLogo.png, id=210, 418.56375pt x 425.59pt>
 File: Figures/uctLogo.png Graphic file (type png)
 <use Figures/uctLogo.png>
 Package pdftex.def Info: Figures/uctLogo.png  used on input line 57.
@@ -626,16 +626,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--210
 
 [3] (Main.toc [4
 
-]
-Overfull \hbox (14.40367pt too wide) in paragraph at lines 29--29
- [][] [][]\OT1/cmr/m/n/12 Electrochemical Impedance Spectroscopy ([][]Electrochemical Impedance 
- []
-
-[5])
+] [5] [6])
 \tf@toc=\write4
 \openout4 = `Main.toc'.
 
- [6]
+ [7]
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 210.
 
@@ -852,11 +847,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-Overfull \hbox (36.78181pt too wide) in paragraph at lines 229--229
-[]\OT1/cmr/bx/n/17.28 Machine Learning for Impedance to Salinity Mapping 
- []
-
-
 Overfull \hbox (1.94405pt too wide) in paragraph at lines 238--244
 \OT1/cmr/m/n/12 Machine learning approaches offer advantages by learning complex non-linear relationships
  []
@@ -927,7 +917,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-<Figures/electrode_pcb.png, id=608, 341.275pt x 544.0325pt>
+<Figures/electrode_pcb.png, id=649, 341.275pt x 544.0325pt>
 File: Figures/electrode_pcb.png Graphic file (type png)
 <use Figures/electrode_pcb.png>
 Package pdftex.def Info: Figures/electrode_pcb.png  used on input line 64.
@@ -950,7 +940,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) h
                                                   \__shipout_drop_firstpage_...
 l.86 
       <./Figures/electrode_pcb.png>]
-<figures/fig_voltage_divider.png, id=617, 581.17125pt x 298.11375pt>
+<figures/fig_voltage_divider.png, id=658, 581.17125pt x 298.11375pt>
 File: figures/fig_voltage_divider.png Graphic file (type png)
 <use figures/fig_voltage_divider.png>
 Package pdftex.def Info: figures/fig_voltage_divider.png  used on input line 89.
@@ -989,7 +979,7 @@ Overfull \hbox (5.88994pt too wide) in paragraph at lines 182--183
 []\OT1/cmr/m/n/12 A simplified circuit diagram showing the resistance measuring circuit is shown in Figure []3.4[]. 
  []
 
-<figures/fig_resistance_circuit.png, id=674, 414.79968pt x 367.3725pt>
+<figures/fig_resistance_circuit.png, id=715, 414.79968pt x 367.3725pt>
 File: figures/fig_resistance_circuit.png Graphic file (type png)
 <use figures/fig_resistance_circuit.png>
 Package pdftex.def Info: figures/fig_resistance_circuit.png  used on input line 186.
@@ -1029,7 +1019,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-<Figures/probe_pcb.jpg, id=715, 750.805pt x 793.96625pt>
+<Figures/probe_pcb.jpg, id=756, 750.805pt x 793.96625pt>
 File: Figures/probe_pcb.jpg Graphic file (type jpg)
 <use Figures/probe_pcb.jpg>
 Package pdftex.def Info: Figures/probe_pcb.jpg  used on input line 252.
@@ -1047,7 +1037,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [25]
-<Figures/controller_circuit.jpg, id=726, 683.55376pt x 1142.2675pt>
+<Figures/controller_circuit.jpg, id=767, 683.55376pt x 1142.2675pt>
 File: Figures/controller_circuit.jpg Graphic file (type jpg)
 <use Figures/controller_circuit.jpg>
 Package pdftex.def Info: Figures/controller_circuit.jpg  used on input line 280.
@@ -1080,7 +1070,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) h
                                                   \__shipout_drop_firstpage_...
 l.299 T
        he two \gls{pcb}s were connected via 4-core communication cable, with... <./Figures/probe_pcb.jpg> <./Figures/controller_circuit.jpg>]
-<Figures/encapsulated_probe.jpg, id=742, 900.36375pt x 976.64874pt>
+<Figures/encapsulated_probe.jpg, id=783, 900.36375pt x 976.64874pt>
 File: Figures/encapsulated_probe.jpg Graphic file (type jpg)
 <use Figures/encapsulated_probe.jpg>
 Package pdftex.def Info: Figures/encapsulated_probe.jpg  used on input line 327.
@@ -1126,7 +1116,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30])
+[30]
+Overfull \hbox (0.14221pt too wide) in paragraph at lines 429--437
+\OT1/cmr/m/n/12 which are inherent in electro-chemical systems [[]]. They have the ability to automatically
+ []
+
+
+Overfull \hbox (1.49127pt too wide) in paragraph at lines 429--437
+\OT1/cmr/m/n/12 approach (using multiple smaller models), which reduces variance and improves robustness
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1134,32 +1133,119 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]
+[31])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
 \openout2 = `Body/Results.aux'.
 
  (Body/Results.tex
 Chapter 4.
-) [32
+
+LaTeX Warning: Reference `table:test_summary' on page 33 undefined on input line 7.
+
+[33
 
 
 
 
 ]
-\openout2 = `Body/Discussion.aux'.
-
- (Body/Discussion.tex
-Chapter 5.
-) [33
-
-
+<figures/dac_test.png, id=874, 614.952pt x 341.64pt>
+File: figures/dac_test.png Graphic file (type png)
+<use figures/dac_test.png>
+Package pdftex.def Info: figures/dac_test.png  used on input line 54.
+(pdftex.def)             Requested size: 317.07614pt x 176.15247pt.
 
 
-]
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 
+     ]
+<figures/adc_test.png, id=886, 666.636pt x 405.15pt>
+File: figures/adc_test.png Graphic file (type png)
+<use figures/adc_test.png>
+Package pdftex.def Info: figures/adc_test.png  used on input line 68.
+(pdftex.def)             Requested size: 317.07614pt x 192.7017pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.83 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.83 
+      <./figures/dac_test.png> <./figures/adc_test.png>]
+Overfull \hbox (11.4234pt too wide) in paragraph at lines 88--107
+ [][] 
+ []
+
+<figures/resistance_measurement_test.png, id=902, 425.298pt x 296.964pt>
+File: figures/resistance_measurement_test.png Graphic file (type png)
+<use figures/resistance_measurement_test.png>
+Package pdftex.def Info: figures/resistance_measurement_test.png  used on input line 117.
+(pdftex.def)             Requested size: 317.07614pt x 221.40384pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.120 
+      ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.142 
+       <./figures/resistance_measurement_test.png>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38]
 \openout2 = `Body/Conclusions.aux'.
 
  (Body/Conclusions.tex
-Chapter 6.
-) [34
+Chapter 5.
+) [39
 
 
 
@@ -1168,8 +1254,8 @@ Chapter 6.
 \openout2 = `Body/Recommendations.aux'.
 
  (Body/Recommendations.tex
-Chapter 7.
-) [35
+Chapter 6.
+) [40
 
 
 
@@ -1192,7 +1278,7 @@ Underfull \hbox (badness 1292) in paragraph at lines 56--60
 []\OT1/cmr/m/n/12 V. Rana, P. Kumar, S. Banerjee, and A. Biswas, ``Magnetic susceptibility
  []
 
-[36
+[41
 
 
 
@@ -1225,13 +1311,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37]
+[42]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 133.
  (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[43]
+Underfull \hbox (badness 1817) in paragraph at lines 195--201
+[]\OT1/cmr/m/n/12 D. Doonyapisut, P.-K. Kannan, B. Kim, J. K. Kim, E. Lee, and C.-H.
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 195--201
+\OT1/cmr/m/n/12 Chung, ``Analysis of Electrochemical Impedance Data: Use of Deep Neural
+ []
+
 ))
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1240,7 +1344,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38]
+[44]
 \openout2 = `Appendix/appendixa.aux'.
 
  (Appendix/appendixa.tex
@@ -1260,7 +1364,7 @@ Overfull \hbox (24.17755pt too wide) in paragraph at lines 14--31
  [] 
  []
 
-[39
+[45
 
 
 
@@ -1273,12 +1377,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40]
+[46]
 \openout2 = `Appendix/appendixb.aux'.
 
  (Appendix/appendixb.tex
 Appendix B.
-) [41
+) [47
 
 
 
@@ -1288,14 +1392,14 @@ Appendix B.
 
  (Appendix/appendixc.tex
 Appendix C.
-) [42
+) [48
 
 
 
 
 ] 
 AED: lastpage setting LastPage
-(Main.aux (Body/Introduction.aux) (Body/Literature.aux) (Body/Methodology.aux) (Body/Results.aux) (Body/Discussion.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
+(Main.aux (Body/Introduction.aux) (Body/Literature.aux) (Body/Methodology.aux) (Body/Results.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
@@ -1305,20 +1409,20 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: D319CB89864EF1550285DE5DA7BFABE4;8762.
+(rerunfilecheck)             Checksum: 9E138BC194B349BACCCB4B05E15A43A4;9729.
  ) 
 Here is how much of TeX's memory you used:
- 26048 strings out of 474486
- 547979 string characters out of 5743755
+ 26088 strings out of 474486
+ 548497 string characters out of 5743755
  1943542 words of memory out of 5000000
- 47785 multiletter control sequences out of 15000+600000
+ 47808 multiletter control sequences out of 15000+600000
  565863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,12n,80p,2604b,1751s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 77i,12n,80p,2604b,1734s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Main.pdf (49 pages, 1042099 bytes).
+Output written on Main.pdf (56 pages, 1494630 bytes).
 PDF statistics:
- 950 PDF objects out of 1000 (max. 8388607)
- 202 named destinations out of 1000 (max. 500000)
- 412 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1080 PDF objects out of 1200 (max. 8388607)
+ 226 named destinations out of 1000 (max. 500000)
+ 467 words of extra memory for PDF output out of 10000 (max. 10000000)
 

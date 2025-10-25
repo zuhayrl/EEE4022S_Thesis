@@ -303,7 +303,7 @@ Both PCBs were powered by an input voltage of 9V which was stepped down appropri
 The electrode manufacturing was simple, as it consisted of the gold plated solder pads, as mentioned in Section~\ref{sec:electrode_design}.
 No additional modifications had to be made to the electrode \gls{pcb}s, and they were hand soldered to the corresponding solder pads on the probe \gls{pcb}.
 
-\subsection{Waterproofing}
+\subsection{Waterproofing}\label{sec:waterproofing}
 Since the probe \gls{pcb} would need to be submerged in water, it will would need to waterproofed.
 A multitude of methods were considered including conformal coating, a 3D-printed waterproof enclosure, and resin casting.
 Conformal coating is a thin proctective layer applied to shield circuitry and \gls{pcb}s from moisture and extreme temperature, and usually comes in a spary can.
@@ -340,7 +340,7 @@ A fully encapsulated probe \gls{pcb} can be seen in Figure~\ref{fig:encapsulated
     \label{fig:encapsulated_probe} %chktex 24
 \end{figure}
 
-\subsection{Microcontroller Programming}
+\subsection{Microcontroller Programming}\label{sec:uc_program}
 The controller was programmed to send commands to the probe via RS-485, and the probe to follow the command and return the data back to the controller.
 These commands would first be sent by a computer to the serial monitor on the controller board, and then would be sent from the controller to the probe.
 Multiple measurement modes were programmed into the probe board and they were trigered with specific commands.
@@ -376,7 +376,8 @@ The \gls{dac} would output a voltage, the calibration resistor would be measured
 This would be done for the full specified range of voltages in increments of $0.1V$.
 
 A resistance would then be calculated for the corresponding voltage, and this would be used to calculate the conductivity.
-The conductivities for each volatage step would be averaged, and returned with the temperatureand pressure values.
+The conductivities and resistances for each volatage step would be returned as well as the temperature and pressure values.
+The average conductivity is also returned
 %TODO Flow chart
 
 \subsubsection{DC Single Voltage}
@@ -407,5 +408,40 @@ The controller instructions were typed in manually via the controller's serial m
 Upon receiving the readings, the controller would display them in the serial monitor and print them to the $.txt$ file on the micro-SD card.
 %TODO
 
-\subsection{Machine Learning Programming}
+\subsection{Machine Learning Programming and AC Analysis}
 
+For salinity prediction through \gls{eis}, impedance measurements over a range of input frequencies and amplitudes would need to be taken.
+This would allow the machine learning to be formatted as a regression task, where the input features consist of:
+\begin{itemize}
+    \item AC exitation frequency $(f)$
+    \item AC exitation amplitude $(A)$
+    \item Measured impedance magnitude $|Z|$
+    \item Measured phase angle $(\phi)$
+\end{itemize}
+
+The output is the predicted salinity value. During the training the model learns the mapping function (function is denoted with $m$ instead of $f$ as $f$ is used to represent frequency):
+\begin{equation}
+    \text{Salinity}= m(f,A,|Z|,\phi)
+\end{equation}
+
+Multiple input frequency-amplitude combinations can be used as input features, enabling the model to leverage information across the entire impedance spectrum for improved salinity accuracy~\cite{wang_deep_2024}.
+
+For \gls{eis} salinity measurements, neural networks would theoretically be the superior choice~\cite{doonyapisut_analysis_2023}.
+This is due to their ability to model highly complex, non-linear relationships which are inherent in electro-chemical systems~\cite{chen_intelligent_2025}.
+They have the ability to automatically learn feature interactions, without manual feature engineering and their ability to learn hierarchical representations makes them especially suited for \gls{eis} data~\cite{doonyapisut_analysis_2023}.
+However, given the constraint of a small sample size, random forest is the more practical and effective choice for this application.
+Random forests require significantly less training data to achieve reliable performance, often working well with just dozens to hundreds of samples rather than the thousands needed for neural networks.
+With limited data, neural networks are highly prone to overfitting, essentially memorising the training examples rather than learning generalisable patterns, which would result in poor performance on new salinity measurements~\cite{alwosheel_is_2018}.
+Random forests mitigate this through their ensemble approach (using multiple smaller models), which reduces variance and improves robustness even with small data sets. 
+Additionally they require minimal parameter tuning and work reasonably well `out of the box', whereas neural networks require extensive architecture design, learning rate optimisation, and regularisation techniques that become nearly impossible to properly tune without sufficient validation data~\cite{alwosheel_is_2018}.
+
+Due to these factors random forrest was chosen.
+The programming for this model was done in python via a Jupyter Notebook, as this is widely used in the industry.
+First, to test the random forrest model, a Resistor-Capacitor dataset was used,
+This allowed for the evaluation of the accuracy of the model.
+It used an input frequency and amplitude and output impedance magnitude and phase, mapped to a dielectric permittivity (the other parameters for capacitance were the same for all capacitor values), to prepict permittivity of the capacitor, based on the inputs.
+Once the Resistor-Capacitor model was tested, the model was updated to support the \gls{eis} parameters for salinity.
+
+To create the \gls{eis} dataset for the random forrest model, measurements of signals of varying frequency and amplitude, in solutions of varying salinity would be taken.
+It was planned to use 10 solutions of varying salinity, with frequencies 1-100Hz in increments of 20Hz, since the MCP4725 \gls{dac} outputted these reliably, and amplitude 0-1V in increments of 0.2V.
+This would give a total dataset of 360 data points, enough to train the random forrest on.

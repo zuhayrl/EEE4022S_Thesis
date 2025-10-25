@@ -184,4 +184,32 @@ S.~Jiang and S.~Georgakopoulos, ``Electromagnetic {Wave} {Propagation} into
   Applications}, vol.~3, pp.~261--266, July 2011.
 \newblock Publisher: Scientific Research Publishing.
 
+\bibitem{wang_deep_2024}
+J.~Wang, B.~Jiang, Y.~Ou, X.~Wang, X.~Wei, and H.~Dai, ``A deep learning-based
+  parameter identification approach of electrochemical impedance spectrum
+  equivalent model for lithium-ion batteries,'' in {\em 2024 {IEEE}
+  {Transportation} {Electrification} {Conference} and {Expo}, {Asia}-{Pacific}
+  ({ITEC} {Asia}-{Pacific})}, pp.~978--983, Oct. 2024.
+
+\bibitem{doonyapisut_analysis_2023}
+D.~Doonyapisut, P.-K. Kannan, B.~Kim, J.~K. Kim, E.~Lee, and C.-H. Chung,
+  ``Analysis of {Electrochemical} {Impedance} {Data}: {Use} of {Deep} {Neural}
+  {Networks},'' {\em Advanced Intelligent Systems}, vol.~5, no.~8, p.~2300085,
+  2023.
+\newblock \_eprint:
+  https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aisy.202300085.
+
+\bibitem{chen_intelligent_2025}
+W.~Chen, B.~Yan, A.~Xu, X.~Mu, X.~Zhou, M.~Jiang, C.~Wang, R.~Li, J.~Huang, and
+  J.~Dong, ``An intelligent matching method for the equivalent circuit of
+  electrochemical impedance spectroscopy based on {Random} {Forest},'' {\em
+  Journal of Materials Science \& Technology}, vol.~209, pp.~300--310, Feb.
+  2025.
+
+\bibitem{alwosheel_is_2018}
+A.~Alwosheel, S.~van Cranenburgh, and C.~G. Chorus, ``Is your dataset big
+  enough? {Sample} size requirements when using artificial neural networks for
+  discrete choice analysis,'' {\em Journal of Choice Modelling}, vol.~28,
+  pp.~167--182, Sept. 2018.
+
 \end{thebibliography}

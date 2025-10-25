@@ -9,8 +9,6 @@ Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Body/Methodology.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
 A level-1 auxiliary file: Body/Results.aux
-Reallocating 'name_of_file' (item size: 1) to 20 items.
-A level-1 auxiliary file: Body/Discussion.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 A level-1 auxiliary file: Body/Conclusions.aux
 Reallocating 'name_of_file' (item size: 1) to 25 items.
@@ -32,45 +30,45 @@ Warning--empty journal in salinity_def
 Warning--empty booktitle in canales_electrochemical_2021
 Warning--empty publisher in canales_electrochemical_2021
 Warning--empty publisher in orazem_electrochemical_2008
-You've used 37 entries,
+You've used 41 entries,
             1876 wiz_defined-function locations,
-            703 strings with 10023 characters,
-and the built_in function-call counts, 8657 in all, are:
-= -- 883
-> -- 310
+            727 strings with 11327 characters,
+and the built_in function-call counts, 10198 in all, are:
+= -- 1032
+> -- 393
 < -- 0
-+ -- 122
-- -- 85
-* -- 586
-:= -- 1203
-add.period$ -- 46
-call.type$ -- 37
-change.case$ -- 35
++ -- 151
+- -- 110
+* -- 707
+:= -- 1418
+add.period$ -- 51
+call.type$ -- 41
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 446
-empty$ -- 817
-format.name$ -- 85
-if$ -- 2131
+cite$ -- 45
+duplicate$ -- 522
+empty$ -- 935
+format.name$ -- 110
+if$ -- 2500
 int.to.chr$ -- 0
-int.to.str$ -- 37
-missing$ -- 32
-newline$ -- 128
-num.names$ -- 33
-pop$ -- 112
+int.to.str$ -- 41
+missing$ -- 36
+newline$ -- 141
+num.names$ -- 37
+pop$ -- 122
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 355
+skip$ -- 422
 stack$ -- 0
-substring$ -- 464
-swap$ -- 192
+substring$ -- 574
+swap$ -- 234
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 81
-width$ -- 39
-write$ -- 352
+while$ -- 95
+width$ -- 43
+write$ -- 394
 (There were 5 warnings)
