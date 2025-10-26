@@ -221,7 +221,7 @@ The comparisons for the Single Voltage test can be seen in Table~\ref{table:sali
                 >{\centering\arraybackslash}m{3cm}|
                 >{\centering\arraybackslash}m{2cm}|}
             \hline
-                \textbf{Salinity (PSU)} & \textbf{T (°C)} & \textbf{Probe Voltage} & \textbf{Calib Factor} & \textbf{Corrected Voltage} & \textbf{Resistance ($\Omega)$} & \textbf{Calculated Salinity} \\ \hline
+                \textbf{Salinity (PSU)} & \textbf{T (°C)} & \textbf{Probe Voltage} & \textbf{Calib Factor} & \textbf{Calibrated Voltage} & \textbf{Resistance ($\Omega)$} & \textbf{Calculated Salinity} \\ \hline
                 34.8  & 15    & 0.119 & 0.7739 & 0.0920941 & 7.041339901  & 35    \\ \hline
                 30.1  & 15    & 0.145 & 0.7745 & 0.1123025 & 8.721186459  & 28.02 \\ \hline
                 23.74 & 15    & 0.188 & 0.7601 & 0.1428988 & 11.36732667  & 20.71 \\ \hline
@@ -238,10 +238,69 @@ The comparisons for the Single Voltage test can be seen in Table~\ref{table:sali
 \endgroup
 
 From these measured values it can be seen that the probe has a measuring accuracy of approximately $\pm3.5$ \gls{psu}.
-
+This inaccuary could be attributed to noise and error.
 
 \section{EIS and Machine Learning}
-As mentioned 
+\subsection{Resistor-Capacitor Machine Learning Test}
+As mentioned in Section~\ref{sec:ml_for_eis}, a Resistor-Capacitor circuit was modelled, to test the ability of the model in mapping impedance data to a given characteristic.
+This model used the same input features, mapped to permittivity instead of salinity.
+The dataset consisted of 300 datapoints, with frequencies from $1-81Hz$ in increments of $20Hz$, permittivity $10-100F/m$, in increments of $10F/m$, and amplitudes $0.1-1.1V$ in increments of $0.2V$.
+Noise was added to simulate real world conditions.
+The random forest model works by creating multiple `decision trees' that learn patterns on the data, each tree makes a prediction, and the final prediction is the average of all the trees.
+Derived features were additionally added, inclusing, Angular Frequency $\omega$, $1/f$ and Capacitor Reactance $X_C$
+Three random forest models were tested, with varying tree sizes, these being 30, 50 and 100. The results of these can be seen in table~\ref{table:rf_rc}, where it can be seen that the 100 tree model performed the best.
 
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[H]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|}
+            \hline
+                \textbf{Model} & \textbf{$R^2$ Score} & \textbf{Mean Error (MAE)} & \textbf{$\%$ Error (MAPE)} \\ \hline
+                100 trees & 0.9903 & 2.11  & 5.33$\%$ \\ \hline
+                50 Trees  & 0.9898 & 2.21  & 5.06$\%$ \\ \hline
+                30 Trees  & 0.9890 & 2.30  & 5.59$\%$ \\ \hline
+            \end{tabular}
+        \caption{Table for Random Forrest on RC Test Data}
+        \label{table:rf_rc}
+    \end{table}
+\endgroup
 
+\textbf{$R^2$ Score:} Measures how well the model predicts. 0.9903 mean it captures 99.03$\%$ of the variation in permittivity data, the high this number the better. \\
+\textbf{Mean Absolute Error (MAE):} Average prediction error = 2.11  permittivity units. This means that predictions had an accuracy of $\pm2.11 F/m$. For a permittivity range of 0-100, this comes to 2.3$\%$. \\
+\textbf{Mean Absolute Percentage Error (MAPE):} Average error in percentage. For example, if the predicted is 74.5 and the actual is 70, $\text{MAPE}=((|Actual-Predicted|)/Actual)\times100$.
+
+The model identified which measurements were most important for predictions and found that impedance dominated with $73\%$ and inverse frequency $1/f$ played a role with $12\%$ whereas input voltage had barely any impact.
+However this is due to RC circuit being a linear system.
+The high importance of impedance and inverse frequency confirms that the model learnt the physics, not just random correlations.
+
+The model was then manually tested to verify the accuracy. These results can be seen in table~\ref{table:rf_rc_test}.
+
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[H]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|
+                >{\centering\arraybackslash}m{3cm}|
+                >{\centering\arraybackslash}m{2cm}|}
+            \hline
+                \textbf{Actual $\epsilon_R$} & \textbf{Predicted $\epsilon_R$} & \textbf{Error} \\ \hline
+                70 & 74.5 & 6.4$\%$ \\ \hline
+                90 & 88.5 & 1.7$\%$ \\ \hline
+                60 & 60.5 & 0.9$\%$ \\ \hline
+                10 & 10.1 & 1.0$\%$ \\ \hline
+                80 & 78.2 & 2.3$\%$ \\ \hline
+            \end{tabular}
+        \caption{Table for 100 Trees on manually inputted RC Data}
+        \label{table:rf_rc_test}
+    \end{table}
+\endgroup
+
+This data showed that the model was ready to be used for salinity prediction.
+
+\subsection{AC Wave Generation and Testing}
+Before the probe could be used for \gls{eis}, test had to be conducted to ensure that it could reliably output a sine waveform, and to anaylse how the signal was measured in water.
 

@@ -293,8 +293,6 @@ INPUT .\Body\Introduction.tex
 INPUT Body\Introduction.tex
 INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Body\Literature.tex
 INPUT .\Body\Literature.tex
 OUTPUT Body\Literature.aux
@@ -302,6 +300,8 @@ INPUT .\Body\Literature.tex
 INPUT .\Body\Literature.tex
 INPUT Body\Literature.tex
 INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\zuhay\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT .\Body\Methodology.tex
 INPUT .\Body\Methodology.tex
 OUTPUT Body\Methodology.aux

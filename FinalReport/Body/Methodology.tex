@@ -410,7 +410,7 @@ The controller instructions were typed in manually via the controller's serial m
 Upon receiving the readings, the controller would display them in the serial monitor and print them to the $.txt$ file on the micro-SD card.
 %TODO
 
-\subsection{Machine Learning Programming and AC Analysis}
+\subsection{Machine Learning Programming and AC Analysis}\label{sec:ml_for_eis}
 
 For salinity prediction through \gls{eis}, impedance measurements over a range of input frequencies and amplitudes would need to be taken.
 This would allow the machine learning to be formatted as a regression task, where the input features consist of:
@@ -421,6 +421,7 @@ This would allow the machine learning to be formatted as a regression task, wher
     \item Measured phase angle $(\phi)$
 \end{itemize}
 
+For linear systms AC exitation amlitude is not necessary, however, for non-linear systems, such as this, it needs to be included, as the measured impedance may be affected by the exirtation amplitude.
 The output is the predicted salinity value. During the training the model learns the mapping function (function is denoted with $m$ instead of $f$ as $f$ is used to represent frequency):
 \begin{equation}
     \text{Salinity}= m(f,A,|Z|,\phi)
@@ -437,13 +438,13 @@ With limited data, neural networks are highly prone to overfitting, essentially 
 Random forests mitigate this through their ensemble approach (using multiple smaller models), which reduces variance and improves robustness even with small data sets. 
 Additionally they require minimal parameter tuning and work reasonably well `out of the box', whereas neural networks require extensive architecture design, learning rate optimisation, and regularisation techniques that become nearly impossible to properly tune without sufficient validation data~\cite{alwosheel_is_2018}.
 
-Due to these factors random forrest was chosen.
+Due to these factors random forest was chosen.
 The programming for this model was done in python via a Jupyter Notebook, as this is widely used in the industry.
-First, to test the random forrest model, a Resistor-Capacitor dataset was used,
+First, to test the random forest model, a Resistor-Capacitor dataset was used,
 This allowed for the evaluation of the accuracy of the model.
 It used an input frequency and amplitude and output impedance magnitude and phase, mapped to a dielectric permittivity (the other parameters for capacitance were the same for all capacitor values), to prepict permittivity of the capacitor, based on the inputs.
 Once the Resistor-Capacitor model was tested, the model was updated to support the \gls{eis} parameters for salinity.
 
-To create the \gls{eis} dataset for the random forrest model, measurements of signals of varying frequency and amplitude, in solutions of varying salinity would be taken.
+To create the \gls{eis} dataset for the random forest model, measurements of signals of varying frequency and amplitude, in solutions of varying salinity would be taken.
 It was planned to use 10 solutions of varying salinity, with frequencies 1-100Hz in increments of 20Hz, since the MCP4725 \gls{dac} outputted these reliably, and amplitude 0-1V in increments of 0.2V.
-This would give a total dataset of 360 data points, enough to train the random forrest on.
+This would give a total dataset of 360 data points, enough to train the random forest on.
