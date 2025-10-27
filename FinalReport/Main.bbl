@@ -141,6 +141,9 @@ K.-L. Hsueh, ``A {Study} of {Artificial} {Neural} {Networks} for
   {Electrochemical} {Data} {Analysis},'' {\em Journal of the Chinese Chemical
   Society}, vol.~57, Aug. 2010.
 
+\bibitem{ibm_randomforest}
+``What {Is} {Random} {Forest}? {\textbar} {IBM},'' Oct. 2021.
+
 \bibitem{salman_random_2024}
 H.~Salman, A.~Kalakech, and A.~Steiti, ``Random {Forest} {Algorithm}
   {Overview},'' {\em Babylonian Journal of Machine Learning}, vol.~2024,
@@ -208,5 +211,11 @@ A.~Alwosheel, S.~van Cranenburgh, and C.~G. Chorus, ``Is your dataset big
   enough? {Sample} size requirements when using artificial neural networks for
   discrete choice analysis,'' {\em Journal of Choice Modelling}, vol.~28,
   pp.~167--182, Sept. 2018.
+
+\bibitem{wu_understanding_2022}
+J.~Wu, ``Understanding the {Electric} {Double}-{Layer} {Structure},
+  {Capacitance}, and {Charging} {Dynamics},'' {\em Chemical Reviews}, vol.~122,
+  pp.~10821--10859, June 2022.
+\newblock Publisher: American Chemical Society.
 
 \end{thebibliography}

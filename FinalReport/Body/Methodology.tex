@@ -32,7 +32,7 @@ Titanium is the material of choice for ocean-use~\cite{materials_ocean_structure
 However, titanium is expensive and fell out of the budget of this project.
 Gold boasts both a high conductivity of $4.10\times 10^{7}$, higher than titanium but lower than silver, and a high corrosion resistance, making it an ideal choice.
 Gold is also a commonly used material in electronic design, with it being used in \gls{pcb} manufacturing, to protect copper pads from corrosion.
-This is done through a \gls{enig} plating process, where a layer of nickel is chemically deposited onto the exposed copper traces, to prevent the copper from oxidizing, and then a layer of gold is applied over the nickel through an emmersion process, to protect the nickel.
+This is done through a \gls{enig} plating process, where a layer of nickel is chemically deposited onto the exposed copper traces, to prevent the copper from oxidizing, and then a layer of gold is applied over the nickel through an immersion process, to protect the nickel.
 This process is significantly more expensive compared to standard \gls{pcb} manufacturing, however, it allowed for the use of gold electrodes, and therefore was factored into the budget. 
 
 In order to utilise the \gls{enig} process a \gls{pcb} was used to design the gold electrodes.
@@ -108,7 +108,7 @@ Significant improvements and modifications were made to the resistor divider cir
 
 For input power, a \gls{dac} was used to drive the circuit. This allowed to the input voltage to be varied between $0 V$ and the reference voltage, which was chosen to be $5V$.
 This allowed for a range of voltages to be applied, which allowed for the measurement of the water's voltage-resistance relationship, and the creation of \gls{ac} signals.
-A function generator was considered for generating the \gls{ac} signal, as it would allow for signals of a wider frequency and and high precision, however the price could not be accommodated by the budget.
+A function generator was considered for generating the \gls{ac} signal, as it would allow for signals of a wider frequency and high precision, however the price could not be accommodated by the budget.
 The choice of \gls{dac}, and all following components, was first influenced by availability on JLCPCB, the \gls{pcb} manufacturing house.
 The MCP4725 was chosen for its high resolution of 12-bits, offering a digital range of 0-4095, fast update time of $6{\mu}s$, and interface speed of 3.4MHz.
 These features allow for both \gls{dc} and \gls{ac} signal analysis.
@@ -173,12 +173,12 @@ For Resistance this can be shown as:
 \end{equation}
 
 Using the above equations, with resistors with an individual uncertainty of $\pm1\%$, three resistors in parallel have a combined uncertainty of $\pm0.33\%$
-To created the intended $R_1$ resistances of $100\Omega$, $1K\Omega$ and $10K\Omega$, the three parallel resistors were chosen to use values of $300\Omega$, $3K\Omega$ and $30K\Omega$ respectively.
+To create the intended $R_1$ resistances of $100\Omega$, $1K\Omega$ and $10K\Omega$, the three parallel resistors were chosen to use values of $300\Omega$, $3K\Omega$ and $30K\Omega$ respectively.
 
 A second switch circuit was then used to configure the $R_2$ resistor.
 With there being two electrodes, the switching circuit allowed for the user to choose which would be the anode and the cathode.
 The switch also included a calibration resistor of $5\Omega$, which would allow for the calculation of the gain of the \gls{adc} when measuring.
-This calibration resistor was also created using a parallel resistor configuration, where four $20\Omega$ resistors were connected in parallel to give the require resistance at an uncertainty of $\pm0.25\%$.
+This calibration resistor was also created using a parallel resistor configuration, where four $20\Omega$ resistors were connected in parallel to give the required resistance at an uncertainty of $\pm0.25\%$.
 
 A simplified circuit diagram showing the resistance measuring circuit is shown in Figure~\ref{fig:resistance_circuit}.
 
@@ -204,7 +204,7 @@ The MS583702BA01-50 was chosen for its low price and availability on JLCPCB.
 This sensor only allowed for up to 2 Bar pressure measurements, which was enough for this prototype, but would not satisfy the real-world requirements of the salinity probe.
 Lastly, an RS-485 \gls{ic} was included for inter board communication.
 
-A ESP-32 S2-Mini-2 was chosen for the microcontroller, as it was the most cost effective ESP32 based microcontroller.
+An ESP-32 S2-Mini-2 was chosen for the microcontroller, as it was the most cost effective ESP32 based microcontroller.
 It offered an FPU, allowing for the complex salinity calculations to be done, did not require a \gls{uart} bridge as it has built-in USB OTG support, allowing it to connect directly to a computer for easy programming, which was done via a USB-Micro port, and offered 13-bit \gls{adc}s, allowing for a good voltage measurement resolution.
 Additionally the wireless capabilities allowed for easy debugging, through a web interface, as the researcher's computer only had one USB port.
 The researcher also had significant experience with this microcontroller.
@@ -306,9 +306,9 @@ The electrode manufacturing was simple, as it consisted of the gold plated solde
 No additional modifications had to be made to the electrode \gls{pcb}s, and they were hand soldered to the corresponding solder pads on the probe \gls{pcb}.
 
 \subsection{Waterproofing}\label{sec:waterproofing}
-Since the probe \gls{pcb} would need to be submerged in water, it will would need to waterproofed.
+Since the probe \gls{pcb} would need to be submerged in water, it would need to waterproofed.
 A multitude of methods were considered including conformal coating, a 3D-printed waterproof enclosure, and resin casting.
-Conformal coating is a thin protective layer applied to shield circuitry and \gls{pcb}s from moisture and extreme temperature, and usually comes in a spary can.
+Conformal coating is a thin protective layer applied to shield circuitry and \gls{pcb}s from moisture and extreme temperature, and usually comes in a spray can.
 It is relatively cheap but has a low pressure resistance, and offers low physical protection.
 A 3D-printed enclosure was considered too complex, ultimately leaving a resin cast as the chosen method.
 This method offers good physical protection and is considered the most reliable.
@@ -346,7 +346,7 @@ A fully encapsulated probe \gls{pcb} can be seen in Figure~\ref{fig:encapsulated
 The controller was programmed to send commands to the probe via RS-485, and the probe to follow the command and return the data back to the controller.
 These commands would first be sent by a computer to the serial monitor on the controller board, and then would be sent from the controller to the probe.
 Multiple measurement modes were programmed into the probe board and they were triggered with specific commands.
-A separate C++ header file, with functions for the salinity calculation equations, mentioned in Section~\ref{sec:salinity_compensation}, was created for ease of coding and and reusability.
+A separate C++ header file, with functions for the salinity calculation equations, mentioned in Section~\ref{sec:salinity_compensation}, was created for ease of coding and reusability.
 
 The voltage measurements were done using the ESP32's built in \gls{adc}s, which used a reference voltage of $3.3V$.
 To account for measurement inaccuracies caused by the \gls{dac}, \gls{adc} or op-amp, the calibration resistor was used to find a calibration factor, which will be denoted by $C_F$.
@@ -373,7 +373,7 @@ The calibration test function was designed to measure the inaccuracies of the \g
 It used Equations~\ref{eqn:caibration_equation1} to~\ref{eqn:caibration_equation4} to achieve this.
 
 \subsubsection{DC Voltage Sweep}
-This procedure was designed to take voltage measurements over the probes through a range of voltages, were the function allowed for the maximum voltage, and chosen $R_1$ resistor, to inputted.
+This procedure was designed to take voltage measurements over the probes through a range of voltages, were the function allowed for the maximum voltage, and chosen $R_1$ resistor, to be inputted.
 The \gls{dac} would output a voltage, the calibration resistor would be measured to calculate the calibration factors for each \gls{adc} and then the electrode voltages would be measured bi-directionally ($Au_1$ as +, $Au_2$ as negative, and vice versa).
 This would be done for the full specified range of voltages in increments of $0.1V$.
 
@@ -384,7 +384,7 @@ The average conductivity is also returned. This is shown in Figure~\ref{fig:dcsw
 \subsubsection{DC Single Voltage}
 This function was designed to take a single voltage reading.
 Similar to the \gls{dc} voltage sweep, this first measures over the calibration resistor, to find the calibration factor, and then takes bi-directional measurements over the electrodes.
-the voltage is then used to calculate the conductivity, which was returned with the temperature and pressure values.
+The voltage is then used to calculate the conductivity, which was returned with the temperature and pressure values.
 This is shown in figure~\ref{fig:dcpoint}
 
 Essentially, the voltage sweep performed the single voltage test through a range of voltages.

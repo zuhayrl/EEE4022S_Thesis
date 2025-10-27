@@ -1,7 +1,7 @@
 \chapter{Testing and Evaluation}
 
 To properly evaluate the system, multiple testing procedures were implemented.
-These started with first testing the accuracy of individual components on the \gls{pcb}, and then testing the probes ability to measure salinity, through voltage measurements relating to conductivity.
+These started with first testing the accuracy of individual components on the \gls{pcb}, and then testing the probe's ability to measure salinity, through voltage measurements relating to conductivity.
 Additionally, tests were done on the \gls{ml} model programmed to map the salinity.
 
 \section{Component and Equipment Testing}
@@ -144,7 +144,7 @@ Figure~\ref{fig:repeatability_test} shows voltage sweeps across the same solutio
 
 \subsubsection{Obtaining Conductivity of the Standard Solution}
 For the measurement of salinity from conductivity, the conductivity of the standard solution of $35$ \gls{psu} at $15^{\circ}C$ and $0dbar$ must first be obtained.
-To evaluate this, both the voltage sweep and single voltage measurements wer taken in a solution at standard conditions.
+To evaluate this, both the voltage sweep and single voltage measurements were taken in a solution at standard conditions.
 To achieve these conditions salt was mixed into water until the salinity was 34.8 \gls{psu}.
 This value was used, as creating a solution of a specific salinity is a time-consuming process, and it was considered close enough for this experiment.
 To achieve a temperature of $15^\circ$C the water was cooled in a fridge to $4^\circ$C and then left out until it reached $15^\circ$C.
@@ -195,7 +195,7 @@ The Single Voltage Test can be seen in Table~\ref{table:sal_vsingledc}, with a g
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/sal_vsweep.png}
-    \caption{Volatge Sweep Test Showing Resistance vs Input Voltage}
+    \caption{Voltage Sweep Test Showing Resistance vs Input Voltage}
     \label{fig:sal_vsweepdc}
 \end{figure}
 
@@ -444,15 +444,15 @@ In order to properly analyse the the data, a bode plot was created, as seen in F
 \end{figure}
 
 The bode plot demonstrated tow key characteristics of the system. \\
-\textbf{Magnitude Response:} As the frequency increased from 1-21Hz, the system gain progressively decreases, indicating a frequency dependant attenuation.
+\textbf{Magnitude Response:} As the frequency increased from 1-21Hz, the system gain progressively decreases, indicating a frequency dependent attenuation.
 The salt water exhibits characteristic of a low pass filter, where higher frequency signals propagate less effectively than lower frequencies.
 A significant reduction in magnitude is observed at 21Hz where the gain dips to -13dB, and remains around this level for higher frequencies. \\
 \textbf{Phase Response:} The phase shift becomes increasingly negative as the frequency increases, showing that the output voltage lags the current.
 The negative phase characteristic suggests capacitive behaviour becomes more dominant at higher frequencies.
 
 This frequency response can be attributed to the electrical double layer formation between the electrode and the electrolyte, and the ionic polarisation within the saline solution.
-The polarisation can also be attributed to the \gls{dac} being used to create the wave, since it only produces positive voltages, causing a semi-permanent charge on the elctrodes.
+The polarisation can also be attributed to the \gls{dac} being used to create the wave, since it only produces positive voltages, causing a semi-permanent charge on the electrodes.
 At low frequencies ions have sufficient time to respond to the applied electric field causing them to move according to their charge.
 This results in efficient conduction and minimal phase lag.
 As frequency increases, the electrode-solution interface acts similarly to a capacitor, due to charge accumulation on the electrodes.
-At higher frequencies, the capacitive impedance becomes dominant, causing attenuation and phase lag.
+At higher frequencies, the capacitive impedance becomes dominant, causing attenuation and phase lag~\cite{wu_understanding_2022}.

@@ -16,7 +16,7 @@ Modern salinity is defined through the Practical Salinity Scale 1978 (PSS-78), w
 The salinity-conductivity relationship is however, quite complex, requiring corrections and calibrations needed for depth and temperature, as these both play a factor in the conductivity of the water. 
 
 \section{Overview of Salinity Measurement Methods}
-There are a multitude of methods which can be used to measure salinity, each with their own advatages, limitations and levels of accuracy.
+There are a multitude of methods which can be used to measure salinity, each with their own advantages, limitations and levels of accuracy.
 Traditional methods include gravimetric analysis, chemical titration (such as the Mohr-Knudsen method for chlorinity), and refractometry. While these techniques can provide accurate results, they are often time-consuming, require skilled operators, and are not easily adaptable to in-situ or automated measurements.
 Modern approaches predominantly rely on electrical conductivity sensors, which offer rapid, repeatable, and automated salinity determination.
 Other techniques, such as optical methods and ion-selective electrodes, have also been explored, but are less commonly used in oceanographic applications due to issues with robustness, calibration, or specificity.
@@ -57,7 +57,7 @@ S = \frac{\frac{\rho}{\rho_0}-1}{k}
 
 This however, does not include temperature correction.
 
-\subsubsection{Refractometric Thechniques}
+\subsubsection{Refractometric Techniques}
 Refractometric techniques measure the refractive index changes caused by the dissolved salts.
 The refractive index of seawater is influenced by wavelength, temperature, salinity, and pressure. 
 Within the range of 500-700~nm wavelength, 0-30$^\circ$C temperature, 0-40~PSU salinity, and 0-11000~dbar pressure, the refractive index equation provides an accuracy of 0.4-80~ppm~PSU, with accuracy decreasing as pressure increases~\cite{refraction_millard}.
@@ -95,7 +95,7 @@ The technique utilises the strong correlation between dissolved ionic content an
 
 The conductivity of a liquid is measured by its ability to conduct electrical current.
 The relationship between conductivity and salinity is based on the concentration of dissolved ions in seawater.
-The main ions found in sea water ($Na^+, Cl^-, Mg^{2+}, {SO_4}^{2-}, Ca^{2+}, K^+$) maintain a relatively constant proportional relationship, in ocean waters~\cite{chemical_ocean}.
+The main ions found in seawater ($Na^+, Cl^-, Mg^{2+}, {SO_4}^{2-}, Ca^{2+}, K^+$) maintain a relatively constant proportional relationship, in ocean waters~\cite{chemical_ocean}.
 This enables robust corrections between conductivity and total dissolved salt content.
 Unlike other measurement techniques, conductivity accounts for all the ions in the water, not only chlorine, which is why it is considered a more accurate measure of salinity~\cite{salinity_def_calc}.
 
@@ -149,7 +149,7 @@ Finally, $R_t$ can be evaluated using $R$, $R_p$ and $r_t$:
     R_t = \frac{R}{{R_p}{r_t}}
 \end{equation} 
 
-At standard conditions, i.e., temperature $t=15{^\circ}$C, $R_t$ is equal to $K_{15}$ an therefore Practical salinity $S_p$ can be calculated from Equation~\ref{eqn:k15_salinity}.
+At standard conditions, i.e., temperature $t=15{^\circ}$C, $R_t$ is equal to $K_{15}$ and therefore Practical salinity $S_p$ can be calculated from Equation~\ref{eqn:k15_salinity}.
 For cases where the temperature is not $t=15^\circ$C, Practical Salinity $S_p$ is given as a function of $R_t$, with $k=0.0162$~\cite{teos-10}:
 \begin{equation}\label{eqn:salinity_full}
 S_p = \sum_{i=0}^{5} a_i {(R_t)}^{i/2} + \frac{t-15}{1+k(t-15)} \sum_{i=0}^{5} b_i {(R_t)}^{i/2}
@@ -198,7 +198,7 @@ Modern CTD systems achieve salinity accuracies better than $\pm0.005$ \gls{psu},
 Conductivity-based salinity measurements excel in most oceanographic and water quality applications due to its accuracy, speed, and reliability.
 The conductivity method allows for real-time data capture, continuous monitoring, and easy integration with autonomous devices~\cite{roemmich_argo_2009}. 
 
-However, this method does face some limitations. Due to its dependance on the water's capacity to conduct electricity, freshawater applications require specialised low-conductivity sensors, while hyper-saline environments could exceed the standard calibration range.
+However, this method does face some limitations. Due to its dependence on the water's capacity to conduct electricity, freshwater applications require specialised low-conductivity sensors, while hyper-saline environments could exceed the standard calibration range.
 The method's reliance on empirical correlations derived from typical seawater compositions can introduce errors in waters ocean waters affected by external factors such as pollution or freshwater inflow from connecting rivers, which can alter ionic composition and introduce variability not captured by standard seawater-based calibrations.
 In such environments supplementary practices may be necessary for accurate salinity measurements~\cite{uncles_estuarine_2002}.
 

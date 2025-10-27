@@ -157,6 +157,6 @@ fprintf('===========================\n\n');
 fprintf('%.4f,%.4f,%.4f,%.4f\n', dominant_freq, max(abs(input_wave)), H_magnitude(idx), rad2deg(H_phase(idx)));
 
 % Write to csv file
-fileID = fopen('salinity_data.csv', 'a');
-fprintf(fileID, '%.4f,%.4f,%.4f,%.4f\n', dominant_freq, max(abs(input_wave)), H_magnitude(idx), rad2deg(H_phase(idx)));
-fclose(fileID);
+%fileID = fopen('salinity_data.csv', 'a');
+%fprintf(fileID, '%.4f,%.4f,%.4f,%.4f\n', dominant_freq, max(abs(input_wave)), H_magnitude(idx), rad2deg(H_phase(idx)));
+%fclose(fileID);

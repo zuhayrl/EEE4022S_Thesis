@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  27 OCT 2025 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  27 OCT 2025 18:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -809,8 +809,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11]
-Overfull \hbox (8.41064pt too wide) in paragraph at lines 201--204
-\OT1/cmr/m/n/12 capacity to conduct electricity, freshawater applications require specialised low-conductivity
+Overfull \hbox (2.5357pt too wide) in paragraph at lines 201--204
+\OT1/cmr/m/n/12 capacity to conduct electricity, freshwater applications require specialised low-conductivity
  []
 
 
@@ -883,9 +883,6 @@ Overfull \hbox (0.44684pt too wide) in paragraph at lines 256--259
  []
 
 
-LaTeX Warning: Citation `ibm_randomforest' on page 15 undefined on input line 267.
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
 (fancyhdr)                \setlength{\headheight}{14.49998pt}.
@@ -939,7 +936,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18]
-<Figures/electrode_pcb.png, id=690, 341.275pt x 544.0325pt>
+<Figures/electrode_pcb.png, id=692, 341.275pt x 544.0325pt>
 File: Figures/electrode_pcb.png Graphic file (type png)
 <use Figures/electrode_pcb.png>
 Package pdftex.def Info: Figures/electrode_pcb.png  used on input line 64.
@@ -962,7 +959,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) h
                                                   \__shipout_drop_firstpage_...
 l.86 
       <./Figures/electrode_pcb.png>]
-<figures/fig_voltage_divider.png, id=699, 581.17125pt x 298.11375pt>
+<figures/fig_voltage_divider.png, id=701, 581.17125pt x 298.11375pt>
 File: figures/fig_voltage_divider.png Graphic file (type png)
 <use figures/fig_voltage_divider.png>
 Package pdftex.def Info: figures/fig_voltage_divider.png  used on input line 89.
@@ -1001,7 +998,7 @@ Overfull \hbox (5.88994pt too wide) in paragraph at lines 183--184
 []\OT1/cmr/m/n/12 A simplified circuit diagram showing the resistance measuring circuit is shown in Figure []3.3[]. 
  []
 
-<figures/fig_resistance_circuit.png, id=756, 414.79968pt x 367.3725pt>
+<figures/fig_resistance_circuit.png, id=758, 414.79968pt x 367.3725pt>
 File: figures/fig_resistance_circuit.png Graphic file (type png)
 <use figures/fig_resistance_circuit.png>
 Package pdftex.def Info: figures/fig_resistance_circuit.png  used on input line 187.
@@ -1041,7 +1038,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
-<Figures/probe_pcb.jpg, id=797, 750.805pt x 793.96625pt>
+<Figures/probe_pcb.jpg, id=799, 750.805pt x 793.96625pt>
 File: Figures/probe_pcb.jpg Graphic file (type jpg)
 <use Figures/probe_pcb.jpg>
 Package pdftex.def Info: Figures/probe_pcb.jpg  used on input line 254.
@@ -1059,7 +1056,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [25]
-<Figures/controller_circuit.jpg, id=808, 683.55376pt x 1142.2675pt>
+<Figures/controller_circuit.jpg, id=810, 683.55376pt x 1142.2675pt>
 File: Figures/controller_circuit.jpg Graphic file (type jpg)
 <use Figures/controller_circuit.jpg>
 Package pdftex.def Info: Figures/controller_circuit.jpg  used on input line 282.
@@ -1092,7 +1089,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) h
                                                   \__shipout_drop_firstpage_...
 l.301 T
        he two \gls{pcb}s were connected via 4-core communication cable, with... <./Figures/probe_pcb.jpg> <./Figures/controller_circuit.jpg>]
-<Figures/encapsulated_probe.jpg, id=824, 900.36375pt x 976.64874pt>
+Overfull \hbox (19.20647pt too wide) in paragraph at lines 309--315
+\OT1/cmr/m/n/12 A multitude of methods were considered including conformal coating, a 3D-printed waterproof
+ []
+
+<Figures/encapsulated_probe.jpg, id=826, 900.36375pt x 976.64874pt>
 File: Figures/encapsulated_probe.jpg Graphic file (type jpg)
 <use Figures/encapsulated_probe.jpg>
 Package pdftex.def Info: Figures/encapsulated_probe.jpg  used on input line 329.
@@ -1131,12 +1132,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [29]
-<figures/dcsweep.png, id=862, 359.3425pt x 512.91624pt>
+<figures/dcsweep.png, id=864, 359.3425pt x 512.91624pt>
 File: figures/dcsweep.png Graphic file (type png)
 <use figures/dcsweep.png>
 Package pdftex.def Info: figures/dcsweep.png  used on input line 394.
 (pdftex.def)             Requested size: 181.18439pt x 258.62541pt.
-<figures/dcpoint.png, id=863, 322.20375pt x 332.24126pt>
+<figures/dcpoint.png, id=865, 322.20375pt x 332.24126pt>
 File: figures/dcpoint.png Graphic file (type png)
 <use figures/dcpoint.png>
 Package pdftex.def Info: figures/dcpoint.png  used on input line 401.
@@ -1168,7 +1169,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) h
                                                   \__shipout_drop_firstpage_...
 l.427 
        <./figures/dcpoint.png>]
-<figures/comms.png, id=887, 502.87875pt x 261.97874pt>
+<figures/comms.png, id=889, 502.87875pt x 261.97874pt>
 File: figures/comms.png Graphic file (type png)
 <use figures/comms.png>
 Package pdftex.def Info: figures/comms.png  used on input line 430.
@@ -1223,7 +1224,7 @@ Chapter 4.
 
 
 ]
-<figures/dac_test.png, id=933, 614.952pt x 341.64pt>
+<figures/dac_test.png, id=935, 614.952pt x 341.64pt>
 File: figures/dac_test.png Graphic file (type png)
 <use figures/dac_test.png>
 Package pdftex.def Info: figures/dac_test.png  used on input line 51.
@@ -1247,7 +1248,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) h
                                                   \__shipout_drop_firstpage_...
 l.57 
       <./figures/dac_test.png>]
-<figures/adc_test.png, id=948, 666.636pt x 405.15pt>
+<figures/adc_test.png, id=950, 666.636pt x 405.15pt>
 File: figures/adc_test.png Graphic file (type png)
 <use figures/adc_test.png>
 Package pdftex.def Info: figures/adc_test.png  used on input line 66.
@@ -1260,7 +1261,7 @@ Overfull \hbox (11.4234pt too wide) in paragraph at lines 88--107
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<figures/resistance_measurement_test.png, id=957, 425.298pt x 296.964pt>
+<figures/resistance_measurement_test.png, id=959, 425.298pt x 296.964pt>
 File: figures/resistance_measurement_test.png Graphic file (type png)
 <use figures/resistance_measurement_test.png>
 Package pdftex.def Info: figures/resistance_measurement_test.png  used on input line 117.
@@ -1304,7 +1305,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) h
                                                   \__shipout_drop_firstpage_...
 l.135 F
        igure~\ref{fig:repeatability_test} shows voltage sweeps across the sa... <./figures/resistance_measurement_test.png>]
-<figures/repeatability_test.png, id=977, 541.149pt x 364.416pt>
+<figures/repeatability_test.png, id=979, 541.149pt x 364.416pt>
 File: figures/repeatability_test.png Graphic file (type png)
 <use figures/repeatability_test.png>
 Package pdftex.def Info: figures/repeatability_test.png  used on input line 138.
@@ -1332,7 +1333,7 @@ Overfull \hbox (4.57504pt too wide) in paragraph at lines 187--187
  []|\OT1/cmr/bx/n/12 Mean| 
  []
 
-<figures/sal_vsweep.png, id=989, 451.359pt x 274.188pt>
+<figures/sal_vsweep.png, id=991, 451.359pt x 274.188pt>
 File: figures/sal_vsweep.png Graphic file (type png)
 <use figures/sal_vsweep.png>
 Package pdftex.def Info: figures/sal_vsweep.png  used on input line 197.
@@ -1412,7 +1413,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}) ha
                                                   \__shipout_drop_firstpage_...
 l.298 
       ]
-<figures/permit_graph.png, id=1020, 567.92175pt x 440.847pt>
+<figures/permit_graph.png, id=1022, 567.92175pt x 440.847pt>
 File: figures/permit_graph.png Graphic file (type png)
 <use figures/permit_graph.png>
 Package pdftex.def Info: figures/permit_graph.png  used on input line 301.
@@ -1436,22 +1437,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) h
                                                   \__shipout_drop_firstpage_...
 l.313 
        <./figures/permit_graph.png>]
-<Figures/osc_1hz.jpg, id=1029, 4047.12pt x 3035.34pt>
+<Figures/osc_1hz.jpg, id=1031, 4047.12pt x 3035.34pt>
 File: Figures/osc_1hz.jpg Graphic file (type jpg)
 <use Figures/osc_1hz.jpg>
 Package pdftex.def Info: Figures/osc_1hz.jpg  used on input line 318.
 (pdftex.def)             Requested size: 217.42265pt x 163.03055pt.
-<Figures/osc_60hz.jpg, id=1030, 4047.12pt x 3035.34pt>
+<Figures/osc_60hz.jpg, id=1032, 4047.12pt x 3035.34pt>
 File: Figures/osc_60hz.jpg Graphic file (type jpg)
 <use Figures/osc_60hz.jpg>
 Package pdftex.def Info: Figures/osc_60hz.jpg  used on input line 323.
 (pdftex.def)             Requested size: 217.42265pt x 163.03055pt.
-<Figures/adc_1hz.png, id=1031, 361.35pt x 181.42781pt>
+<Figures/adc_1hz.png, id=1033, 361.35pt x 181.42781pt>
 File: Figures/adc_1hz.png Graphic file (type png)
 <use Figures/adc_1hz.png>
 Package pdftex.def Info: Figures/adc_1hz.png  used on input line 333.
 (pdftex.def)             Requested size: 217.42265pt x 109.16481pt.
-<Figures/adc_60hz.png, id=1032, 374.90062pt x 182.18062pt>
+<Figures/adc_60hz.png, id=1034, 374.90062pt x 182.18062pt>
 File: Figures/adc_60hz.png Graphic file (type png)
 <use Figures/adc_60hz.png>
 Package pdftex.def Info: Figures/adc_60hz.png  used on input line 338.
@@ -1475,7 +1476,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) h
                                                   \__shipout_drop_firstpage_...
 l.353 
        <./Figures/osc_1hz.jpg> <./Figures/osc_60hz.jpg> <./Figures/adc_1hz.png> <./Figures/adc_60hz.png>]
-<figures/salinity_graph.png, id=1045, 576.35326pt x 434.8245pt>
+<figures/salinity_graph.png, id=1047, 576.35326pt x 434.8245pt>
 File: figures/salinity_graph.png Graphic file (type png)
 <use figures/salinity_graph.png>
 Package pdftex.def Info: figures/salinity_graph.png  used on input line 403.
@@ -1517,7 +1518,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4.9}) ha
                                                   \__shipout_drop_firstpage_...
 l.432 
        <./figures/salinity_graph.png>]
-<figures/bode_plot.png, id=1064, 602.25pt x 451.9284pt>
+<figures/bode_plot.png, id=1066, 602.25pt x 451.9284pt>
 File: figures/bode_plot.png Graphic file (type png)
 <use figures/bode_plot.png>
 Package pdftex.def Info: figures/bode_plot.png  used on input line 441.
@@ -1647,12 +1648,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [56]
-Underfull \hbox (badness 1817) in paragraph at lines 192--198
+Underfull \hbox (badness 1817) in paragraph at lines 195--201
 []\OT1/cmr/m/n/12 D. Doonyapisut, P.-K. Kannan, B. Kim, J. K. Kim, E. Lee, and C.-H.
  []
 
 
-Underfull \hbox (badness 1005) in paragraph at lines 192--198
+Underfull \hbox (badness 1005) in paragraph at lines 195--201
 \OT1/cmr/m/n/12 Chung, ``Analysis of Electrochemical Impedance Data: Use of Deep Neural
  []
 
@@ -1818,12 +1819,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (Appendix/appendixb.tex
 Appendix B.
-<figures/AI_Usage/Bib_file.png, id=1133, 735.49782pt x 626.34pt>
+<figures/AI_Usage/Bib_file.png, id=1138, 735.49782pt x 626.34pt>
 File: figures/AI_Usage/Bib_file.png Graphic file (type png)
 <use figures/AI_Usage/Bib_file.png>
 Package pdftex.def Info: figures/AI_Usage/Bib_file.png  used on input line 7.
 (pdftex.def)             Requested size: 271.7835pt x 231.45544pt.
-<figures/AI_Usage/latex_table.png, id=1134, 680.5425pt x 656.4525pt>
+<figures/AI_Usage/latex_table.png, id=1139, 680.5425pt x 656.4525pt>
 File: figures/AI_Usage/latex_table.png Graphic file (type png)
 <use figures/AI_Usage/latex_table.png>
 Package pdftex.def Info: figures/AI_Usage/latex_table.png  used on input line 13.
@@ -1839,12 +1840,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.B.1}) h
                                                   \__shipout_drop_firstpage_...
 l.16 
       <./figures/AI_Usage/Bib_file.png>]
-<figures/AI_Usage/latex_figure.png, id=1141, 688.07062pt x 641.39626pt>
+<figures/AI_Usage/latex_figure.png, id=1146, 688.07062pt x 641.39626pt>
 File: figures/AI_Usage/latex_figure.png Graphic file (type png)
 <use figures/AI_Usage/latex_figure.png>
 Package pdftex.def Info: figures/AI_Usage/latex_figure.png  used on input line 19.
 (pdftex.def)             Requested size: 271.7835pt x 253.34384pt.
-<figures/AI_Usage/latex_pic.png, id=1142, 662.475pt x 674.52pt>
+<figures/AI_Usage/latex_pic.png, id=1147, 662.475pt x 674.52pt>
 File: figures/AI_Usage/latex_pic.png Graphic file (type png)
 <use figures/AI_Usage/latex_pic.png>
 Package pdftex.def Info: figures/AI_Usage/latex_pic.png  used on input line 25.
@@ -1868,12 +1869,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.B.3}) h
                                                   \__shipout_drop_firstpage_...
 l.28 
       <./figures/AI_Usage/latex_table.png> <./figures/AI_Usage/latex_figure.png>]
-<figures/AI_Usage/latex_gls.png, id=1151, 700.11563pt x 615.80063pt>
+<figures/AI_Usage/latex_gls.png, id=1156, 700.11563pt x 615.80063pt>
 File: figures/AI_Usage/latex_gls.png Graphic file (type png)
 <use figures/AI_Usage/latex_gls.png>
 Package pdftex.def Info: figures/AI_Usage/latex_gls.png  used on input line 31.
 (pdftex.def)             Requested size: 271.7835pt x 239.0525pt.
-<figures/AI_Usage/grammar1.png, id=1152, 684.30656pt x 593.21625pt>
+<figures/AI_Usage/grammar1.png, id=1157, 684.30656pt x 593.21625pt>
 File: figures/AI_Usage/grammar1.png Graphic file (type png)
 <use figures/AI_Usage/grammar1.png>
 Package pdftex.def Info: figures/AI_Usage/grammar1.png  used on input line 37.
@@ -1897,12 +1898,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.B.5}) h
                                                   \__shipout_drop_firstpage_...
 l.41 
       <./figures/AI_Usage/latex_pic.png> <./figures/AI_Usage/latex_gls.png>]
-<figures/AI_Usage/freezing_overview.png, id=1161, 682.80093pt x 612.03656pt>
+<figures/AI_Usage/freezing_overview.png, id=1166, 682.80093pt x 612.03656pt>
 File: figures/AI_Usage/freezing_overview.png Graphic file (type png)
 <use figures/AI_Usage/freezing_overview.png>
 Package pdftex.def Info: figures/AI_Usage/freezing_overview.png  used on input line 44.
 (pdftex.def)             Requested size: 271.7835pt x 243.6149pt.
-<figures/AI_Usage/eis_overview.png, id=1162, 676.02562pt x 618.05907pt>
+<figures/AI_Usage/eis_overview.png, id=1167, 676.02562pt x 618.05907pt>
 File: figures/AI_Usage/eis_overview.png Graphic file (type png)
 <use figures/AI_Usage/eis_overview.png>
 Package pdftex.def Info: figures/AI_Usage/eis_overview.png  used on input line 50.
@@ -1957,26 +1958,23 @@ L3 programming layer <2024-01-04>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 17F44595ED39EC15865CDA25D171BFAE;10335.
  ) 
 Here is how much of TeX's memory you used:
- 26298 strings out of 474486
- 553892 string characters out of 5743755
+ 26302 strings out of 474486
+ 553980 string characters out of 5743755
  1944542 words of memory out of 5000000
- 47973 multiletter control sequences out of 15000+600000
+ 47975 multiletter control sequences out of 15000+600000
  565863 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  77i,12n,80p,2604b,1735s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on Main.pdf (74 pages, 4798476 bytes).
+Output written on Main.pdf (74 pages, 4799383 bytes).
 PDF statistics:
- 1310 PDF objects out of 1440 (max. 8388607)
- 271 named destinations out of 1000 (max. 500000)
+ 1315 PDF objects out of 1440 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
  583 words of extra memory for PDF output out of 10000 (max. 10000000)
 

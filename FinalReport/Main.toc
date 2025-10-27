@@ -13,7 +13,7 @@
 \contentsline {subsubsection}{Gravimetric Methods}{7}{section*.5}%
 \contentsline {subsection}{\numberline {2.3.2}Physical Property Based Methods}{7}{subsection.2.3.2}%
 \contentsline {subsubsection}{Hydrometric and Density Methods}{7}{section*.6}%
-\contentsline {subsubsection}{Refractometric Thechniques}{8}{section*.7}%
+\contentsline {subsubsection}{Refractometric Techniques}{8}{section*.7}%
 \contentsline {subsubsection}{Freezing Point Osmometry}{8}{section*.8}%
 \contentsline {subsubsection}{Magnetic Permeability}{8}{section*.9}%
 \contentsline {subsection}{\numberline {2.3.3}Advanced Analytical Methods}{9}{subsection.2.3.3}%
