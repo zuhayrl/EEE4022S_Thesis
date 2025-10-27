@@ -1,20 +1,17 @@
 \chapter{Testing and Evaluation}
 
 To properly evaluate the system, multiple testing procedures were implemented.
-These started with first testing the accuarcy of individual components on the \gls{pcb}, and then testing the probes ability to measure salinity, through voltage measurements relating to conductivity.
+These started with first testing the accuracy of individual components on the \gls{pcb}, and then testing the probes ability to measure salinity, through voltage measurements relating to conductivity.
 Additionally, tests were done on the \gls{ml} model programmed to map the salinity.
 
-A summary of the tests and their outcomes can be seen in Table~\ref{table:test_summary}. %TODO
-
-
 \section{Component and Equipment Testing}
-Before the probe could be used to measure salinity, the accuarcy of its components needed to be tested.
+Before the probe could be used to measure salinity, the accuracy of its components needed to be tested.
 These procedures were completed before the probe was encased in resin, as access to the circuitry was required.
 
 \subsection{Resistor Testing}
 For accurate electrode resistance to be measured, the the $R1$ parallel resistor combinations would need to be measured.
 As shown in Section~\ref{sec:circuit_design}, by calculation, the $R1$ resistors should have equivalent resistances of $100\Omega$, $1K\Omega$ and $10K\Omega$, with an uncertainty of $\pm0.33\%$.
-These were measured using the $Keysight Technologies U3401A$ multimeter, which had a resistance accuracy of $0.1\%$.
+These were measured using the Keysight Technologies U3401A multimeter, which had a resistance accuracy of $0.1\%$.
 This multimeter would be used for all subsequent \gls{dc} voltage measurements, and has a voltage accuracy of $0.02\%$.
 The multimeter probes had a resistance of $0.154\Omega$ which was accounted for.
 The $R1$ resistors were measured and are shown in Table~\ref{table:resistance_test}.
@@ -27,7 +24,7 @@ The $R1$ resistors were measured and are shown in Table~\ref{table:resistance_te
             \begin{tabular}{|>{\centering\arraybackslash}p{5cm}|
                 >{\centering\arraybackslash}m{5cm}|}
             \hline
-            Theoretical R ($\Omega$) & Meausured R ($\Omega$) \\ \hline
+            Theoretical R ($\Omega$) & Measured R ($\Omega$) \\ \hline
             $99.67-100.33$ & $99.888$ \\ \hline
             $996.7-1003.3$ & $1000.146$ \\ \hline
             $9967-10033$ & $10005.746$ \\ \hline
@@ -49,7 +46,7 @@ The \gls{adc}s were also used to measure the output of the \gls{dac}, and these 
 Figure~\ref{fig:dac_test} shows the relationship between the voltage inputted to the \gls{dac}, and its output voltage, with the output measured on the multimeter.
 Note that the reference voltage of the \gls{dac} was measured to be $5.001V$.
 
-\begin{figure}[H]\label{fig:dac_test}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/dac_test.png}
     \caption{DAC Output Voltage vs Input Voltage}
@@ -64,7 +61,7 @@ For this test, the \gls{adc} took 5 measurements at each voltage step, which wer
 These 5 values were averaged to give the voltage at that step.
 The results of this test can be seen in Figure~\ref{fig:adc_test}.
 
-\begin{figure}[H]\label{fig:adc_test}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/adc_test.png}
     \caption{DAC Output Measured by the ADC vs Multimeter}
@@ -72,7 +69,8 @@ The results of this test can be seen in Figure~\ref{fig:adc_test}.
 \end{figure}
 
 Once the voltage measured by the \gls{adc} reaches $3.3V$ the \gls{adc} saturates as its reference voltage is $3.3V$.
-The gain of the \gls{adc} was calculated to be 1.28072 compared to the mulimeter.
+The gain of the \gls{adc} was calculated to be 1.28072 compared to the multimeter.
+The \gls{adc} had a measured gain of 1.3.
 
 \subsection{Accuracy of Resistance Measuring Circuitry}\label{sec:resistor_measuring_test}
 In order to evaluate the resistance circuit's ability to accurately measure resistance, resistors were attached to the electrode's solder pads.
@@ -108,13 +106,13 @@ The outcome of this test can be seen in Table~\ref{table:resistance_measurement_
             \end{tabular}
         \caption{Table for Resistor Measurement Test}
         \textit{Note 1: For this test an input of 2V was used} \\
-        \textit{Note 2: Accepectable range indicates resistance values due to $\pm5\%$ accuarcy}
+        \textit{Note 2: Acceptable range indicates resistance values due to $\pm5\%$ accuracy}
         \label{table:resistance_measurement_test}
     \end{table}
 \endgroup
 
 The voltage sweep test, from 0-2V, achieved a similar measuring accuracy as seen in Figure~\ref{fig:resistance_measurement_test}
-\begin{figure}[H]\label{fig:resistance_measurement_test}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/resistance_measurement_test.png}
     \caption{Resistance Measurement Test via Voltage Sweep}
@@ -131,11 +129,11 @@ Following this a range of tests were conducted, ranging from testing voltage mea
 In order to get an understanding of how the electrodes interact with saline solutions, a voltage sweep test was conducted multiple times with the same solution.
 This was done using the voltage sweep function, mentioned in Section~\ref{sec:uc_program}, with some alterations, allowing for the function to return the raw voltage instead of the conductivity.
 The results showed that on the same solution, the the voltage sweep had the same effects.
-However, it was noticed that when a volatge reading was taken in quick succession to another there was a slight interference was caused by the water, to counteract this a 1 second delay was introduced between each measurement.
+However, it was noticed that when a voltage reading was taken in quick succession to another there was a slight interference was caused by the water, to counteract this a 1 second delay was introduced between each measurement.
 After this delay was added, the interference was no longer observed.
 
-Figure~\ref{fig:repeatability_test} shows voltage sweeps across the same solution on three seperate occasions.
-\begin{figure}[H]\label{fig:repeatability_test}
+Figure~\ref{fig:repeatability_test} shows voltage sweeps across the same solution on three separate occasions.
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/repeatability_test.png}
     \caption{Repeatability Test Results}
@@ -147,7 +145,7 @@ Figure~\ref{fig:repeatability_test} shows voltage sweeps across the same solutio
 \subsubsection{Obtaining Conductivity of the Standard Solution}
 For the measurement of salinity from conductivity, the conductivity of the standard solution of $35$ \gls{psu} at $15^{\circ}C$ and $0dbar$ must first be obtained.
 To evaluate this, both the voltage sweep and single voltage measurements wer taken in a solution at standard conditions.
-To achieve these conditions salt was mied into water until the salinity was 34.8 \gls{psu}.
+To achieve these conditions salt was mixed into water until the salinity was 34.8 \gls{psu}.
 This value was used, as creating a solution of a specific salinity is a time-consuming process, and it was considered close enough for this experiment.
 To achieve a temperature of $15^\circ$C the water was cooled in a fridge to $4^\circ$C and then left out until it reached $15^\circ$C.
 The salinity was measured using a salinometer.
@@ -194,8 +192,7 @@ The Single Voltage Test can be seen in Table~\ref{table:sal_vsingledc}, with a g
     \end{table}
 \endgroup
 
-%TODO table sweep or smth
-\begin{figure}[H]\label{fig:sal_vsweepdc}
+\begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth]{figures/sal_vsweep.png}
     \caption{Volatge Sweep Test Showing Resistance vs Input Voltage}
@@ -206,7 +203,7 @@ The Single Voltage Test can be seen in Table~\ref{table:sal_vsingledc}, with a g
 Once the conductivity of the standard solution was found, the PSS-78 salinity equations could be used to find the salinity of sample solutions.
 The both the DC Single Voltage and DC Sweep Voltage functions were updated to return the salinity of a measured solution.
 For the DC Single Voltage Test, a voltage of $1.4V$ was found to return the most accurate value.
-Using these methods salinity of solutions were tested against a salinometer and compared.
+Using these methods salinity of solutions were tested against a salinometer and compared, were the single voltage test proved to give the more accurate measurements.
 The comparisons for the Single Voltage test can be seen in Table~\ref{table:salinity_measurements}.
 
 \begingroup
@@ -238,16 +235,16 @@ The comparisons for the Single Voltage test can be seen in Table~\ref{table:sali
 \endgroup
 
 From these measured values it can be seen that the probe has a measuring accuracy of approximately $\pm3.5$ \gls{psu}.
-This inaccuary could be attributed to noise and error.
+This inaccuracy could be attributed to noise and error.
 
 \section{EIS and Machine Learning}
 \subsection{Resistor-Capacitor Machine Learning Test}
 As mentioned in Section~\ref{sec:ml_for_eis}, a Resistor-Capacitor circuit was modelled, to test the ability of the model in mapping impedance data to a given characteristic.
 This model used the same input features, mapped to permittivity instead of salinity.
-The dataset consisted of 300 datapoints, with frequencies from $1-81Hz$ in increments of $20Hz$, permittivity $10-100F/m$, in increments of $10F/m$, and amplitudes $0.1-1.1V$ in increments of $0.2V$.
+The dataset consisted of 300 data-points, with frequencies from $1-81Hz$ in increments of $20Hz$, permittivity $10-100F/m$, in increments of $10F/m$, and amplitudes $0.1-1.1V$ in increments of $0.2V$.
 Noise was added to simulate real world conditions.
 The random forest model works by creating multiple `decision trees' that learn patterns on the data, each tree makes a prediction, and the final prediction is the average of all the trees.
-Derived features were additionally added, inclusing, Angular Frequency $\omega$, $1/f$ and Capacitor Reactance $X_C$
+Derived features were additionally added, including, Angular Frequency $\omega$, $1/f$ and Capacitor Reactance $X_C$
 Three random forest models were tested, with varying tree sizes, these being 30, 50 and 100. The results of these can be seen in table~\ref{table:rf_rc}, where it can be seen that the 100 tree model performed the best.
 
 \begingroup
@@ -275,9 +272,9 @@ Three random forest models were tested, with varying tree sizes, these being 30,
 
 The model identified which measurements were most important for predictions and found that impedance dominated with $73\%$ and inverse frequency $1/f$ played a role with $12\%$ whereas input voltage had barely any impact.
 However this is due to RC circuit being a linear system.
-The high importance of impedance and inverse frequency confirms that the model learnt the physics, not just random correlations.
+The high importance of impedance and inverse frequency confirms that the model learned the physics, not just random correlations.
 
-The model was then manually tested to verify the accuracy. These results can be seen in table~\ref{table:rf_rc_test}.
+The model was then manually tested to verify the accuracy. These results can be seen in Table~\ref{table:rf_rc_test}, with a graph showing the predicted vs actual permittivity shown in Figure~\ref{fig:permit_graph}.
 
 \begingroup
     \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
@@ -299,8 +296,163 @@ The model was then manually tested to verify the accuracy. These results can be 
     \end{table}
 \endgroup
 
-This data showed that the model was ready to be used for salinity prediction.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/permit_graph.png}
+    \caption{Predicted vs Actual Salinity}
+    \label{fig:permit_graph}
+\end{figure}
+
+This data showed that the model was feasible for salinity prediction.
 
 \subsection{AC Wave Generation and Testing}
-Before the probe could be used for \gls{eis}, test had to be conducted to ensure that it could reliably output a sine waveform, and to anaylse how the signal was measured in water.
+Before the probe could be used for \gls{eis}, test had to be conducted to ensure that it could reliably output a sine waveform, and to analyse how the signal was measured in water.
+The sine wave generation was tested using the adc and an external oscilloscope. 
+The oscilloscope was the Keysight Infiniivision DSOX2002A.
+A 1Hz and 60Hz wave outputted by the \gls{dac} and measured, as seen in Figures~\ref{fig:oscilloscope} and~\ref{fig:adc_sine}.
 
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/osc_1hz.jpg}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/osc_60hz.jpg}
+    \end{minipage}
+    \caption{1Hz and 60Hz measured on the Oscilloscope}
+    \label{fig:oscilloscope}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/adc_1hz.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{Figures/adc_60hz.png}
+    \end{minipage}
+    \caption{1Hz and 60Hz measured on the ADC}
+    \label{fig:adc_sine}
+\end{figure}
+
+%typer here
+A \gls{dc} offset can be observed, which is due to using the \gls{dac} to output the wave, causing it to only have positive voltages.
+
+\subsection{Machine Learning Salinity Prediction Test}
+To create the data for the prediction model, measurements were taken for frequencies $1-81Hz$, in increments of $20Hz$, voltages of $0.5-1.5V$ in increments of $0.2V$, and for 5 different salinity values.
+It was intended for 10 salinity values to be captured, but the process proved longer than expected, limiting it to five samples.
+This did prove to have an effect on the model as the smaller dataset meant less training data and a smaller training range.
+
+Again three models were created, with 30, 50 and 100 trees. The results for these models are shown in Table~\ref{table:salinity_prediction_stats}.
+
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[H]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|}
+            \hline
+                \textbf{Model} & \textbf{$R^2$ Score} & \textbf{Mean Error (MAE)} & \textbf{$\%$ Error (MAPE)} \\ \hline
+                100 trees & -0.27 & 3.14  & 15.57$\%$ \\ \hline
+                50 Trees  & -0.24 & 3.07  & 15.25$\%$ \\ \hline
+                30 Trees  & -0.21 & 3.02  & 14.97$\%$ \\ \hline
+            \end{tabular}
+        \caption{Table for Random Forrest on Salinity Data}
+        \label{table:salinity_prediction_stats}
+    \end{table}
+\endgroup
+
+The negative $R^2$ score indicates that the model struggled to learn meaningful patterns from the data.
+This can mainly be attributed to the low sample size and diversity.
+However, this does not mean the model does not work. Individual predictions show some positive performance.
+Despite the poor $R^2$ value, many individual predictions showed reasonable accuracy, as seen in Table~\ref{table:salinity_predictions}.
+
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[H]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{3cm}|
+                >{\centering\arraybackslash}m{3cm}|
+                >{\centering\arraybackslash}m{2cm}|
+                >{\centering\arraybackslash}m{2cm}|}
+            \hline
+                \textbf{Actual $\epsilon_R$} & \textbf{Predicted $\epsilon_R$} & \textbf{Error} & \textbf{$\%$ Error} \\ \hline
+                22.5 & 22.7 & 0.2 & 0.8$\%$ \\ \hline
+                17.5 & 23.0 & 5.5 & 31.5$\%$ \\ \hline
+                26.3 & 24.7 & 1.6 & 6.0$\%$ \\ \hline
+            \end{tabular}
+        \caption{Table for 100 Trees on Individual Salinity Predictions}
+        \label{table:salinity_predictions}
+    \end{table}
+\endgroup
+
+This accuracy, however, may be attributed to the low data variance.
+Since most of the test data was close to the mean, the predictions remain near the mean.
+This is illustrated in Figure~\ref{fig:salinity_graph}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/salinity_graph.png}
+    \caption{Predicted vs Actual Salinity}
+    \label{fig:salinity_graph}
+\end{figure}
+
+The feature importance analysis does however show that the model correctly identified the impedance related features as the most important, demonstrating that it learned the physics, despite the limited overall performance.
+The values for the feature importance analysis can be seen in Table~\ref{table:feature_analysis}.
+
+\begingroup
+    \renewcommand{\arraystretch}{1.8} % increase row height (adjust factor as needed)
+    \begin{table}[H]
+        \centering
+            \begin{tabular}{|>{\centering\arraybackslash}p{4cm}|
+                >{\centering\arraybackslash}m{2.8cm}|
+                >{\centering\arraybackslash}m{4cm}|}
+            \hline
+                \textbf{Feature} & \textbf{Importance} & \textbf{Interpretation} \\ \hline
+                $|H|$ (Transfer Magnitude) & 23.6$\%$ & Primary indicator of solution properties \\ \hline
+                $H\angle$Transfer phase & 12.6$\%$ & Secondary impedance characteristic \\ \hline
+                $1/(Z\times\omega)$ & 11.9$\%$ & Related to capacitance ($C \propto  1/(Z\times\omega)$) \\ \hline
+                $|Z|$ (Impedance magnitude) & 11.1$\%$ & Direct measure of solution resistance \\ \hline
+            \end{tabular}
+        \caption{Table for Feature Analysis}
+        \label{table:feature_analysis}
+    \end{table}
+\endgroup
+
+From this it can be seen that despite the limited performance of the model, due to the low salinity variance and small dataset, the feature engineering correctly identified the physically meaningful features, and well represented salinities were predicted with good accuracy.
+This proves that with sufficient data, the model should accurately predict salinity from \gls{eis} data.
+
+\subsection{Additional AC Analysis}
+While measuring impedance values for the salinity prediction dataset, it was noticed that between 1 and 20Hz there was a major decrease in the gain of the output signal.
+This was investigated via a frequency response analysis.
+
+In order to properly analyse the the data, a bode plot was created, as seen in Figure~\ref{fig:bode}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/bode_plot.png}
+    \caption{Bode Plot}
+    \label{fig:bode}
+\end{figure}
+
+The bode plot demonstrated tow key characteristics of the system. \\
+\textbf{Magnitude Response:} As the frequency increased from 1-21Hz, the system gain progressively decreases, indicating a frequency dependant attenuation.
+The salt water exhibits characteristic of a low pass filter, where higher frequency signals propagate less effectively than lower frequencies.
+A significant reduction in magnitude is observed at 21Hz where the gain dips to -13dB, and remains around this level for higher frequencies. \\
+\textbf{Phase Response:} The phase shift becomes increasingly negative as the frequency increases, showing that the output voltage lags the current.
+The negative phase characteristic suggests capacitive behaviour becomes more dominant at higher frequencies.
+
+This frequency response can be attributed to the electrical double layer formation between the electrode and the electrolyte, and the ionic polarisation within the saline solution.
+The polarisation can also be attributed to the \gls{dac} being used to create the wave, since it only produces positive voltages, causing a semi-permanent charge on the elctrodes.
+At low frequencies ions have sufficient time to respond to the applied electric field causing them to move according to their charge.
+This results in efficient conduction and minimal phase lag.
+As frequency increases, the electrode-solution interface acts similarly to a capacitor, due to charge accumulation on the electrodes.
+At higher frequencies, the capacitive impedance becomes dominant, causing attenuation and phase lag.

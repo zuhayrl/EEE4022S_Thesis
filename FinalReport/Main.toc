@@ -1,0 +1,70 @@
+\contentsline {chapter}{Glossary}{2}{section*.2}%
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Background to the study}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objectives of this study}{4}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Scope and Limitations}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Plan of development}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Salinity: Definition}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Overview of Salinity Measurement Methods}{6}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Historical Methods}{6}{subsection.2.3.1}%
+\contentsline {subsubsection}{Chlorinity Titration}{6}{section*.4}%
+\contentsline {subsubsection}{Gravimetric Methods}{7}{section*.5}%
+\contentsline {subsection}{\numberline {2.3.2}Physical Property Based Methods}{7}{subsection.2.3.2}%
+\contentsline {subsubsection}{Hydrometric and Density Methods}{7}{section*.6}%
+\contentsline {subsubsection}{Refractometric Thechniques}{8}{section*.7}%
+\contentsline {subsubsection}{Freezing Point Osmometry}{8}{section*.8}%
+\contentsline {subsubsection}{Magnetic Permeability}{8}{section*.9}%
+\contentsline {subsection}{\numberline {2.3.3}Advanced Analytical Methods}{9}{subsection.2.3.3}%
+\contentsline {subsubsection}{Ion Chromatography}{9}{section*.10}%
+\contentsline {section}{\numberline {2.4}Conductivity-Based Salinity Measurements}{9}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Theoretical Foundation}{9}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Temperature and Pressure Compensation}{10}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Instrumentation and Technology}{12}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Applications and Limitations}{12}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Machine Learning Applications in Electrochemical \\ Impedance Spectroscopy}{13}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}\gls {eis}}{13}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}EIS Fundamentals}{14}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Limitations of Traditional Equivalent Circuit Modelling}{14}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Machine Learning Modelling for Impedance Analysis}{14}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Machine Learning Algorithms for Salinity Prediction}{15}{subsection.2.5.5}%
+\contentsline {subsubsection}{Neural Networks}{15}{section*.11}%
+\contentsline {subsubsection}{Random Forest Algorithms}{16}{section*.12}%
+\contentsline {chapter}{\numberline {3}Methodology}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Salinity Measurement Method}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Electrode Design}{18}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Resistance Measurement}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Circuit Design}{20}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Assembly and Programming}{25}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}PCB and Circuit Assembly}{25}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Waterproofing}{27}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Microcontroller Programming}{28}{subsection.3.5.3}%
+\contentsline {subsubsection}{Calibration Test}{29}{section*.13}%
+\contentsline {subsubsection}{DC Voltage Sweep}{29}{section*.14}%
+\contentsline {subsubsection}{DC Single Voltage}{30}{section*.15}%
+\contentsline {subsubsection}{AC Wave Generator}{31}{section*.16}%
+\contentsline {subsubsection}{Inter-Board Communication}{31}{section*.17}%
+\contentsline {subsection}{\numberline {3.5.4}Machine Learning Programming and AC Analysis}{32}{subsection.3.5.4}%
+\contentsline {chapter}{\numberline {4}Testing and Evaluation}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Component and Equipment Testing}{35}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Resistor Testing}{35}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}DAC and ADC Accuracy}{36}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Accuracy of Resistance Measuring Circuitry}{37}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Salinity Testing}{39}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Voltage Measurement Accuracy and Repeatability}{39}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Conductivity and Salinity Measurement}{40}{subsection.4.2.2}%
+\contentsline {subsubsection}{Obtaining Conductivity of the Standard Solution}{40}{section*.18}%
+\contentsline {subsubsection}{Measuring Salinity of Sample Solutions}{42}{section*.19}%
+\contentsline {section}{\numberline {4.3}EIS and Machine Learning}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Resistor-Capacitor Machine Learning Test}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}AC Wave Generation and Testing}{45}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Machine Learning Salinity Prediction Test}{46}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Additional AC Analysis}{49}{subsection.4.3.4}%
+\contentsline {chapter}{\numberline {5}Conclusions}{51}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Recommendations}{53}{chapter.6}%
+\contentsline {chapter}{Bibliography}{54}{chapter.6}%
+\contentsline {chapter}{\numberline {A}Proof of Graduate Attributes}{58}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Addenda}{62}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Examples of AI Usage}{62}{section.B.1}%
+\contentsline {chapter}{\numberline {C}GitHub Repository}{67}{appendix.C}%

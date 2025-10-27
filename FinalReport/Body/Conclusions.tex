@@ -1,11 +1,17 @@
 \chapter{Conclusions}
-This project document the design and development of a conductivity based salinity measuring device, as well well investigating the feasibility of using \gls{eis} paired with \gls{ml} to predict salinity from impedance.
+This project documents the design and development of a conductivity based salinity measuring device, as well well investigating the feasibility of using \gls{eis} paired with \gls{ml} to predict salinity from impedance.
 It showed the successful development of a probe that used electrodes to measure conductivity, and which used conductivity, coupled with temperature and pressure, through the PSS-78 equations, to measure salinity.
 It also covered the development of the controller module, used to send instructions and receive readings from the probe board. These modules both performed successfully, showing accurate salinity measurements within $\pm3.5$ \gls{psu}, and transferring data and instructions accurately.
-Two methods of salinity analysis were investigated, these being \gls{dc} analysus, through resistance measuring, and \gls{ac} analysis, through gls{eis} coupled with \gls{ml}.
+Two methods of salinity analysis were investigated, these being \gls{dc} analysis, through resistance measuring, and \gls{ac} analysis, through gls{eis} coupled with \gls{ml}.
 
 The \gls{dc} analysis used two main measuring methods, a single voltage measurement, and a voltage sweep. 
 These methods both return accurate resistance values, and showed good feasibility for salinity measurement.
 However, further tests and investigations are required, to determine how this method can be improved.
 
+The Resistor-Capacitor random forest model showed good prediction capabilities, with an $R^2$ value of 0,99, and optimal feature recognition. This feature recognition translated well into the salinity prediction model, were it correctly identified the features that related most to the physics of salinity.
+However, this model was held back by the small dataset and low data variance, limiting its prediction capabilities.
 
+Investigation of the effects of \gls{ac} signals on the salt water showed that it exhibited capacitive characteristics, however this needs to be tested further.
+
+In conclusion this project showed that conductivity is a feasible method for measuring salinity, and through iteration and further development, this device can be used to measure salinity accurately.
+Furthermore, the investigation into the feasibility of using \gls{eis} paired with machine learning, proved fruitful, as the models were able to learn the physics of the system.

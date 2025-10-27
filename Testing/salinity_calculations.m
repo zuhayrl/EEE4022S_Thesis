@@ -1,55 +1,28 @@
 %% Salinity Calculation Functions
-% UNESCO Practical Salinity Scale 1978 (PSS-78) implementation
 % For conductivity probe measurements at surface pressure (0 dbar)
 
 %% Main calculation pipeline
 function salinity = voltage_to_salinity(v_input, v_probe, r1, distance, area, conductivity_standard, temp_sample, temp_standard)
-    % Complete pipeline: voltage to salinity
-    %
-    % Inputs:
-    %   v_input - Input voltage (V)
-    %   v_probe - Measured voltage across probe (V)
-    %   r1 - Series resistor value (Ohms)
-    %   distance - Electrode spacing (m)
-    %   area - Electrode area (m²)
-    %   conductivity_standard - Standard solution conductivity (S/m)
-    %   temp_sample - Sample temperature (°C)
-    %   temp_standard - Standard temperature (°C), typically 15
-    %
-    % Output:
-    %   salinity - Practical Salinity (PSU)
     
-    % Step 1: Calculate resistance
+    % Calculate resistance
     resistance = calculate_resistance(v_input, v_probe, r1);
     if resistance < 0
         error('Invalid voltage readings');
     end
     
-    % Step 2: Calculate conductivity
+    % Calculate conductivity
     conductivity = calculate_conductivity(resistance, distance, area);
     if conductivity < 0
         error('Invalid resistance or geometry parameters');
     end
     
-    % Step 3: Calculate salinity
+    % Calculate salinity
     salinity = calculate_salinity(conductivity, conductivity_standard, temp_sample, temp_standard, 0);
 end
 
 %% Individual calculation functions
-
+% Resistance
 function resistance = calculate_resistance(v_input, v_probe, r1)
-    % Calculate resistance from voltage divider circuit
-    %
-    % Inputs:
-    %   v_input - Input voltage applied to voltage divider (V)
-    %   v_probe - Voltage measured across probe (V)
-    %   r1 - Known resistor value in series with probe (Ohms)
-    %
-    % Output:
-    %   resistance - Probe resistance (Ohms)
-    %
-    % Circuit: V_input -- R1 -- [V_probe] -- R_probe -- GND
-    % Formula: R_probe = R1 * V_probe / (V_input - V_probe)
     
     if v_input <= v_probe
         resistance = -1;
@@ -59,19 +32,8 @@ function resistance = calculate_resistance(v_input, v_probe, r1)
     
     resistance = r1 * v_probe / (v_input - v_probe);
 end
-
+% Conductivity
 function conductivity = calculate_conductivity(resistance, distance, area)
-    % Calculate conductivity from resistance and probe geometry
-    %
-    % Inputs:
-    %   resistance - Measured resistance across probe (Ohms)
-    %   distance - Distance between electrode plates (m)
-    %   area - Area of electrode plates (m²)
-    %
-    % Output:
-    %   conductivity - Conductivity (S/m)
-    %
-    % Formula: Conductivity = distance / (resistance * area)
     
     if resistance <= 0 || area <= 0
         conductivity = -1;
@@ -82,17 +44,10 @@ function conductivity = calculate_conductivity(resistance, distance, area)
     conductivity = distance / (resistance * area);
 end
 
+% Temp ratio
 function Rt = calculate_rt(temp)
-    % Calculate conductivity ratio Rt from temperature
-    % Helper function for salinity calculation
-    %
-    % Input:
-    %   temp - Temperature (°C)
-    %
-    % Output:
-    %   Rt - Temperature correction factor
     
-    % Coefficients for Rt polynomial
+    % Coefficients
     c0 = 0.6766097;
     c1 = 2.00564e-2;
     c2 = 1.104259e-4;
@@ -102,17 +57,8 @@ function Rt = calculate_rt(temp)
     Rt = c0 + c1*temp + c2*temp^2 + c3*temp^3 + c4*temp^4;
 end
 
+% Pressure correction factor
 function Rp = calculate_rp(R, temp, pressure)
-    % Calculate Rp (pressure correction factor)
-    % For surface measurements (pressure = 0), returns 1.0
-    %
-    % Inputs:
-    %   R - Conductivity ratio
-    %   temp - Temperature (°C)
-    %   pressure - Pressure (dbar), use 0 for surface
-    %
-    % Output:
-    %   Rp - Pressure correction factor
     
     if pressure == 0
         Rp = 1.0;
@@ -133,18 +79,8 @@ function Rp = calculate_rp(R, temp, pressure)
          (1 + d1*temp + d2*temp^2 + (d3 + d4*temp)*R);
 end
 
+% Salinity from ratios 
 function salinity = calculate_salinity_from_ratio(R, temp, pressure)
-    % Calculate salinity from conductivity ratio using UNESCO PSS-78
-    %
-    % Inputs:
-    %   R - Conductivity ratio (sample/standard at same temp)
-    %   temp - Temperature (°C)
-    %   pressure - Pressure (dbar), use 0 for surface
-    %
-    % Output:
-    %   salinity - Practical Salinity (PSU)
-    %
-    % Valid for: 2 ≤ S ≤ 42 PSU, -2 ≤ T ≤ 35°C, 0 ≤ P ≤ 10000 dbar
     
     if R <= 0
         salinity = 0;
@@ -190,20 +126,9 @@ function salinity = calculate_salinity_from_ratio(R, temp, pressure)
                a4*RT^2 + a5*RT^2*sqrt_RT + deltaS;
 end
 
+% Salinity from cond, temp, pres
 function salinity = calculate_salinity(conductivity_sample, conductivity_standard, temp_sample, temp_standard, pressure)
-    % Calculate salinity from test solution conductivity
-    %
-    % Inputs:
-    %   conductivity_sample - Conductivity of sample solution (S/m)
-    %   conductivity_standard - Conductivity of standard solution (S/m)
-    %   temp_sample - Temperature of sample (°C)
-    %   temp_standard - Temperature of standard (°C), typically 15
-    %   pressure - Pressure (dbar), use 0 for surface
-    %
-    % Output:
-    %   salinity - Practical Salinity (PSU)
-    %
-    % Standard solution is typically 35 PSU at 15°C
+
     
     % Calculate conductivity ratio at measurement temperature
     R = conductivity_sample / conductivity_standard;
@@ -219,23 +144,23 @@ function salinity = calculate_salinity(conductivity_sample, conductivity_standar
     salinity = calculate_salinity_from_ratio(R_corrected, temp_sample, pressure);
 end
 
-%% Example usage ===================================================================================================
+%% Usage
 
 % Probe parameters
-V_INPUT = 1.5;              % ESP32 voltage (V)
-R1 = 10000;                  % 1k ohm series resistor
+V_INPUT = 1.4;             
+R1 = 100;               
 d = 0.01;      % 1cm between plates (m)
-A = 0.0004;        % 2cm² plates (m²)
+A = 0.0004;        % 2cm^2 plates (m^2)
  
-% Standard solution (35 PSU at 15°C) - measure this value
-STANDARD_CONDUCTIVITY = 0.037; % S/m (example value, measure yours!)
-STANDARD_TEMP = 15.0;        % °C
+% Standard solution (35 PSU at 15C) - measure this value
+STANDARD_CONDUCTIVITY = 3.53; % S/m 
+STANDARD_TEMP = 15.0;        % C
  
 % Sample measurement
-v_probe = 0.12;               % Measured voltage (V)
-sample_temp = 24;          % Sample temperature (°C)
+v_probe = 0.143;               % Measured voltage (V)
+sample_temp = 15;          % Sample temperature (C)
  
-% Step-by-step:
+% Or step-by-step:
 resistance = calculate_resistance(V_INPUT, v_probe, R1);
 fprintf('Resistance: %.2f Ohms\n', resistance);
  
@@ -244,7 +169,7 @@ fprintf('Conductivity: %.4f S/m\n', conductivity);
 
 salinity = calculate_salinity(conductivity, STANDARD_CONDUCTIVITY, ...
                                sample_temp, STANDARD_TEMP, 0);
- fprintf('Salinity: %.2f PSU\n', salinity);
+fprintf('Salinity: %.2f PSU\n', salinity);
 
 % Calculate salinity
 %salinity = voltage_to_salinity(V_INPUT, v_probe, R1, ...

@@ -11,8 +11,8 @@ This comprehensive review provides the theoretical and methodological foundation
 \section{Salinity: Definition}
 Salinity is a fundamental characteristic of water, and is most commonly defined as the total amount of dissolved salts in water, and in the context of oceanography, seawater.
 It is typically expressed in \gls{ppt} or \gls{psu}~\cite{salinity_def}. 
-The concept of salinity has evoloved significantly from its early definition, which was based on chlorinity measurements.
-Modern salinty is defined through the Practical Salinity Scale 1978 (PSS-78), where salinity is based on the conductivity ratio of standard seawater solutions, to a standard Potassium Chloride solution, and is dimensionless~\cite{unesco_salinity}.
+The concept of salinity has evolved significantly from its early definition, which was based on chlorinity measurements.
+Modern salinity is defined through the Practical Salinity Scale 1978 (PSS-78), where salinity is based on the conductivity ratio of standard seawater solutions, to a standard Potassium Chloride solution, and is dimensionless~\cite{unesco_salinity}.
 The salinity-conductivity relationship is however, quite complex, requiring corrections and calibrations needed for depth and temperature, as these both play a factor in the conductivity of the water. 
 
 \section{Overview of Salinity Measurement Methods}
@@ -30,7 +30,7 @@ The chlorinity of a solution has the definition `the mass of silver required to 
 This method was highly accurate, with results within ($\pm0.001$ PSU). However, it relied heavily on toxic chemicals, and was a time-consuming laboratory procedure, with limited practical application in the field~\cite{lewis_pss78}.
 
 \subsubsection{Gravimetric Methods}
-Gravimetric analysis, a technique used to determine an amount of a substance, by measuring its change in mass, invloves evaporation and the weighing of dissovled solids.
+Gravimetric analysis, a technique used to determine an amount of a substance, by measuring its change in mass, involves evaporation and the weighing of dissolved solids.
 This method directly provided measurements of the salt content, within accuracies of ($\pm0.001$ PSU), under controlled laboratory conditions.
 This method remains the reference standard for calibration processes, but is however, extremely slow~\cite{chemical_ocean}.
 
@@ -58,7 +58,7 @@ S = \frac{\frac{\rho}{\rho_0}-1}{k}
 This however, does not include temperature correction.
 
 \subsubsection{Refractometric Thechniques}
-Refractometric techniques measure the refractive index changes cuased by the dissovled salts.
+Refractometric techniques measure the refractive index changes caused by the dissolved salts.
 The refractive index of seawater is influenced by wavelength, temperature, salinity, and pressure. 
 Within the range of 500-700~nm wavelength, 0-30$^\circ$C temperature, 0-40~PSU salinity, and 0-11000~dbar pressure, the refractive index equation provides an accuracy of 0.4-80~ppm~PSU, with accuracy decreasing as pressure increases~\cite{refraction_millard}.
 Refractometers, which require only a small sample volume, are compact devices, making them suitable for portable field measurements~\cite{malarde_high-resolution_refractometer}.
@@ -67,7 +67,7 @@ Fibre optic refractometers have improved portability and reduced temperature sen
 
 \subsubsection{Freezing Point Osmometry}
 Freezing point depression osmometry exploits the colligative (i.e.~relating to the binding together of molecules) properties of dissolved salts.
-The main principle relies on freezing point depression, which is the phenomenon where a solvents freeving point is lowered when a solute is added to it.
+The main principle relies on freezing point depression, which is the phenomenon where a solvents freezing point is lowered when a solute is added to it.
 To perform the measurement, the water is cooled till its freezing point and the temperature drop is measured, which is then used to calculate the osmolality~\cite{freeze_abele}.
 This method can achieve accuracies of $\pm2 mOsm/kg H_{2}O$ which is approximately $\pm0.1-0.2$ \gls{ppt}. However its requirement for precise temperature control limits its usage to laboratory applications~\cite{freezing_accuracy}.
 
@@ -105,7 +105,7 @@ The Practical Salinity Scale 1978 (PSS-78) defines Practical Salinity $S_p$ thro
     K_{15} = \frac{C(S_p, 15, 0)}{C(KCl, 15, 0)}
 \end{equation}
 
-where the numerator, $C(S, 15, 0)$ represents the conductivity of seawater sample at 15$^\circ$C and standard atmospheric pressure ($1 atm/101.325 kPa/0dbar$), and the denomimator, $C(KCl, 15, 0)$ is the conductivity of a standard $KCl$ (Potassium Chloride) solution under identical temperature and pressure.
+where the numerator, $C(S, 15, 0)$ represents the conductivity of seawater sample at 15$^\circ$C and standard atmospheric pressure ($1 atm/101.325 kPa/0dbar$), and the denominator, $C(KCl, 15, 0)$ is the conductivity of a standard $KCl$ (Potassium Chloride) solution under identical temperature and pressure.
 The standard $KCl$ solution consists of $32.4356 \times 10^{-3}kg$ of $KCl$ dissolved in $1kg$ of water~\cite{lewis_pss78}.
 When the ratio between the water sample and the $KCl$ solution is 1, i.e. $K_{15} = 1$, then the Practical Salinity $S_p$ is, according to the definition, 35~\cite{teos-10}.
 
@@ -135,7 +135,7 @@ These ratios can be expanded as follows:
 \end{equation}
 
 This equation represents the ratio between the conductivity measurement of a sample $C(S_p,t,p)$ and the conductivity of the standard solution $C(35, 15^{\circ}, 0)$~\cite{teos-10}. 
-In order to find the salinity, $R_p$, $R_t$ and $r_t$ need to be caculated.
+In order to find the salinity, $R_p$, $R_t$ and $r_t$ need to be calculated.
 First, $r_t$ is calculated using the temperature of the sample:
 \begin{equation}
     r_t = \sum_{i=0}^{4} {c_i}{t_i}
@@ -199,8 +199,8 @@ Conductivity-based salinity measurements excel in most oceanographic and water q
 The conductivity method allows for real-time data capture, continuous monitoring, and easy integration with autonomous devices~\cite{roemmich_argo_2009}. 
 
 However, this method does face some limitations. Due to its dependance on the water's capacity to conduct electricity, freshawater applications require specialised low-conductivity sensors, while hyper-saline environments could exceed the standard calibration range.
-The method's reliance on emperical correlations derived from typical seawater compositions can introduce errors in waters ocean waters affected by external factors such as pollution or freshwater inflow from connecting rivers, which can alter ionic composition and introduce variability not captured by standard seawater-based calibrations.
-In such environments supplementry practices may be necessary for accurate salinity measurements~\cite{uncles_estuarine_2002}.
+The method's reliance on empirical correlations derived from typical seawater compositions can introduce errors in waters ocean waters affected by external factors such as pollution or freshwater inflow from connecting rivers, which can alter ionic composition and introduce variability not captured by standard seawater-based calibrations.
+In such environments supplementary practices may be necessary for accurate salinity measurements~\cite{uncles_estuarine_2002}.
 
 \section{Machine Learning Applications in Electrochemical \\ Impedance Spectroscopy}
 \subsection{\gls{eis}}
@@ -219,11 +219,11 @@ In electrolyte analysis, multi-frequency measurements enable determination of io
 
 
 \subsection{EIS Fundamentals}
-The \gls{eis} measuring process invloves applying an AC signal at a specific frequency and amplitude to a sample.
+The \gls{eis} measuring process involves applying an AC signal at a specific frequency and amplitude to a sample.
 By sweeping across a multitude of frequencies, a complete impedance spectrum can be obtained.
 The impedance magnitude $|Z|$ and phase angle $\phi$ at each frequency is recorded, and are used to analyse the electrical properties of the solution~\cite{orazem_electrochemical_2008}.
 For salinity, it can be used to characterise the electrical properties of ionic solutions, including seawater, by analyzing how ions affect the impedance spectrum. 
-This data can be used to approximate the system using \glspl{eec}, which are circuits ussed to describe a system with discrete electrical circuit elements~\cite{barsoukov_impedance_2005}.
+This data can be used to approximate the system using \glspl{eec}, which are circuits used to describe a system with discrete electrical circuit elements~\cite{barsoukov_impedance_2005}.
 \glspl{eec} fulfill the overall goal of \gls{eis} is to describe the behaviour of the electrode and solution in terms of electrical parameters such as resistances and capacitances~\cite{canales_electrochemical_2021}.
 
 %\section{Machine Learning for Impedance to Salinity Mapping}
@@ -251,21 +251,21 @@ When a node's output exceeds its threshold value, it activates and sends data to
 This creates a feed-forward process where information flows from input to output. Each node functions like a linear regression model with inputs, weights, a bias, and an output.
 Weights determine how important each input is, with larger weights having greater significance. Inputs are multiplied by their weights, summed together, and passed through an activation function to determine if the node fires.
 Neural networks rely on training data to learn and improve accuracy over time.
-They use cost functions to evaluate accuracy and adjust their weights and biases through gradient descent and backpropagation to minimize errors and reach optimal performance~\cite{ibm_nn}.
+They use cost functions to evaluate accuracy and adjust their weights and biases through gradient descent and back-propagation to minimize errors and reach optimal performance~\cite{ibm_nn}.
 
 \glspl{ann} represent the most widely adopted machine learning approach for impedance-based concentration prediction due to their exceptional capability for modelling complex non-linear relationships.
 The architecture typically consists of an input layer receiving impedance features such as frequency and phase, one or more hidden layers that extract relevant patterns, and an output layer producing predictions~\cite{christopher_m_bishop_pattern_2006}.
 Hidden layers with non-linear activation functions enable the network to capture complex impedance-salinity relationships~\cite{ann_eis_hsueh}.
 
 Deep neural networks with multiple hidden layers can learn hierarchical representations, potentially identifying frequency dependent patterns at different levels.
-However, they require larger training datasets and careful regularisation to prevent overfitting~\cite{ann_eis_hsueh}.
+However, they require larger training datasets and careful regularisation to prevent over-fitting~\cite{ann_eis_hsueh}.
 
 \subsubsection{Random Forest Algorithms}
 Random forest is a machine learning algorithm which combines the output of multiple decision trees to reach a single result. It handles both classification and regression problems.
 The model is built from multiple decision trees. Decision trees start with a basic question and use a series of questions (decision nodes) to split data, ultimately leading to a final decision at the leaf node. They're trained through the Classification and Regression Tree (CART) algorithm.
-Unlike single decision trees that can be prone to bias and overfitting, when multiple uncorrelated decision trees form an ensemble in random forest, they predict more accurate results.
-By accounting for potential variability in the data through feature randomness, random forests reduce the risk of overfitting, bias, and overall variance, resulting in more precise predictions~\cite{ibm_randomforest}.
+Unlike single decision trees that can be prone to bias and over-fitting, when multiple uncorrelated decision trees form an ensemble in random forest, they predict more accurate results.
+By accounting for potential variability in the data through feature randomness, random forests reduce the risk of over-fitting, bias, and overall variance, resulting in more precise predictions~\cite{ibm_randomforest}.
 
 Random Forest methods demonstrate excellent performance with mixed data types, enabling simultaneous utilisation of raw impedance values, derived electrochemical parameters, and statistical features within unified prediction models.
-The algorithm's resistance to overfitting makes it particularly suitable for limited training data scenarios common in analytical applications~\cite{salman_random_2024}.
+The algorithm's resistance to over-fitting makes it particularly suitable for limited training data scenarios common in analytical applications~\cite{salman_random_2024}.
 

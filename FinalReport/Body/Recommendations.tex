@@ -1,3 +1,15 @@
 \chapter{Recommendations}
 
-Make sensible recommendations for further work.
+Further circuit development for the probe is required.
+Many of the components could be upgraded to more suitable ones, given the budget.
+\gls{adc}s with a higher reference voltage will allow for a wider range of voltage measurements.
+For the \gls{ac} signal generation, a method of removing the \gls{dc} component should be implemented.
+This could be done using \gls{ac} coupling, including a virtual ground rail, or using a negative voltage.
+Additionally, the implementation of a signal generator could solve this issue, as well as fill in where the \gls{dac} fell short in \gls{ac} signal generation, allowing for a wider range of frequencies at a higher resolution.
+
+For the development of the machine learning algorithm to predict salinity, a much larger dataset with a higher variance should be used.
+This would allow for a better range of training data, causing predictions to be less prone to error. The addition of temperature as a feature would also allow predictions to be done across a range of temperatures, however, this would require an even larger sample size.
+
+The controller board served its purpose well, given the budget. However, further development should consider designing the board to work independent of a computer.
+An interface with an OLED display, and built in menus and functions would allow for measurement without a computer.
+

@@ -1,31 +1,64 @@
-\chapter{Additional Files and Schematics}
+\chapter{Proof of Graduate Attributes}
 
-Add any information here that you would like to have in your project but is not necessary in the main
-text. Remember to refer to it in the main text. Separate your appendices based on what they are for
-example. Equation derivations in Appendix A and code in Appendix B etc.
-
-\textbf{IMPORTANT:} Appendix A (see the table below) should provide a summary of how you have met the GAs associated with the course, and where in the report the evidence can be found.
-
-If you have used AI in writing your report, you need to provide details in one of the appendices of how you used it.
-
-If appropriate, in a subsequent appendix, provide a link to any GitHub repository where the code and additional materials for your project can be found.
+%\begin{center}
+%\begin{tabular}{||p{2em} |p{15em} |p{20em}||}
+% \hline
+% \textbf{GA} & \textbf{Requirement} & \textbf{Justification and section in the report}  \\  [0.5ex] 
+% \hline\hline
+% 1 & Problem-solving & During this course I have done research on salinity measurements. This included techniques used for measuring salinity, their use cases and the mathematics behind conductivity methods used for salinity calculations. Using this research, I created a salinity measuring device that uses conductivity, temperature and depth (CTD) to measure salinity in salt water. This device required me to build a PCB and meet specific requirements, such as size and cost constraints. I had to carefully choose components and build the PCB with good practice methods used. I plan to then program this device to measure and calculate the salinity using the mathematics I researched. I have also researched Machine learning methods that can be applicable to creating a prediction or mapping model between the impedance of the salt water and its salinity. This then led to me researching Electrical Impedance Spectroscopy, which I found, should allow me to accurately create my ML model. \\  \hline
+% 4 & Investigations, experiments and data analysis & I am designing a device that measures conductivity of saline solutions. Using this device, I will run an Electrical Impedance Spectroscopy measuring across the saline solution. Here I will compare the input wave to the output over the saline solution to calculate the impedance. This will be done over multiple different input waves and solutions of varying salinity to create a wide enough dataset to feed into the ML model. Here I will also use the probes to measure the salinity directly to find out the accuracy of the system and if any improvements should be made in future iterations.  \\
+% \hline
+% 5 & Use of engineering tools & For the hardware component of this project, I design a PCB. I used KiCAD to design both the schematic and the PCB. For the software component I plan to use VS Code and Arduino IDE with embedded C/C++. For Testing and debugging I will use tools including Oscilloscopes and Multimeters. For version control I have used Git and have a GitHub page for this project, allowing for easy changes and backing up of files. For machine learning I plan to use python with jupyter notebooks. \\
+% \hline
+% 6 & Professional and technical communication (Long report) & During my project I have been writing a report that documents the research I have done, the processes I have taken and my results. This report will be formatted according to the specified format and will be handed in at the end of the project. By documenting my project and meeting the deadlines I will show my ability for communication. My project also includes an oral presentation at the end which will show my presentation skills and verbal communication skills. Throughout this project I have and will submit all relevant tasks on time and have and plan to be punctual will all communication such as meetings. \\
+% \hline
+% 8 & Individual work & This project has shown that I have the ability to work individually, with research, design, experimentation and documentation. Where necessary I have attributed any work or ideas I have gotten from others to them. (i.e. I have referenced all sources) \\
+% \hline
+% 9 & Independent learning ability & have done significant research on salinity measurements, Electrical Impedance Spectroscopy, and Machine Learning algorithms. I have also designed a PCB, which involved learning about layered PCBs and interference, researching components, creating iterations to fix mistakes. This also included asking knowledgeable people such as my supervisor for advice on topics that I have some uncertainty on. \\ [1ex] 
+% \hline
+%\end{tabular}
+%\end{center}
 
 \begin{center}
-\begin{tabular}{||p{2em} |p{15em} |p{20em}||}
- \hline
- \textbf{GA} & \textbf{Requirement} & \textbf{Justification and section in the report}  \\ [0.5ex] 
- \hline\hline
- 1 & Problem-solving & Description here  \\ 
- \hline
- 4 & Investigations, experiments and data analysis & Description here  \\
- \hline
- 5 & Use of engineering tools & Description here \\
- \hline
- 6 & Professional and technical communication (Long report) & Description here \\
- \hline
- 8 & Individual work & Description here \\
- \hline
- 9 & Independent learning ability & Description here \\ [1ex] 
- \hline
-\end{tabular}
+\setlength{\extrarowheight}{1em} % optional: increases row height
+\begin{longtable}{||p{2em}|p{15em}|p{20em}||}
+\caption{Graduate Attributes and Justifications}\label{tab:GA_requirements} \\
+\hline
+\textbf{GA} & \textbf{Requirement} & \textbf{Justification and section in the report} \\ [0.5ex]
+\hline
+\endfirsthead
+
+\hline
+\textbf{GA} & \textbf{Requirement} & \textbf{Justification and section in the report} \\ [0.5ex]
+\hline
+\endhead
+
+\hline
+\multicolumn{3}{r}{\textit{Continued on next page}} \\
+\hline
+\endfoot
+
+\hline
+\endlastfoot
+
+1 & Problem-solving &
+During this course I have done research on salinity measurements. This included techniques used for measuring salinity, their use cases and the mathematics behind conductivity methods used for salinity calculations. Using this research, I created a salinity measuring device that uses conductivity, temperature and depth (CTD) to measure salinity in salt water. This device required me to build a PCB and meet specific requirements, such as size and cost constraints. I had to carefully choose components and build the PCB with good practice methods used. I plan to then program this device to measure and calculate the salinity using the mathematics I researched. I have also researched Machine learning methods that can be applicable to creating a prediction or mapping model between the impedance of the salt water and its salinity. This then led to me researching Electrical Impedance Spectroscopy, which I found, should allow me to accurately create my ML model. \\ \hline
+
+4 & Investigations, experiments and data analysis &
+I am designing a device that measures conductivity of saline solutions. Using this device, I will run an Electrical Impedance Spectroscopy measuring across the saline solution. Here I will compare the input wave to the output over the saline solution to calculate the impedance. This will be done over multiple different input waves and solutions of varying salinity to create a wide enough dataset to feed into the ML model. Here I will also use the probes to measure the salinity directly to find out the accuracy of the system and if any improvements should be made in future iterations. \\ \hline
+
+5 & Use of engineering tools &
+For the hardware component of this project, I design a PCB. I used KiCAD to design both the schematic and the PCB. For the software component I plan to use VS Code and Arduino IDE with embedded C/C++. For Testing and debugging I will use tools including Oscilloscopes and Multimeters. For version control I have used Git and have a GitHub page for this project, allowing for easy changes and backing up of files. For machine learning I plan to use python with jupyter notebooks. \\ \hline
+
+6 & Professional and technical communication (Long report) &
+During my project I have been writing a report that documents the research I have done, the processes I have taken and my results. This report will be formatted according to the specified format and will be handed in at the end of the project. By documenting my project and meeting the deadlines I will show my ability for communication. My project also includes an oral presentation at the end which will show my presentation skills and verbal communication skills. Throughout this project I have and will submit all relevant tasks on time and have and plan to be punctual will all communication such as meetings. \\ \hline
+
+8 & Individual work &
+This project has shown that I have the ability to work individually, with research, design, experimentation and documentation. Where necessary I have attributed any work or ideas I have gotten from others to them. (i.e. I have referenced all sources). \\ \hline
+
+9 & Independent learning ability &
+I have done significant research on salinity measurements, Electrical Impedance Spectroscopy, and Machine Learning algorithms. I have also designed a PCB, which involved learning about layered PCBs and interference, researching components, creating iterations to fix mistakes. This also included asking knowledgeable people such as my supervisor for advice on topics that I have some uncertainty on. \\ [1ex]
+\hline
+
+\end{longtable}
 \end{center}

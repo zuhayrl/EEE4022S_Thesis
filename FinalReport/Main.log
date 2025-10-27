@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  26 OCT 2025 14:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.4.15)  27 OCT 2025 16:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -360,4 +360,1623 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 \XKV@tempa@toks=\toks35
 )
 \XKV@depth=\count308
-File: xkeyval.tex 2014/12/03 v2.7a key=value par
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossaries.sty
+Package: glossaries 2025/08/11 v4.8 (NLCT)
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+Package: mfirstuc 2025/04/03 v2.09 (NLCT)
+\@glsmfirst=\toks36
+\@glsmrest=\toks37
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.sty
+Package: datatool-base 2025/04/25 v3.4.1 (NLCT)
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklang.sty
+Package: tracklang 2025/03/11 v1.6.6 (NLCT) Track Languages
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\tracklang.tex)) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-l3fp.def
+File: datatool-l3fp.def 2025/04/25 v3.4.1 (NLCT)
+)
+\@dtl@toks=\toks38
+\@dtl@tmpcount=\count309
+\dtl@tmplength=\skip79
+\l__datatool_measure_box=\box65
+\dtl@sortresult=\count310
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-utf8.ldf
+File: datatool-utf8.ldf 2025/04/25 v3.4.1 (NLCT)
+)
+\@dtl@datatype=\count311
+\l__datatool_tmpa_int=\count312
+\l__datatool_tmpb_int=\count313
+\l__datatool_tmpc_int=\count314
+\l__datatool_tmpd_int=\count315
+\l__datatool_count_int=\count316
+\l__datatool_tmp_datatype_int=\count317
+\l__datatool_tmpa_dim=\dimen173
+\l__datatool_tmpb_dim=\dimen174
+\c_datatool_unknown_int=\count318
+\l__datatool_year_int=\count319
+\l__datatool_month_int=\count320
+\l__datatool_day_int=\count321
+\l__datatool_hour_int=\count322
+\l__datatool_minute_int=\count323
+\l__datatool_second_int=\count324
+\l__datatool_tzhour_int=\count325
+\l__datatool_tzminute_int=\count326
+\l__datatool_julian_int=\count327
+\l__datatool_local_julian_int=\count328
+\l__datatool_prefix_int=\count329
+\l__datatool_suffix_int=\count330
+\@dtl@foreach@level=\count331
+\dtl@codeA=\count332
+\dtl@codeB=\count333
+)
+\gls@level=\count334
+\@gls@tmpb=\toks39
+\gls@tmplen=\skip80
+\l__glossaries_tmpa_dim=\dimen175
+\l__glossaries_tmpb_dim=\dimen176
+\glskeylisttok=\toks40
+\glslabeltok=\toks41
+\glsshorttok=\toks42
+\glslongtok=\toks43
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-hypernav.sty
+Package: glossary-hypernav 2025/08/11 v4.8 (NLCT)
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-list.sty
+Package: glossary-list 2025/08/11 v4.8 (NLCT)
+\glslistdottedwidth=\skip81
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-long.sty
+Package: glossary-long 2025/08/11 v4.8 (NLCT)
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip82
+\LTright=\skip83
+\LTpre=\skip84
+\LTpost=\skip85
+\LTchunksize=\count335
+\LTcapwidth=\dimen177
+\LT@head=\box66
+\LT@firsthead=\box67
+\LT@foot=\box68
+\LT@lastfoot=\box69
+\LT@gbox=\box70
+\LT@cols=\count336
+\LT@rows=\count337
+\c@LT@tables=\count338
+\c@LT@chunks=\count339
+\LT@p@ftn=\toks44
+)
+\glsdescwidth=\skip86
+\glspagelistwidth=\skip87
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-super.sty
+Package: glossary-super 2025/08/11 v4.8 (NLCT)
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabular.sty
+Package: supertabular 2024/07/20 v4.2c the supertabular environment
+\c@tracingst=\count340
+\ST@wd=\dimen178
+\ST@rightskip=\skip88
+\ST@leftskip=\skip89
+\ST@parfillskip=\skip90
+\ST@pageleft=\dimen179
+\ST@headht=\dimen180
+\ST@tailht=\dimen181
+\ST@pagesofar=\dimen182
+\ST@pboxht=\dimen183
+\ST@rowht=\dimen184
+\ST@prevht=\dimen185
+\ST@toadd=\dimen186
+\ST@dimen=\dimen187
+\ST@pbox=\box71
+)) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\glossary-tree.sty
+Package: glossary-tree 2025/08/11 v4.8 (NLCT)
+\l__glossaries_tree_max_known_level_int=\count341
+\l__glossaries_tree_offset_dim=\dimen188
+\l__glossaries_tree_namewidth_dim=\dimen189
+\l__glossaries_tree_symbolwidth_dim=\dimen190
+\l__glossaries_tree_prenamesym_width_dim=\dimen191
+\l__glossaries_tree_presubnamesym_width_dim=\dimen192
+\l__glossaries_tree_namewidth_padding_dim=\dimen193
+\l__glossaries_tree_symbolwidth_padding_dim=\dimen194
+\l__glossaries_tree_namesymbolwidth_dim=\dimen195
+\l__glossaries_tree_namesymbolwidth_padding_dim=\dimen196
+\l__glossaries_tree_level_int=\count342
+\glstreeindent=\skip91
+))
+\@glsxtr@leveloffset=\count343
+\glsxtrresourcecount=\count344
+\@glsxtrnewgls@inner=\count345
+\glsshortpltok=\toks45
+\glslongpltok=\toks46
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-extra\glossaries-extra-abbrstyles.def
+File: glossaries-extra-abbrstyles.def 2025/08/13 v1.8 (NLCT)
+)
+\mglselementindex=\count346
+) (glossary.tex)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 43.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count347
+\l__pdf_internal_box=\box72
+) (Main.aux
+\g__glossaries_gls_ref_acronym_int=\count348
+ (Body/Introduction.aux) (Body/Literature.aux) (Body/Methodology.aux
+
+LaTeX Warning: Label `fig:voltage_divider' multiply defined.
+
+
+LaTeX Warning: Label `fig:resistance_circuit' multiply defined.
+
+) (Body/Results.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
+\openout1 = `Main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=452.9679pt
+* \textheight=700.50687pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count349
+\scratchdimen=\dimen197
+\scratchbox=\box73
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen198
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks48
+) (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package hyperref Info: Link coloring OFF on input line 43.
+ (Main.out) (Main.out)
+\@outlinefile=\write3
+\openout3 = `Main.out'.
+
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 43.
+<Figures/uctLogo.png, id=218, 418.56375pt x 425.59pt>
+File: Figures/uctLogo.png Graphic file (type png)
+<use Figures/uctLogo.png>
+Package pdftex.def Info: Figures/uctLogo.png  used on input line 57.
+(pdftex.def)             Requested size: 146.4995pt x 148.95872pt.
+ [1
+
+{C:/Users/zuhay/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Figures/uctLogo.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 214.
+(C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 214.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (7.75787pt too wide) in paragraph at lines 214--214
+\OT1/cmr/m/n/12 intelligence software has been limited to giving overviews of topics, checking grammar,
+ []
+
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 214--214
+
+ []
+
+[3] (Main.toc [4
+
+] [5] [6])
+\tf@toc=\write4
+\openout4 = `Main.toc'.
+
+
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]. Rerun may be required (or you may have forgotten to use commands like \gls) on input line 214.
+
+
+Package glossaries Info: Preparing to sort glossary `acronym' (total number of
+(glossaries)             referenced entries: 16)
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.214 }
+       } % for nohyphens and line spacing [1] [2
+
+
+]
+\openout2 = `Body/Introduction.aux'.
+
+ (Body/Introduction.tex
+Chapter 1.
+[3
+
+
+]
+Overfull \hbox (4.16763pt too wide) in paragraph at lines 24--27
+\OT1/cmr/m/n/12 The scope of this project includes the design, assembly and testing of the salinity measuring
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4]
+\openout2 = `Body/Literature.aux'.
+
+ (Body/Literature.tex
+Chapter 2.
+
+Overfull \hbox (24.53409pt too wide) in paragraph at lines 3--10
+\OT1/cmr/m/n/12 particular emphasis on conductivity-based methods and emerging machine learning approaches
+ []
+
+
+Overfull \hbox (2.92737pt too wide) in paragraph at lines 3--10
+\OT1/cmr/m/n/12 enhanced salinity analysis, examining how frequency-domain measurements and intelligent
+ []
+
+
+Overfull \hbox (14.24207pt too wide) in paragraph at lines 3--10
+\OT1/cmr/m/n/12 methods. This comprehensive review provides the theoretical and methodological foundation
+ []
+
+
+Overfull \hbox (2.01349pt too wide) in paragraph at lines 12--17
+\OT1/cmr/m/n/12 evolved significantly from its early definition, which was based on chlorinity measurements.
+ []
+
+
+Overfull \hbox (10.42128pt too wide) in paragraph at lines 12--17
+\OT1/cmr/m/n/12 Potassium Chloride solution, and is dimensionless [[]]. The salinity-conductivity relationship
+ []
+
+[5
+
+
+
+
+]
+Overfull \hbox (1.93988pt too wide) in paragraph at lines 19--24
+\OT1/cmr/m/n/12 gravimetric analysis, chemical titration (such as the Mohr-Knudsen method for chlorinity),
+ []
+
+
+Overfull \hbox (12.21431pt too wide) in paragraph at lines 19--24
+\OT1/cmr/m/n/12 automated measurements. Modern approaches predominantly rely on electrical conductivity
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+Overfull \hbox (28.64238pt too wide) in paragraph at lines 41--45
+\OT1/cmr/m/n/12 Hydrometric methods using density measurements via hydrometers, offer salinity measurements
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+Overfull \hbox (27.92433pt too wide) in paragraph at lines 76--80
+\OT1/cmr/m/n/12 Magnetic properties of liquids, particularly magnetic susceptibility, vary with ion concentration,
+ []
+
+
+Overfull \hbox (5.10661pt too wide) in paragraph at lines 76--80
+\OT1/cmr/m/n/12 bulk magnetic susceptibility (BMS) of saline water correlates with salinity and conductivity
+ []
+
+
+Overfull \hbox (12.08792pt too wide) in paragraph at lines 76--80
+\OT1/cmr/m/n/12 magnetic susceptibility values. This approach offers the benefit of non-contact measurement,
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+Overfull \hbox (0.5544pt too wide) in paragraph at lines 152--154
+\OT1/cmr/m/n/12 Practical salinity $\OML/cmm/m/it/12 S[]$ \OT1/cmr/m/n/12 can be calculated from Equation []2.3[]. For cases where the temperature
+ []
+
+
+Overfull \hbox (20.1706pt too wide) in paragraph at lines 164--179
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (0.64267pt too wide) in paragraph at lines 191--196
+\OT1/cmr/m/n/12 The most common method for measuring salinity is by using a [][]Conductivity, Temperature,
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+Overfull \hbox (8.41064pt too wide) in paragraph at lines 201--204
+\OT1/cmr/m/n/12 capacity to conduct electricity, freshawater applications require specialised low-conductivity
+ []
+
+
+Overfull \hbox (3.9718pt too wide) in paragraph at lines 201--204
+\OT1/cmr/m/n/12 The method's reliance on empirical correlations derived from typical seawater compositions
+ []
+
+
+Overfull \hbox (6.06067pt too wide) in paragraph at lines 201--204
+\OT1/cmr/m/n/12 or freshwater inflow from connecting rivers, which can alter ionic composition and introduce
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.204 
+      ]
+Overfull \hbox (11.91985pt too wide) in paragraph at lines 205--205
+[]\OT1/cmr/bx/n/17.28 Machine Learning Applications in Electrochemical 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 205.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 206.
+
+
+Overfull \hbox (17.60094pt too wide) in paragraph at lines 208--213
+[][]\OT1/cmr/m/n/12 Electrochemical Impedance Spectroscopy (EIS)[] is an analytical technique used to characterise
+ []
+
+
+Overfull \hbox (3.21358pt too wide) in paragraph at lines 217--219
+[]\OT1/cmr/m/n/12 EIS has demonstrated success in quantitative concentration analysis across diverse solution
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]
+Overfull \hbox (1.94405pt too wide) in paragraph at lines 238--244
+\OT1/cmr/m/n/12 Machine learning approaches offer advantages by learning complex non-linear relationships
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+Overfull \hbox (0.44684pt too wide) in paragraph at lines 256--259
+\OT1/cmr/m/n/12 approach for impedance-based concentration prediction due to their exceptional capability
+ []
+
+
+LaTeX Warning: Citation `ibm_randomforest' on page 15 undefined on input line 267.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15]
+Overfull \hbox (24.46881pt too wide) in paragraph at lines 269--271
+\OT1/cmr/m/n/12 enabling simultaneous utilisation of raw impedance values, derived electrochemical parameters,
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+\openout2 = `Body/Methodology.aux'.
+
+ (Body/Methodology.tex
+Chapter 3.
+
+Overfull \hbox (3.67052pt too wide) in paragraph at lines 12--16
+[]\OT1/cmr/m/n/12 Modern [][]CTD[] sensors are compact, and can easily be designed for specific space constraints.
+ []
+
+
+Overfull \hbox (15.94678pt too wide) in paragraph at lines 17--18
+[][][]\OT1/cmr/m/n/12 CTD[] instruments inherently measure conductivity, temperature and pressure simultaneously,
+ []
+
+
+Overfull \hbox (6.58289pt too wide) in paragraph at lines 17--18
+\OT1/cmr/m/n/12 laboratory methods measure salinity only, and require separate temperature measurements. 
+ []
+
+[17
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+<Figures/electrode_pcb.png, id=690, 341.275pt x 544.0325pt>
+File: Figures/electrode_pcb.png Graphic file (type png)
+<use Figures/electrode_pcb.png>
+Package pdftex.def Info: Figures/electrode_pcb.png  used on input line 64.
+(pdftex.def)             Requested size: 135.89174pt x 216.6296pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 62--75
+[]$[]$ $[]$
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.86 
+      <./Figures/electrode_pcb.png>]
+<figures/fig_voltage_divider.png, id=699, 581.17125pt x 298.11375pt>
+File: figures/fig_voltage_divider.png Graphic file (type png)
+<use figures/fig_voltage_divider.png>
+Package pdftex.def Info: figures/fig_voltage_divider.png  used on input line 89.
+(pdftex.def)             Requested size: 271.7835pt x 139.41295pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.115 
+       <./figures/fig_voltage_divider.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
+Overfull \hbox (5.88994pt too wide) in paragraph at lines 183--184
+[]\OT1/cmr/m/n/12 A simplified circuit diagram showing the resistance measuring circuit is shown in Figure []3.3[]. 
+ []
+
+<figures/fig_resistance_circuit.png, id=756, 414.79968pt x 367.3725pt>
+File: figures/fig_resistance_circuit.png Graphic file (type png)
+<use figures/fig_resistance_circuit.png>
+Package pdftex.def Info: figures/fig_resistance_circuit.png  used on input line 187.
+(pdftex.def)             Requested size: 339.72592pt x 300.89423pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.196 F
+       our points on the resistance circuit were routed to separate \gls{adc... <./figures/fig_resistance_circuit.png>]
+Overfull \hbox (10.60878pt too wide) in paragraph at lines 202--206
+\OT1/cmr/m/n/12 sensor was included, as these values are needed for calculating salinity. The MS583702BA01-
+ []
+
+
+Overfull \hbox (7.10094pt too wide) in paragraph at lines 221--229
+\OT1/cmr/m/n/12 However, wireless communication, especially electro-magnetic waves suffer interference [[]].
+ []
+
+
+Overfull \hbox (26.10074pt too wide) in paragraph at lines 221--229
+\OT1/cmr/m/n/12 strengthens the electromagnetic magnetic interference rejection and reduces signal degradation.
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24]
+<Figures/probe_pcb.jpg, id=797, 750.805pt x 793.96625pt>
+File: Figures/probe_pcb.jpg Graphic file (type jpg)
+<use Figures/probe_pcb.jpg>
+Package pdftex.def Info: Figures/probe_pcb.jpg  used on input line 254.
+(pdftex.def)             Requested size: 181.18784pt x 191.59767pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 252--275
+[]$[]$ $[]$
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]
+<Figures/controller_circuit.jpg, id=808, 683.55376pt x 1142.2675pt>
+File: Figures/controller_circuit.jpg Graphic file (type jpg)
+<use Figures/controller_circuit.jpg>
+Package pdftex.def Info: Figures/controller_circuit.jpg  used on input line 282.
+(pdftex.def)             Requested size: 181.18784pt x 302.76917pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 280--295
+[]$[]$ $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--300
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.301 T
+       he two \gls{pcb}s were connected via 4-core communication cable, with...
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.301 T
+       he two \gls{pcb}s were connected via 4-core communication cable, with... <./Figures/probe_pcb.jpg> <./Figures/controller_circuit.jpg>]
+<Figures/encapsulated_probe.jpg, id=824, 900.36375pt x 976.64874pt>
+File: Figures/encapsulated_probe.jpg Graphic file (type jpg)
+<use Figures/encapsulated_probe.jpg>
+Package pdftex.def Info: Figures/encapsulated_probe.jpg  used on input line 329.
+(pdftex.def)             Requested size: 181.18784pt x 196.53339pt.
+
+Overfull \hbox (2.61108pt too wide) in paragraph at lines 327--341
+[]$[]$ $[]$
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.364 \end{gather}
+                   <./Figures/encapsulated_probe.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29]
+<figures/dcsweep.png, id=862, 359.3425pt x 512.91624pt>
+File: figures/dcsweep.png Graphic file (type png)
+<use figures/dcsweep.png>
+Package pdftex.def Info: figures/dcsweep.png  used on input line 394.
+(pdftex.def)             Requested size: 181.18439pt x 258.62541pt.
+<figures/dcpoint.png, id=863, 322.20375pt x 332.24126pt>
+File: figures/dcpoint.png Graphic file (type png)
+<use figures/dcpoint.png>
+Package pdftex.def Info: figures/dcpoint.png  used on input line 401.
+(pdftex.def)             Requested size: 181.18439pt x 186.83453pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.405 
+       <./figures/dcsweep.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.427 
+       <./figures/dcpoint.png>]
+<figures/comms.png, id=887, 502.87875pt x 261.97874pt>
+File: figures/comms.png Graphic file (type png)
+<use figures/comms.png>
+Package pdftex.def Info: figures/comms.png  used on input line 430.
+(pdftex.def)             Requested size: 317.07614pt x 165.1834pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.448 \begin{equation}
+                       <./figures/comms.png>]
+Overfull \hbox (0.14221pt too wide) in paragraph at lines 454--462
+\OT1/cmr/m/n/12 which are inherent in electro-chemical systems [[]]. They have the ability to automatically
+ []
+
+
+Overfull \hbox (1.49127pt too wide) in paragraph at lines 454--462
+\OT1/cmr/m/n/12 approach (using multiple smaller models), which reduces variance and improves robustness
+ []
+
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34]
+\openout2 = `Body/Results.aux'.
+
+ (Body/Results.tex
+Chapter 4.
+[35
+
+
+
+
+]
+<figures/dac_test.png, id=933, 614.952pt x 341.64pt>
+File: figures/dac_test.png Graphic file (type png)
+<use figures/dac_test.png>
+Package pdftex.def Info: figures/dac_test.png  used on input line 51.
+(pdftex.def)             Requested size: 317.07614pt x 176.15247pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.57 
+      <./figures/dac_test.png>]
+<figures/adc_test.png, id=948, 666.636pt x 405.15pt>
+File: figures/adc_test.png Graphic file (type png)
+<use figures/adc_test.png>
+Package pdftex.def Info: figures/adc_test.png  used on input line 66.
+(pdftex.def)             Requested size: 317.07614pt x 192.7017pt.
+
+Overfull \hbox (11.4234pt too wide) in paragraph at lines 88--107
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figures/resistance_measurement_test.png, id=957, 425.298pt x 296.964pt>
+File: figures/resistance_measurement_test.png Graphic file (type png)
+<use figures/resistance_measurement_test.png>
+Package pdftex.def Info: figures/resistance_measurement_test.png  used on input line 117.
+(pdftex.def)             Requested size: 317.07614pt x 221.40384pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[37
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.120 \end{figure}
+                   <./figures/adc_test.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.121 
+      ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.135 F
+       igure~\ref{fig:repeatability_test} shows voltage sweeps across the sa... <./figures/resistance_measurement_test.png>]
+<figures/repeatability_test.png, id=977, 541.149pt x 364.416pt>
+File: figures/repeatability_test.png Graphic file (type png)
+<use figures/repeatability_test.png>
+Package pdftex.def Info: figures/repeatability_test.png  used on input line 138.
+(pdftex.def)             Requested size: 317.07614pt x 213.53003pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.161 
+       <./figures/repeatability_test.png>]
+Overfull \hbox (3.7695pt too wide) in paragraph at lines 176--176
+ \OT1/cmr/bx/n/12 AMP 
+ []
+
+
+Overfull \hbox (4.57504pt too wide) in paragraph at lines 187--187
+ []|\OT1/cmr/bx/n/12 Mean| 
+ []
+
+<figures/sal_vsweep.png, id=989, 451.359pt x 274.188pt>
+File: figures/sal_vsweep.png Graphic file (type png)
+<use figures/sal_vsweep.png>
+Package pdftex.def Info: figures/sal_vsweep.png  used on input line 197.
+(pdftex.def)             Requested size: 317.07614pt x 192.6206pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.201 
+      ]
+Overfull \hbox (2.13338pt too wide) in paragraph at lines 221--221
+ []|\OT1/cmr/bx/n/12 Salinity 
+ []
+
+
+Overfull \hbox (1.61253pt too wide) in paragraph at lines 221--221
+ \OT1/cmr/bx/n/12 Voltage| 
+ []
+
+
+Overfull \hbox (5.87921pt too wide) in paragraph at lines 221--221
+ []|\OT1/cmr/bx/n/12 Calculated 
+ []
+
+
+Overfull \hbox (18.3442pt too wide) in paragraph at lines 213--231
+ [][] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[42
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.236 
+       <./figures/sal_vsweep.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[43
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.249 
+      ]
+Overfull \hbox (31.64627pt too wide) in paragraph at lines 269--272
+\OT1/cmr/m/n/12 example, if the predicted is 74.5 and the actual is 70, $[] = ((\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 Actual \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 Predicted\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =Actual\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^B
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[44
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.298 
+      ]
+<figures/permit_graph.png, id=1020, 567.92175pt x 440.847pt>
+File: figures/permit_graph.png Graphic file (type png)
+<use figures/permit_graph.png>
+Package pdftex.def Info: figures/permit_graph.png  used on input line 301.
+(pdftex.def)             Requested size: 317.07614pt x 246.13269pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[45
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.313 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.313 
+       <./figures/permit_graph.png>]
+<Figures/osc_1hz.jpg, id=1029, 4047.12pt x 3035.34pt>
+File: Figures/osc_1hz.jpg Graphic file (type jpg)
+<use Figures/osc_1hz.jpg>
+Package pdftex.def Info: Figures/osc_1hz.jpg  used on input line 318.
+(pdftex.def)             Requested size: 217.42265pt x 163.03055pt.
+<Figures/osc_60hz.jpg, id=1030, 4047.12pt x 3035.34pt>
+File: Figures/osc_60hz.jpg Graphic file (type jpg)
+<use Figures/osc_60hz.jpg>
+Package pdftex.def Info: Figures/osc_60hz.jpg  used on input line 323.
+(pdftex.def)             Requested size: 217.42265pt x 163.03055pt.
+<Figures/adc_1hz.png, id=1031, 361.35pt x 181.42781pt>
+File: Figures/adc_1hz.png Graphic file (type png)
+<use Figures/adc_1hz.png>
+Package pdftex.def Info: Figures/adc_1hz.png  used on input line 333.
+(pdftex.def)             Requested size: 217.42265pt x 109.16481pt.
+<Figures/adc_60hz.png, id=1032, 374.90062pt x 182.18062pt>
+File: Figures/adc_60hz.png Graphic file (type png)
+<use Figures/adc_60hz.png>
+Package pdftex.def Info: Figures/adc_60hz.png  used on input line 338.
+(pdftex.def)             Requested size: 217.42265pt x 105.65648pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.353 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.353 
+       <./Figures/osc_1hz.jpg> <./Figures/osc_60hz.jpg> <./Figures/adc_1hz.png> <./Figures/adc_60hz.png>]
+<figures/salinity_graph.png, id=1045, 576.35326pt x 434.8245pt>
+File: figures/salinity_graph.png Graphic file (type png)
+<use figures/salinity_graph.png>
+Package pdftex.def Info: figures/salinity_graph.png  used on input line 403.
+(pdftex.def)             Requested size: 317.07614pt x 239.21391pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[47
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.407 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.407 
+      ]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.432 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.432 
+       <./figures/salinity_graph.png>]
+<figures/bode_plot.png, id=1064, 602.25pt x 451.9284pt>
+File: figures/bode_plot.png Graphic file (type png)
+<use figures/bode_plot.png>
+Package pdftex.def Info: figures/bode_plot.png  used on input line 441.
+(pdftex.def)             Requested size: 317.07614pt x 237.94176pt.
+
+Overfull \hbox (14.96011pt too wide) in paragraph at lines 446--452
+\OT1/cmr/m/n/12 increases, showing that the output voltage lags the current. The negative phase characteristic
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[49
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.452 
+       <./figures/bode_plot.png (PNG copy)>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[50]
+\openout2 = `Body/Conclusions.aux'.
+
+ (Body/Conclusions.tex
+Chapter 5.
+) [51
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[52]
+\openout2 = `Body/Recommendations.aux'.
+
+ (Body/Recommendations.tex
+Chapter 6.
+
+Overfull \hbox (15.674pt too wide) in paragraph at lines 13--15
+[]\OT1/cmr/m/n/12 The controller board served its purpose well, given the budget. However, further development
+ []
+
+) [53
+
+
+
+
+]
+\openout2 = `Referencing/References.aux'.
+
+ (Referencing/References.tex (Main.bbl
+Underfull \hbox (badness 2103) in paragraph at lines 35--39
+[]\OT1/cmr/m/n/12 D. Malard^^Se, Z. Y. Wu, P. Grosso, J.-L. De Bougrenet De La Tocnaye,
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 35--39
+\OT1/cmr/m/n/12 and M. Le Menn, ``High-resolution and compact refractometer for salinity
+ []
+
+
+Underfull \hbox (badness 1292) in paragraph at lines 56--60
+[]\OT1/cmr/m/n/12 V. Rana, P. Kumar, S. Banerjee, and A. Biswas, ``Magnetic susceptibility
+ []
+
+[54
+
+
+
+
+
+]
+Underfull \hbox (badness 8189) in paragraph at lines 78--82
+[]\OT1/cmr/m/n/12 International Oceanographic Commission,, ``TEOS-10: The International
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 84--89
+\OT1/cmr/m/n/12 Salinity Measurements for Small Submersibles and Biologgers,'' \OT1/cmr/m/it/12 International
+ []
+
+
+Underfull \hbox (badness 3623) in paragraph at lines 84--89
+\OT1/cmr/m/it/12 Journal of Oceanography\OT1/cmr/m/n/12 , vol. 2013, no. 1, p. 529674, 2013.  []-eprint:
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 110--113
+[]\OT1/cmr/m/n/12 E. Barsoukov and J. R. Macdonald, eds., \OT1/cmr/m/it/12 Impedance Spectroscopy: Theory,
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[55]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 133.
+ (C:\Users\zuhay\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 133.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[56]
+Underfull \hbox (badness 1817) in paragraph at lines 192--198
+[]\OT1/cmr/m/n/12 D. Doonyapisut, P.-K. Kannan, B. Kim, J. K. Kim, E. Lee, and C.-H.
+ []
+
+
+Underfull \hbox (badness 1005) in paragraph at lines 192--198
+\OT1/cmr/m/n/12 Chung, ``Analysis of Electrochemical Impedance Data: Use of Deep Neural
+ []
+
+))
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[57]
+\openout2 = `Appendix/appendixa.aux'.
+
+ (Appendix/appendixa.tex
+Appendix A.
+
+Overfull \hbox (24.17755pt too wide) in alignment at lines 24--29
+ [] [] [] 
+ []
+
+
+Overfull \hbox (24.17755pt too wide) in alignment at lines 29--34
+ [] [] [] 
+ []
+
+
+Overfull \hbox (24.17755pt too wide) in alignment at lines 34--39
+ [] [] [] 
+ []
+
+
+Overfull \hbox (24.17755pt too wide) in alignment at lines 39--42
+ [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 45--45
+[]|\OT1/cmr/m/n/12 During this course I have done research
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 on salinity measurements. This included
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 techniques used for measuring salinity,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 their use cases and the mathematics
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 behind conductivity methods used for
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 uses conductivity, temperature and depth
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 (CTD) to measure salinity in salt water.
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 and cost constraints. I had to carefully
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 good practice methods used. I plan to
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 45--45
+\OT1/cmr/m/n/12 learning methods that can be applicable
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 47--47
+[]|\OT1/cmr/m/n/12 Investigations, experiments and
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 48--48
+[]|\OT1/cmr/m/n/12 I am designing a device that measures
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 48--48
+\OT1/cmr/m/n/12 Spectroscopy measuring across the saline
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
+[]|\OT1/cmr/m/n/12 Professional and technical
+ []
+
+
+Underfull \hbox (badness 2486) in paragraph at lines 54--54
+\OT1/cmr/m/n/12 this project I have and will submit all
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\OT1/cmr/m/n/12 measurements, Electrical Impedance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+\OT1/cmr/m/n/12 Spectroscopy, and Machine Learning
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 60--60
+\OT1/cmr/m/n/12 and interference, researching components,
+ []
+
+
+Overfull \hbox (24.17755pt too wide) in alignment at lines 42--63
+ [] [] [] 
+ []
+
+[58
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[59]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[60])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[61]
+\openout2 = `Appendix/appendixb.aux'.
+
+ (Appendix/appendixb.tex
+Appendix B.
+<figures/AI_Usage/Bib_file.png, id=1133, 735.49782pt x 626.34pt>
+File: figures/AI_Usage/Bib_file.png Graphic file (type png)
+<use figures/AI_Usage/Bib_file.png>
+Package pdftex.def Info: figures/AI_Usage/Bib_file.png  used on input line 7.
+(pdftex.def)             Requested size: 271.7835pt x 231.45544pt.
+<figures/AI_Usage/latex_table.png, id=1134, 680.5425pt x 656.4525pt>
+File: figures/AI_Usage/latex_table.png Graphic file (type png)
+<use figures/AI_Usage/latex_table.png>
+Package pdftex.def Info: figures/AI_Usage/latex_table.png  used on input line 13.
+(pdftex.def)             Requested size: 271.7835pt x 262.16566pt.
+[62
+
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16 
+      <./figures/AI_Usage/Bib_file.png>]
+<figures/AI_Usage/latex_figure.png, id=1141, 688.07062pt x 641.39626pt>
+File: figures/AI_Usage/latex_figure.png Graphic file (type png)
+<use figures/AI_Usage/latex_figure.png>
+Package pdftex.def Info: figures/AI_Usage/latex_figure.png  used on input line 19.
+(pdftex.def)             Requested size: 271.7835pt x 253.34384pt.
+<figures/AI_Usage/latex_pic.png, id=1142, 662.475pt x 674.52pt>
+File: figures/AI_Usage/latex_pic.png Graphic file (type png)
+<use figures/AI_Usage/latex_pic.png>
+Package pdftex.def Info: figures/AI_Usage/latex_pic.png  used on input line 25.
+(pdftex.def)             Requested size: 271.7835pt x 276.71967pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[63
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.28 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.28 
+      <./figures/AI_Usage/latex_table.png> <./figures/AI_Usage/latex_figure.png>]
+<figures/AI_Usage/latex_gls.png, id=1151, 700.11563pt x 615.80063pt>
+File: figures/AI_Usage/latex_gls.png Graphic file (type png)
+<use figures/AI_Usage/latex_gls.png>
+Package pdftex.def Info: figures/AI_Usage/latex_gls.png  used on input line 31.
+(pdftex.def)             Requested size: 271.7835pt x 239.0525pt.
+<figures/AI_Usage/grammar1.png, id=1152, 684.30656pt x 593.21625pt>
+File: figures/AI_Usage/grammar1.png Graphic file (type png)
+<use figures/AI_Usage/grammar1.png>
+Package pdftex.def Info: figures/AI_Usage/grammar1.png  used on input line 37.
+(pdftex.def)             Requested size: 271.7835pt x 235.60771pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[64
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.41 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.41 
+      <./figures/AI_Usage/latex_pic.png> <./figures/AI_Usage/latex_gls.png>]
+<figures/AI_Usage/freezing_overview.png, id=1161, 682.80093pt x 612.03656pt>
+File: figures/AI_Usage/freezing_overview.png Graphic file (type png)
+<use figures/AI_Usage/freezing_overview.png>
+Package pdftex.def Info: figures/AI_Usage/freezing_overview.png  used on input line 44.
+(pdftex.def)             Requested size: 271.7835pt x 243.6149pt.
+<figures/AI_Usage/eis_overview.png, id=1162, 676.02562pt x 618.05907pt>
+File: figures/AI_Usage/eis_overview.png Graphic file (type png)
+<use figures/AI_Usage/eis_overview.png>
+Package pdftex.def Info: figures/AI_Usage/eis_overview.png  used on input line 50.
+(pdftex.def)             Requested size: 271.7835pt x 248.48297pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[65
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.6}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.53 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.53 
+      <./figures/AI_Usage/grammar1.png> <./figures/AI_Usage/freezing_overview.png>])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[66
+pdfTeX warning (ext4): destination with the same identifier (name{figure.B.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.214 }
+       } % for nohyphens and line spacing <./figures/AI_Usage/eis_overview.png>]
+\openout2 = `Appendix/appendixc.aux'.
+
+ (Appendix/appendixc.tex
+Appendix C.
+) [67
+
+
+
+
+] 
+AED: lastpage setting LastPage
+(Main.aux (Body/Introduction.aux) (Body/Literature.aux) (Body/Methodology.aux) (Body/Results.aux) (Body/Conclusions.aux) (Body/Recommendations.aux) (Referencing/References.aux) (Appendix/appendixa.aux) (Appendix/appendixb.aux) (Appendix/appendixc.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `Main.out' has not changed.
+(rerunfilecheck)             Checksum: 17F44595ED39EC15865CDA25D171BFAE;10335.
+ ) 
+Here is how much of TeX's memory you used:
+ 26298 strings out of 474486
+ 553892 string characters out of 5743755
+ 1944542 words of memory out of 5000000
+ 47973 multiletter control sequences out of 15000+600000
+ 565863 words of font info for 64 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 77i,12n,80p,2604b,1735s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\zuhay\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1200.pk><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/zuhay/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on Main.pdf (74 pages, 4798476 bytes).
+PDF statistics:
+ 1310 PDF objects out of 1440 (max. 8388607)
+ 271 named destinations out of 1000 (max. 500000)
+ 583 words of extra memory for PDF output out of 10000 (max. 10000000)
+
